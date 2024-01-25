@@ -1,0 +1,294 @@
+@keyframes jump {
+  from { transform: translate3d(-50%, -4px, 0); }
+  to { transform: translate3d(-50%, 4px, 0); }
+}
+
+:root {
+  /*
+   * https://mycolor.space/?hex=%23D7B44C&sub=1
+   */
+   --gold: #D7B44C;
+   --green1: #8BA953;
+   --green2: #4A9667;
+   --green3: #147E74;
+   --green4: #19636F;
+   --blue: #2F4858;
+
+   --light: #FFEFCA;
+   --lighter: #FFF8E6;
+   --dark: #735B00;
+   --darker: #5B4600;
+   --darkest: #331A00;
+
+   --brown1: #553426;
+   --brown2: #402E32;
+
+   --gray: #DFE0DF;
+
+   --pink1: #FFC2AF;
+   --pink2: #FD8B7B;
+   --pink3: #C0564A;
+
+   --magenta: #FF6197;
+   --dark-magenta: #E267DC;
+   --cyan: #00B7F9;
+   --dark-cyan: #00B0CE;
+   --light-cyan: #C2FCF3;
+}
+
+@font-face {
+  font-family: 'adomania';
+  src: url('./webfont/adomania-webfont.woff2') format('woff2'),
+       url('./webfont/adomania-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'adomania';
+  src: url('./webfont/adomania-italic-webfont.woff2') format('woff2'),
+       url('./webfont/adomania-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'adomania';
+  src: url('./webfont/adomania-light-webfont.woff2') format('woff2'),
+       url('./webfont/adomania-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'adomania';
+  src: url('./webfont/adomania-lightitalic-webfont.woff2') format('woff2'),
+       url('./webfont/adomania-lightitalic-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--lighter);
+  color: var(--darkest);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+header h1 {
+  font-family: 'adomania', serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1::after {
+  content: ' 🗳️'; /* 🗓️🗳️ */
+  display: inline-block;
+  filter: grayscale(100);
+  font-size: 16px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+header h1::before {
+  content: ' 🗳️'; /* 🗓️🗳️ */
+  display: inline-block;
+  filter: grayscale(100);
+  font-size: 16px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h1::before,
+  header h1::after {
+    font-size: 36px;
+  }
+}
+
+#intro {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px;
+  position: relative;
+}
+
+#intro h2 {  
+  font-family: 'adomania', serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#intro h3 {  
+  font-family: 'adomania', serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#intro em {
+  filter: grayscale(100);
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#intro header {
+  max-width: 400px;
+}
+
+#intro::after {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: jump;
+  bottom: 0;
+  content: '☟';
+  display: block;
+  font-size: 32px;
+  left: 50%;
+  position: absolute;
+  transform: translate3d(-50%, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  #intro h2,
+  #intro h3 {
+    font-size: 24px;
+  }
+}
+
+#calendar {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 5px;
+}
+
+#calendar .container {
+  display: block;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+}
+
+#calendar table {
+  border: 0;
+  border-collapse: separate;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+#calendar thead {
+  background-color: var(--lighter);
+  position: sticky;
+  top: 0;
+}
+
+#calendar th {
+  font-family: 'adomania', serif;
+  font-size: 10px;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#calendar tbody th {
+  text-align: right;
+}
+
+#calendar tbody td,
+#calendar thead th {
+  vertical-align: middle;
+}
+
+#calendar thead th .long {
+  display: none;
+}
+
+#calendar tbody th {
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#calendar td {
+  background: var(--lighter);
+}
+
+#calendar .day {
+  border-radius: 2px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  font-size: 8px;
+}
+
+#calendar .day.day-empty {
+  background: var(--gray);
+  opacity: .25;
+}
+
+#calendar .day.day-1 {
+  background: var(--pink1);
+}
+
+#calendar .day.day-2 {
+  background: var(--pink2);
+}
+
+#calendar .day.day-3 {
+  background: var(--pink3);
+}
+
+@media screen and (min-width: 768px) {
+  #calendar thead th .long {
+    display: inline;
+  }
+
+  #calendar .day {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #calendar thead th .long {
+    display: inline;
+  }
+
+  #calendar .day {
+    height: 40px;
+    width: 40px;
+  }
+
+  #calendar th {
+    font-size: 14px;
+  }
+}
