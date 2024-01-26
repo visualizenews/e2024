@@ -240,10 +240,6 @@ header h1::before {
   vertical-align: top;
 }
 
-#calendar td {
-  background: var(--lighter);
-}
-
 #calendar .day {
   border-radius: 2px;
   display: block;
