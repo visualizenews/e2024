@@ -88,7 +88,7 @@ body {
 }
 
 header h1 {
-  font-family: 'adomania', serif;
+  font-family: 'adomania', sans-serif;
   font-size: 24px;
   font-weight: 200;
   line-height: 72px;
@@ -117,6 +117,7 @@ header h1::before {
 @media screen and (min-width: 768px) {
   header h1 {
     font-size: 48px;
+    line-height: 96px;
   }
 
   header h1::before,
@@ -135,7 +136,7 @@ header h1::before {
 }
 
 #intro h2 {  
-  font-family: 'adomania', serif;
+  font-family: 'adomania', sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
@@ -144,7 +145,7 @@ header h1::before {
 }
 
 #intro h3 {  
-  font-family: 'adomania', serif;
+  font-family: 'adomania', sans-serif;
   font-size: 16px;
   font-weight: 200;
   margin-bottom: 20px;
@@ -213,7 +214,7 @@ header h1::before {
 }
 
 #calendar th {
-  font-family: 'adomania', serif;
+  font-family: 'adomania', sans-serif;
   font-size: 10px;
   font-weight: 200;
   text-align: center;
@@ -246,8 +247,8 @@ header h1::before {
   border-radius: 2px;
   display: block;
   height: 20px;
+  position: relative;
   width: 20px;
-  font-size: 8px;
 }
 
 #calendar .day.day-empty {
@@ -267,14 +268,82 @@ header h1::before {
   background: var(--pink3);
 }
 
+#calendar .popover {
+  background: var(--light);
+  bottom: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  display: none;
+  font-family: 'adomania', sans-serif;
+  height: auto;
+  left: 50%;
+  padding: 5px;
+  position: absolute;
+  transform: translate3d(-5px, -5px, 0);
+  width: 160px;
+  z-index: 99;
+}
+
+#calendar .popover::before {
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: translate3d(0, 0, 0);
+
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;  
+  border-top: 5px solid var(--light);
+}
+
+#calendar .popover.left {
+  left: auto;
+  right: 50%;
+  transform: translate3d(5px, -5px, 0);
+}
+
+#calendar .popover.left::before {
+  left: auto;
+  right: 0;
+}
+
+#calendar .popover.center {
+  left: 50%;
+  transform: translate3d(-50%, -5px, 0);
+}
+
+#calendar .popover.center::before {
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+#calendar .day:hover .popover {
+  display: block;
+}
+
+#calendar .popover .title {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+#calendar .popover .country {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   #calendar thead th .long {
     display: inline;
   }
 
   #calendar .day {
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
   }
 }
 

@@ -38,14 +38,19 @@
 
       const countryWrapper = (day, month) => {
         let html = '';
-        console.log(`2024-${month + 1}-${day}`, new Date(`2024-${month + 1}-${day}`), isNaN(new Date(`2024-${month + 1}-${day}`)));
-        console.log('-', new Date(2024, month, day));
         if (!isValidDate(2024, month, day)) {
           html = '<div class="day day-no" />';
         } else {
           const today = countries.filter(d => d.day === day && d.month === month + 1);
           if (today.length) {
-            html = `<div class="day day-${today.length}">${today.map(c => (`<div class="country country-button" data-target="${c.month}-${c.day}-${c.country}" title="${c.country}">${c.flag}</div>`)).join('')}</div>`;
+            html = `<div class="day day-${today.length}">
+              <div class="popover ${month < 4 ? 'right' : ''}${month > 3 && month < 8 ? 'center' : ''}${month > 7 ? 'left' : ''}">
+                <div class="title">${new Intl.DateTimeFormat('en-us', { dateStyle: 'medium' }).format(new Date(2024, month, day))}</div>
+                <div class="flags">
+                  ${today.map(c => (`<div class="country country-button" data-target="${c.month}-${c.day}-${c.country}" title="${c.country}">${c.flag} ${c.country}</div>`)).join('')}
+                </div>
+              </div>
+            </div>`;
           } else {
             html = '<div class="day day-empty" />';
           }
@@ -87,6 +92,12 @@
         {
           month: 2,
           day: 2,
+          flag: '🇹🇼',
+          country: 'Taiwan',
+        },
+        {
+          month: 6,
+          day: 1,
           flag: '🇹🇼',
           country: 'Taiwan',
         },
