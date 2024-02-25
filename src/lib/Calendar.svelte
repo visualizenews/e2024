@@ -1,4 +1,8 @@
 <script>
+    import { onMount, beforeUpdate } from "svelte";
+
+    export let data = [];
+
     const numOfDays = 366;
     const numOfRows = 7;
     const numOfCols = Math.ceil(numOfDays / numOfRows);
@@ -6,6 +10,22 @@
     let calendarHeight;
     let binWidth = 100 / (numOfCols + 1);
     let binHeight = 100 / numOfRows;
+    $: calendarDays = Array(numOfDays)
+        .fill(0)
+        .map((_, i) => {
+            const timestamp = new Date(Date.UTC(2024, 0, i + 1));
+            return {
+                timestamp,
+                date: getDate(i),
+                day: getDay(i),
+                dayIndex: i,
+                columnIndex: Math.floor(i / numOfRows),
+                columnDelta: getDelta(i),
+                elections: data.filter((d) => {
+                    return +new Date(d.date) === +timestamp;
+                }),
+            };
+        });
 
     const getDay = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
@@ -39,6 +59,12 @@
             )
         );
     };
+
+    beforeUpdate(() => {
+        console.log(data);
+
+        console.log(calendarDays);
+    });
 </script>
 
 <section
@@ -72,9 +98,10 @@
                 {d}
             </li>
         {/each}
-        {#each { length: numOfDays } as _, i}
+        {#each calendarDays as d, i}
             <li
-                data-date={getDay(i, 2024)}
+                data-date={d.day}
+                class={d.elections.length > 0 ? "with-elections" : ""}
                 style="width:{binWidth}%;height:{binHeight}%"
             />
         {/each}
@@ -136,13 +163,17 @@
     #calendar ul.days li:not(.name-of-the-day):after {
         content: "";
         display: block;
-        border-radius: 5px;
+        border-radius: 3px;
         background: var(--gray);
         width: calc(100% - 1px);
         height: calc(var(--binHeight) - 1px);
         margin-left: 1px;
         margin-top: 1px;
     }
+    #calendar ul.days li.with-elections:after {
+        background: var(--dark);
+    }
+
     #calendar .container {
         display: block;
         flex: 1 1 auto;

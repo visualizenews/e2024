@@ -1,5 +1,13 @@
 <script>
+    import { onMount } from "svelte";
     import Calendar from "./lib/Calendar.svelte";
+
+    let calendarData = [];
+
+    onMount(async () => {
+        const calendarResponse = await fetch("./data/calendar.json");
+        calendarData = await calendarResponse.json();
+    });
 </script>
 
 <header id="header">
@@ -24,5 +32,5 @@
 
 <section id="charts"></section>
 
-<Calendar />
+<Calendar data={calendarData} />
 <footer></footer>
