@@ -1,12 +1,45 @@
 <script>
-    import { onMount } from "svelte";
-    import Calendar from "./lib/Calendar.svelte";
+    import { onMount } from 'svelte';
+    import Calendar from './lib/Calendar.svelte';
+    import { Runtime } from '@observablehq/runtime';
+    import define from 'https://api.observablehq.com/d/2779de33b7db5a6b@764.js?v=4';
 
+    let data = {};
     let calendarData = [];
 
     onMount(async () => {
-        const calendarResponse = await fetch("./data/calendar.json");
-        calendarData = await calendarResponse.json();
+        const runtime = new Runtime();
+        const main = runtime.module(define, (name) => {
+            if (name === 'data')
+                return {
+                    pending() {},
+                    fulfilled(value) {
+                        data = value;
+                        console.log('data', data);
+                        calendarData = Object.entries(value).reduce(
+                            (acc, [country, elections]) => {
+                                acc = [
+                                    ...acc,
+                                    ...elections.map((election) => {
+                                        return {
+                                            date: election.date,
+                                            country,
+                                        };
+                                    }),
+                                ];
+                                // console.log(country, elections);
+
+                                return acc;
+                            },
+                            [],
+                        );
+                        console.log('calendarData', calendarData);
+                    },
+                    rejected(error) {
+                        console.error(`${name}: rejected`, error);
+                    },
+                };
+        });
     });
 </script>
 
