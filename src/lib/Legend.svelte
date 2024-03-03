@@ -25,6 +25,7 @@
         width: 100%;
         max-width: none;
         margin-top: 30px;
+        margin-bottom: 15px;
     }
     .legend li {
         white-space: nowrap;

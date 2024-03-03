@@ -5,24 +5,28 @@
     export let data = [];
     export let options = {};
     export let width;
+    const h = 120;
 
-    let chart;
+    let chartNode;
+
+    $: chart = chrt.Chrt();
+    $: {
+        console.log("width", width);
+        chart?.size(width, h);
+    }
 
     onMount(() => {
         // console.log("chrt", chrt);
         const bar = megaBar(data, options);
         // console.log(bar);
-        chart.appendChild(bar);
+        chartNode.appendChild(bar);
     });
 
     const megaBar = (data, options = {}) => {
         console.log(options);
-        const h = 120;
         const middle =
             Math.floor(data.reduce((acc, d) => d[2] + acc, 0) / 2) + 1;
-        const chart = chrt
-            .Chrt()
-            .size(width, h)
+        chart
             .margins({ left: 0, right: 20, top: 0, bottom: 25 })
             .x({ domain: [0, null] })
             .y({ scale: "ordinal" });
@@ -111,7 +115,7 @@
     };
 </script>
 
-<div bind:this={chart}></div>
+<div bind:this={chartNode}></div>
 
 <style>
     :global(svg) {

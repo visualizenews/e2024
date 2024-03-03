@@ -80,12 +80,16 @@
                 <div class="election" bind:offsetWidth={width}>
                     <h3>{election.date}</h3>
                     <p>{election.description}</p>
-                    <Legend data={election.data} />
-                    <Megabar
-                        data={election.data}
-                        options={election.options}
-                        {width}
-                    />
+                    {#if election.data.length === 0}
+                        <p>No data available</p>
+                    {:else}
+                        <Legend data={election.data} />
+                        <Megabar
+                            data={election.data}
+                            options={election.options}
+                            {width}
+                        />
+                    {/if}
                 </div>
             {/each}
         </div>
@@ -106,6 +110,7 @@
         flex-direction: column;
     }
     :global(.country) {
+        width: 100%;
         margin-bottom: 40px;
     }
     :global(.country .election) {
