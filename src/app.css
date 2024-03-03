@@ -83,17 +83,30 @@
     padding: 0;
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.roboto-slab-uniquifier {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
 body {
     background: var(--lighter);
     color: var(--darkest);
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     line-height: 1.5;
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header h1 {
-    font-family: "adomania", sans-serif;
     font-size: 24px;
     font-weight: 200;
     line-height: 72px;
@@ -102,7 +115,7 @@ header h1 {
 }
 
 header h1::after {
-    content: " 🗳️"; /* 🗓️🗳️ */
+    content: "🗳️"; /* 🗓️🗳️ */
     display: inline-block;
     filter: grayscale(100);
     font-size: 16px;
@@ -111,7 +124,7 @@ header h1::after {
 }
 
 header h1::before {
-    content: " 🗳️"; /* 🗓️🗳️ */
+    content: "🗳️"; /* 🗓️🗳️ */
     display: inline-block;
     filter: grayscale(100);
     font-size: 16px;
@@ -128,62 +141,5 @@ header h1::before {
     header h1::before,
     header h1::after {
         font-size: 36px;
-    }
-}
-
-#intro {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 80vh;
-    padding: 40px;
-    position: relative;
-}
-
-#intro h2 {
-    font-family: "adomania", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#intro h3 {
-    font-family: "adomania", sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#intro em {
-    filter: grayscale(100);
-    font-style: normal;
-    text-decoration: underline;
-}
-
-#intro header {
-    max-width: 400px;
-}
-
-#intro::after {
-    animation-direction: alternate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: jump;
-    bottom: 0;
-    content: "☟";
-    display: block;
-    font-size: 32px;
-    left: 50%;
-    position: absolute;
-    transform: translate3d(-50%, 0, 0);
-}
-
-@media screen and (min-width: 768px) {
-    #intro h2,
-    #intro h3 {
-        font-size: 24px;
     }
 }

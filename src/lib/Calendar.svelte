@@ -63,7 +63,7 @@
     beforeUpdate(() => {
         console.log(data);
 
-        console.log(calendarDays);
+        console.log("calendarDays", calendarDays);
     });
 </script>
 
@@ -110,6 +110,7 @@
 
 <style>
     #calendar {
+        font-family: sans-serif;
         align-items: stretch;
         font-size: 10px;
         width: calc(54 * 15px);
