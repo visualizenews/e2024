@@ -1,0 +1,119 @@
+@keyframes jump {
+    from {
+        transform: translate3d(-50%, -4px, 0);
+    }
+    to {
+        transform: translate3d(-50%, 4px, 0);
+    }
+}
+
+:root {
+    /*
+   * https://mycolor.space/?hex=%23D7B44C&sub=1
+   * https://mycolor.space/?hex=%23FEFEFF&sub=1
+   */
+    --gold: #d7b44c;
+    --green1: #8ba953;
+    --green2: #4a9667;
+    --green3: #147e74;
+    --green4: #19636f;
+    --blue: #2f4858;
+
+    --light: #ffefca;
+    --lighter: #fff8e6;
+    --dark: #735b00;
+    --darker: #5b4600;
+    --darkest: #331a00;
+
+    --brown1: #553426;
+    --brown2: #402e32;
+
+    --gray: #dfe0df;
+
+    --pink1: #ffc2af;
+    --pink2: #fd8b7b;
+    --pink3: #c0564a;
+
+    --magenta: #ff6197;
+    --dark-magenta: #e267dc;
+    --cyan: #00b7f9;
+    --dark-cyan: #00b0ce;
+    --light-cyan: #c2fcf3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-slab-uniquifier {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--lighter);
+    color: var(--darkest);
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color: black;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1::after {
+    content: "🗳️"; /* 🗓️🗳️ */
+    display: inline-block;
+    filter: grayscale(100);
+    font-size: 16px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+header h1::before {
+    content: "🗳️"; /* 🗓️🗳️ */
+    display: inline-block;
+    filter: grayscale(100);
+    font-size: 16px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+    #app {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    header h1 {
+        font-size: 48px;
+        line-height: 96px;
+    }
+
+    header h1::before,
+    header h1::after {
+        font-size: 36px;
+    }
+}
