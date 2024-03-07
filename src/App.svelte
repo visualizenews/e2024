@@ -80,7 +80,9 @@
             {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election}
                 <div class="election" bind:offsetWidth={width}>
                     <h3>{election.date}</h3>
+                    {#if election.description}
                     <p>{election.description}</p>
+                    {/if}
                     {#if election.data.length === 0}
                         <p>No data available</p>
                     {:else}
