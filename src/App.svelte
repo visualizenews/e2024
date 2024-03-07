@@ -12,7 +12,7 @@
     let countries = [];
 
     onMount(async () => {
-        const countriesResponse = await fetch("/data/countries.json");
+        const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
 
         const runtime = new Runtime();
