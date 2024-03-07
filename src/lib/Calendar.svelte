@@ -135,7 +135,7 @@
     }
 
     #calendar ul.months {
-        margin-left: 22px;
+        margin-left: var(--binWidth);
         display: flex;
         align-content: flex-start;
         height: 22px;
@@ -171,6 +171,7 @@
         background: transparent;
         color: var(--dark);
         font-weight: 200;
+        font-size: 1vh;
     }
     #calendar ul.days li:not(.name-of-the-day):after {
         content: "";
@@ -345,6 +346,9 @@
         #calendar .day {
             height: 26px;
             width: 26px;
+        }
+        #calendar ul li.name-of-the-day {
+            font-size: 10px;
         }
     }
 

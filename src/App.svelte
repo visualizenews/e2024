@@ -107,7 +107,7 @@
         display: flex;
         justify-content: center;
         /*min-height: 80vh;*/
-        padding: 40px;
+        padding:10px;
         position: relative;
     }
     #charts {

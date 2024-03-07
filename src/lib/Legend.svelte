@@ -28,8 +28,6 @@
         margin-bottom: 15px;
     }
     .legend li {
-        white-space: nowrap;
-        line-height: 10px;
         margin-right: 10px;
         padding-left: 15px;
         position: relative;
@@ -44,5 +42,11 @@
         position: absolute;
         transform: translateY(-25%);
         left: 0;
+    }
+    @media screen and (min-width: 768px) {
+        .legend li {
+            white-space: nowrap;
+            line-height: 10px;
+        }
     }
 </style>

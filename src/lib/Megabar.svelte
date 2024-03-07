@@ -11,7 +11,7 @@
 
     $: chart = chrt.Chrt();
     $: {
-        console.log("width", width);
+        // console.log("width", width);
         chart?.size(width, h);
     }
 
@@ -27,7 +27,7 @@
         const middle =
             Math.floor(data.reduce((acc, d) => d[2] + acc, 0) / 2) + 1;
         chart
-            .margins({ left: 0, right: 20, top: 0, bottom: 25 })
+            .margins({ left: 0, right: 0, top: 0, bottom: 25 })
             .x({ domain: [0, null] })
             .y({ scale: "ordinal" });
         const stack = chrt.stack().orientation("left");
