@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: "./dist", // relative to index.html
     emptyOutDir: true, // true if outDir is inside root. if outDir is not inside root, uncomment this.
   },
-  base: "/e2024/",
+  base: "/e2024-static/",
 });
