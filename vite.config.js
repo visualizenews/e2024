@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [svelte()],
   build: {
     outDir: "./dist", // relative to index.html
-    emptyOutDir: true, // true if outDir is inside root. if outDir is not inside root, uncomment this.
+    // emptyOutDir: true, // true if outDir is inside root. if outDir is not inside root, uncomment this.
   },
-  base: "/e2024-static/",
+  base: "/e2024/",
 });
