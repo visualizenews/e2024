@@ -1,5 +1,6 @@
 <script>
     import { onMount, beforeUpdate } from "svelte";
+    import App from "../App.svelte";
 
     export let data = [];
 
@@ -69,7 +70,7 @@
 
 <section
     id="calendar"
-    style="--binHeight:{(calendarHeight * binHeight) / 100}px"
+    style="--binWidth:{calendarWidth / 54}px;--binHeight:{calendarWidth / 54}px"
 >
     <ul class="months">
         {#each ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] as m, i}
@@ -91,10 +92,7 @@
         bind:clientHeight={calendarHeight}
     >
         {#each ["S", "M", "T", "W", "T", "F", "S"] as d}
-            <li
-                class="name-of-the-day"
-                style="width:{binWidth}%;height:{binHeight}%"
-            >
+            <li class="name-of-the-day">
                 {d}
             </li>
         {/each}
@@ -102,18 +100,27 @@
             <li
                 data-date={d.day}
                 class={d.elections.length > 0 ? "with-elections" : ""}
-                style="width:{binWidth}%;height:{binHeight}%"
-            />
+            >
+                {#if d.elections.length}
+                    <a href="#{d.elections[0].country}" />
+                {/if}
+            </li>
         {/each}
     </ul>
 </section>
 
 <style>
     #calendar {
+        position: sticky;
+        top: 0;
+        margin-top: 0;
         font-family: sans-serif;
         align-items: stretch;
         font-size: 10px;
-        width: calc(54 * 15px);
+        width: 100%;
+        background-color: var(--lighter);
+        z-index: 9999;
+        padding-bottom: 20px;
     }
     #calendar * {
         box-sizing: border-box;
@@ -146,12 +153,16 @@
         flex-direction: column;
         align-content: flex-start;
         width: 100%;
-        height: calc(7 * 15px);
+        /*height: calc(7 * 15px);*/
+        height: calc(7 * var(--binHeight));
     }
     #calendar ul.days li {
         text-align: center;
         line-height: var(--binHeight);
         margin: 0;
+        width: var(--binWidth);
+        height: var(--binHeight);
+        position: relative;
     }
     #calendar ul.days li:nth-child(8) {
         margin-top: var(--binHeight);
@@ -173,6 +184,16 @@
     }
     #calendar ul.days li.with-elections:after {
         background: var(--dark);
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    #calendar ul.days li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
     }
 
     #calendar .container {

@@ -59,22 +59,23 @@
 
 <header id="header">
     <h1 class="show-calendar">2024 The Elections Year</h1>
-    <Calendar data={calendarData} />
 </header>
 <section id="intro" class="contents">
     <header>
-        <h3>
+        <p>
             In the year 2024 almost 70 countries will hold elections, people in
-            8 of the 10 most populous countries in the world —Bangladesh,
-            Brazil, India, Indonesia, Mexico, Pakistan, Russia and the United
-            States— will cast a vote.
-        </h3>
+            8 of the 10 most populous countries in the world — <a href="#BD"
+                >Bangladesh</a
+            >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
+            <a href="#PK">Pakistan</a>, Russia and the United States— will cast
+            a vote.
+        </p>
     </header>
 </section>
-
+<Calendar data={calendarData} />
 <section id="charts" class="contents">
     {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
-        <div class="country">
+        <div id={country.country} class="country">
             <h2>{country.countryInfo.name}</h2>
             {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election}
                 <div class="election" bind:offsetWidth={width}>
@@ -89,6 +90,9 @@
                             options={election.options}
                             {width}
                         />
+                        {#if election.notes}
+                            <p class="notes">{election.notes}</p>
+                        {/if}
                     {/if}
                 </div>
             {/each}
@@ -112,6 +116,7 @@
     :global(.country) {
         width: 100%;
         margin-bottom: 40px;
+        scroll-margin-top: 200px;
     }
     :global(.country .election) {
         display: flex;
@@ -129,16 +134,14 @@
         font-weight: 200;
     }
 
-    .contents em {
-        filter: grayscale(100);
-        font-style: normal;
-        text-decoration: underline;
-    }
-
     .contents header {
         max-width: 600px;
     }
 
+    .election p.notes {
+        font-style: italic;
+        margin-top: 20px;
+    }
     /*.contents::after {
         animation-direction: alternate;
         animation-duration: 1s;
@@ -154,6 +157,14 @@
         }*/
 
     @media screen and (min-width: 768px) {
+        .contents header {
+            max-width: 100%;
+        }
+        header p {
+            font-size: 28px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
         .contents h2,
         .contents h3 {
             font-size: 24px;

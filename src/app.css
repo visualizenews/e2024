@@ -41,56 +41,20 @@
     --light-cyan: #c2fcf3;
 }
 
-@font-face {
-    font-family: "adomania";
-    src:
-        url("./webfont/adomania-webfont.woff2") format("woff2"),
-        url("./webfont/adomania-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "adomania";
-    src:
-        url("./webfont/adomania-italic-webfont.woff2") format("woff2"),
-        url("./webfont/adomania-italic-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "adomania";
-    src:
-        url("./webfont/adomania-light-webfont.woff2") format("woff2"),
-        url("./webfont/adomania-light-webfont.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "adomania";
-    src:
-        url("./webfont/adomania-lightitalic-webfont.woff2") format("woff2"),
-        url("./webfont/adomania-lightitalic-webfont.woff") format("woff");
-    font-weight: 200;
-    font-style: italic;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
 .roboto-slab-uniquifier {
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background: var(--lighter);
@@ -100,6 +64,12 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color: black;
 }
 header {
     display: flex;
@@ -133,6 +103,10 @@ header h1::before {
 }
 
 @media screen and (min-width: 768px) {
+    #app {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
     header h1 {
         font-size: 48px;
         line-height: 96px;
