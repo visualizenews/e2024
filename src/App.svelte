@@ -79,19 +79,28 @@
             <h2>{country.countryInfo.name}</h2>
             {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election}
                 <div class="election" bind:offsetWidth={width}>
-                    <h3>{election.date}</h3>
+                    <h3>
+                        {new Intl.DateTimeFormat("en-GB", {
+                            dateStyle: "full",
+                        }).format(new Date(election.date))}
+                    </h3>
                     {#if election.description}
-                    <p>{election.description}</p>
+                        <b style="margin-botton: 1rem;"
+                            >{election.description}</b
+                        >
+                    {/if}
+                    {#if election.summary}
+                        <p style="margin-bottom: 1rem">{election.summary}</p>
                     {/if}
                     {#if election.data.length === 0}
                         <p>No data available</p>
                     {:else}
-                        <Legend data={election.data} />
                         <Megabar
                             data={election.data}
                             options={election.options}
                             {width}
                         />
+                        <Legend data={election.data} />
                         {#if election.notes}
                             <p class="notes">{election.notes}</p>
                         {/if}
@@ -109,7 +118,7 @@
         display: flex;
         justify-content: center;
         /*min-height: 80vh;*/
-        padding:10px;
+        padding: 10px;
         position: relative;
     }
     #charts {
@@ -117,13 +126,14 @@
     }
     :global(.country) {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         scroll-margin-top: 200px;
     }
     :global(.country .election) {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 2.5rem;
     }
     .contents h2 {
         font-size: 16px;
@@ -132,7 +142,7 @@
     }
 
     .contents h3 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 200;
     }
 
@@ -144,19 +154,6 @@
         font-style: italic;
         margin-top: 20px;
     }
-    /*.contents::after {
-        animation-direction: alternate;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-name: jump;
-        bottom: 0;
-        content: "☟";
-        display: block;
-        font-size: 32px;
-        left: 50%;
-        position: absolute;
-        transform: translate3d(-50%, 0, 0);
-        }*/
 
     @media screen and (min-width: 768px) {
         .contents header {
@@ -167,9 +164,11 @@
             width: 100%;
             margin-bottom: 50px;
         }
-        .contents h2,
-        .contents h3 {
+        .contents h2 {
             font-size: 24px;
+        }
+        .contents h3 {
+            font-size: 18px;
         }
     }
 </style>

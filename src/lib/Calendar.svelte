@@ -72,38 +72,42 @@
     id="calendar"
     style="--binWidth:{calendarWidth / 54}px;--binHeight:{calendarWidth / 54}px"
 >
-    <ul class="months">
-        {#each ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] as m, i}
-            <li
-                data-date={getDayNumberOfTheYear(new Date(2024, i, 1))}
-                data-column-index={Math.floor(
-                    getDayNumberOfTheYear(new Date(2024, i, 1)) / numOfRows,
-                )}
-                data-column-delta={getDelta(i)}
-                style="margin-left:{getDelta(i) * binWidth}%"
-            >
-                {m.slice(0, 3)}
-            </li>
-        {/each}
-    </ul>
-    <ul
-        class="days"
-        bind:clientWidth={calendarWidth}
-        bind:clientHeight={calendarHeight}
-    >
+    <div>
+        <ul class="months">
+            {#each ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] as m, i}
+                <li
+                    data-date={getDayNumberOfTheYear(new Date(2024, i, 1))}
+                    data-column-index={Math.floor(
+                        getDayNumberOfTheYear(new Date(2024, i, 1)) / numOfRows,
+                    )}
+                    data-column-delta={getDelta(i)}
+                    style="margin-left:{getDelta(i) * binWidth}%"
+                >
+                    {m.slice(0, 3)}
+                </li>
+            {/each}
+        </ul>
+        <ul
+            class="days"
+            bind:clientWidth={calendarWidth}
+            bind:clientHeight={calendarHeight}
+        >
+            {#each calendarDays as d, i}
+                <li
+                    data-date={d.day}
+                    class={d.elections.length > 0 ? "with-elections" : ""}
+                >
+                    {#if d.elections.length}
+                        <a href="#{d.elections[0].country}" />
+                    {/if}
+                </li>
+            {/each}
+        </ul>
+    </div>
+    <ul class="days day-names">
         {#each ["S", "M", "T", "W", "T", "F", "S"] as d}
             <li class="name-of-the-day">
                 {d}
-            </li>
-        {/each}
-        {#each calendarDays as d, i}
-            <li
-                data-date={d.day}
-                class={d.elections.length > 0 ? "with-elections" : ""}
-            >
-                {#if d.elections.length}
-                    <a href="#{d.elections[0].country}" />
-                {/if}
             </li>
         {/each}
     </ul>
@@ -121,9 +125,17 @@
         background-color: var(--lighter);
         z-index: 9999;
         padding-bottom: 20px;
+
+        --monthHeight: 22px;
     }
     #calendar * {
         box-sizing: border-box;
+    }
+    #calendar > div {
+        width: 100%;
+        position: relative;
+        overflow-x: auto;
+        padding-bottom: 10px;
     }
     #calendar ul {
         position: relative;
@@ -139,11 +151,14 @@
         display: flex;
         align-content: flex-start;
         height: 22px;
+        width: 200%;
+        font-size: 0.5rem;
+        color: var(--dark);
     }
     #calendar ul.months li {
         width: 0px;
         text-align: left;
-        line-height: 22px;
+        line-height: var(--monthHeight);
         margin: 0;
         background: var(--lighter);
     }
@@ -152,9 +167,11 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-content: flex-start;
-        width: 100%;
+        width: 200%;
         /*height: calc(7 * 15px);*/
         height: calc(7 * var(--binHeight));
+        overflow-x: auto;
+        margin-left: var(--binWidth);
     }
     #calendar ul.days li {
         text-align: center;
@@ -164,8 +181,19 @@
         height: var(--binHeight);
         position: relative;
     }
-    #calendar ul.days li:nth-child(8) {
+    #calendar ul.days:not(.day-names) li:nth-child(1) {
         margin-top: var(--binHeight);
+    }
+    #calendar ul.day-names {
+        position: absolute;
+        z-index: 999;
+        top: var(--monthHeight);
+        left: 0;
+        width: var(--binWidth);
+        height: calc(7 * var(--binHeight) + 1px);
+        padding-top: 1px;
+        overflow: hidden;
+        margin-left: 0;
     }
     #calendar ul li.name-of-the-day {
         background: transparent;
@@ -177,7 +205,7 @@
         content: "";
         display: block;
         border-radius: 3px;
-        background: var(--gray);
+        background: #ede2ca;
         width: calc(100% - 1px);
         height: calc(var(--binHeight) - 1px);
         margin-left: 1px;
@@ -195,79 +223,6 @@
         width: 100%;
         height: 100%;
         background-color: transparent;
-    }
-
-    #calendar .container {
-        display: block;
-        flex: 1 1 auto;
-        margin: 0 auto;
-        max-width: 960px;
-        position: relative;
-    }
-
-    #calendar table {
-        border: 0;
-        border-collapse: separate;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
-    }
-
-    #calendar thead {
-        background-color: var(--lighter);
-        position: sticky;
-        top: 0;
-    }
-
-    #calendar th {
-        font-family: "adomania", sans-serif;
-        font-size: 10px;
-        font-weight: 200;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    #calendar tbody th {
-        text-align: right;
-    }
-
-    #calendar tbody td,
-    #calendar thead th {
-        vertical-align: middle;
-    }
-
-    #calendar thead th .long {
-        display: none;
-    }
-
-    #calendar tbody th {
-        padding-right: 5px;
-        vertical-align: top;
-    }
-
-    #calendar .day {
-        border-radius: 2px;
-        display: block;
-        height: 20px;
-        position: relative;
-        width: 20px;
-    }
-
-    #calendar .day.day-empty {
-        background: var(--gray);
-        opacity: 0.25;
-    }
-
-    #calendar .day.day-1 {
-        background: var(--pink1);
-    }
-
-    #calendar .day.day-2 {
-        background: var(--pink2);
-    }
-
-    #calendar .day.day-3 {
-        background: var(--pink3);
     }
 
     #calendar .popover {
@@ -339,13 +294,13 @@
     }
 
     @media screen and (min-width: 768px) {
-        #calendar thead th .long {
-            display: inline;
+        #calendar ul.days {
+            width: 100%;
+            overflow-x: hidden;
         }
-
-        #calendar .day {
-            height: 26px;
-            width: 26px;
+        #calendar ul.months {
+            width: 100%;
+            font-size: 0.7rem;
         }
         #calendar ul li.name-of-the-day {
             font-size: 10px;
@@ -353,17 +308,5 @@
     }
 
     @media screen and (min-width: 1024px) {
-        #calendar thead th .long {
-            display: inline;
-        }
-
-        #calendar .day {
-            height: 40px;
-            width: 40px;
-        }
-
-        #calendar th {
-            font-size: 14px;
-        }
     }
 </style>

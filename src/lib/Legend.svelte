@@ -15,23 +15,23 @@
 
 <style>
     .legend {
-        display: flex;
         font-family: system-ui;
         font-size: 12px;
         list-style: none;
         margin: 0;
         padding: 0;
-        flex-wrap: wrap;
         width: 100%;
         max-width: none;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
     .legend li {
         margin-right: 10px;
         padding-left: 15px;
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        font-size: 0.6rem;
+        line-height: 20px;
     }
     .legend li span {
         display: inline-block;
@@ -40,13 +40,18 @@
         border-radius: 2px;
         margin-right: 3px;
         position: absolute;
-        transform: translateY(-25%);
         left: 0;
+        line-height: 20px;
     }
     @media screen and (min-width: 768px) {
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+        }
         .legend li {
             white-space: nowrap;
-            line-height: 10px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
         }
     }
 </style>
