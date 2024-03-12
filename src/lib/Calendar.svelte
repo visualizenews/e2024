@@ -294,7 +294,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        #calendar ul.days {
+        #calendar ul.days:not(.day-names) {
             width: 100%;
             overflow-x: hidden;
         }
