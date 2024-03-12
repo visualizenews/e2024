@@ -95,7 +95,11 @@
             {#each calendarDays as d, i}
                 <li
                     data-date={d.day}
-                    class={d.elections.length > 0 ? "with-elections" : ""}
+                    class="{d.elections.length > 0
+                        ? 'with-elections'
+                        : ''} {d.elections.some((election) => election.hasData)
+                        ? 'with-data'
+                        : ''}"
                 >
                     {#if d.elections.length}
                         <a href="#{d.elections[0].country}" />
@@ -212,11 +216,14 @@
         margin-top: 1px;
     }
     #calendar ul.days li.with-elections:after {
-        background: var(--dark);
+        background: #c4b889;
         position: absolute;
         top: 0;
         left: 0;
         pointer-events: none;
+    }
+    #calendar ul.days li.with-elections.with-data:after {
+        background: var(--dark);
     }
     #calendar ul.days li a {
         display: block;

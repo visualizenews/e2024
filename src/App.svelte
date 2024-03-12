@@ -40,6 +40,7 @@
                                         date: election.date,
                                         country: d.country,
                                         countryInfo: d.countryInfo,
+                                        hasData: election?.data?.length,
                                     };
                                 }),
                             ];
@@ -67,8 +68,8 @@
             8 of the 10 most populous countries in the world — <a href="#BD"
                 >Bangladesh</a
             >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
-            <a href="#PK">Pakistan</a>, Russia and the United States— will cast
-            a vote.
+            <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the United States—
+            will cast a vote.
         </p>
     </header>
 </section>
@@ -92,7 +93,7 @@
                     {#if election.summary}
                         <p style="margin-bottom: 1rem">{election.summary}</p>
                     {/if}
-                    {#if election.data.length === 0}
+                    {#if (election?.data?.length ?? 0) === 0}
                         <p>No data available</p>
                     {:else}
                         <Megabar
