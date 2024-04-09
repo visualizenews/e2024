@@ -102,7 +102,10 @@
                             options={election.options}
                             {width}
                         />
-                        <Legend data={election.data} />
+                        <Legend
+                            data={election.data}
+                            options={election.options}
+                        />
                         {#if election.notes}
                             <p class="notes">{election.notes}</p>
                         {/if}

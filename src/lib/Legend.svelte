@@ -1,5 +1,6 @@
 <script>
     export let data = [];
+    export let options = {};
 </script>
 
 <ul class="legend">
@@ -7,7 +8,9 @@
         {#if d[1] && d[2] > 0}
             <li>
                 <span style="background-color:{d[3]}"></span>
-                {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""} ({d[2]})
+                {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
+                {d[2]}{options.percentage ? "%" : ""}
+                {options.withPerc ? ` (${d[5]}%)` : ""}
             </li>
         {/if}
     {/each}
