@@ -3235,5 +3235,27 @@
     "region-code": "002",
     "sub-region-code": 202,
     "intermediate-region-code": "014"
+  },
+  {
+    "name": "Kurdistan Region",
+    "alpha-2": "IQ-KR",
+    "alpha-3": "IQ-KR",
+    "region": "Asia",
+    "sub-region": "Western Asia",
+    "intermediate-region": "",
+    "region-code": 142,
+    "sub-region-code": 145,
+    "intermediate-region-code": ""
+  },
+  {
+    "name": "European Union",
+    "alpha-2": "EU",
+    "alpha-3": "EUR",
+    "region": "Europe",
+    "sub-region": "",
+    "intermediate-region": "",
+    "region-code": 150,
+    "sub-region-code": "",
+    "intermediate-region-code": ""
   }
 ]

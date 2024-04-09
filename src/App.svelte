@@ -67,9 +67,10 @@
             In the year 2024 almost 70 countries will hold elections, people in
             8 of the 10 most populous countries in the world — <a href="#BD"
                 >Bangladesh</a
-            >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
-            <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the United States—
-            will cast a vote.
+            >, <a href="#BR">Brazil</a>, India, <a href="#ID">Indonesia</a>,
+            <a href="#MX">Mexico</a>,
+            <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the
+            <a href="#US">United States</a>— will cast a vote.
         </p>
     </header>
 </section>
