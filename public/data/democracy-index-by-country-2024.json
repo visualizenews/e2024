@@ -1,0 +1,1338 @@
+[
+  {
+    "country": "India",
+    "DemocracyIndex2023": 7.18,
+    "DemocracyIndex2022": 7.04,
+    "DemocracyIndex2006": 7.68,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.5,
+    "DemocracyIndexRelativeChange2006to2023": -7
+  },
+  {
+    "country": "China",
+    "DemocracyIndex2023": 2.12,
+    "DemocracyIndex2022": 1.94,
+    "DemocracyIndex2006": 2.97,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.85,
+    "DemocracyIndexRelativeChange2006to2023": -29
+  },
+  {
+    "country": "United States of America",
+    "DemocracyIndex2023": 7.85,
+    "DemocracyIndex2022": 7.85,
+    "DemocracyIndex2006": 8.22,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.37,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Indonesia",
+    "DemocracyIndex2023": 6.53,
+    "DemocracyIndex2022": 6.71,
+    "DemocracyIndex2006": 6.41,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.12,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Pakistan",
+    "DemocracyIndex2023": 3.25,
+    "DemocracyIndex2022": 4.13,
+    "DemocracyIndex2006": 3.92,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.67,
+    "DemocracyIndexRelativeChange2006to2023": -17
+  },
+  {
+    "country": "Nigeria",
+    "DemocracyIndex2023": 4.23,
+    "DemocracyIndex2022": 4.23,
+    "DemocracyIndex2006": 3.52,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.71,
+    "DemocracyIndexRelativeChange2006to2023": 20
+  },
+  {
+    "country": "Brazil",
+    "DemocracyIndex2023": 6.68,
+    "DemocracyIndex2022": 6.78,
+    "DemocracyIndex2006": 7.38,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.7,
+    "DemocracyIndexRelativeChange2006to2023": -9
+  },
+  {
+    "country": "Bangladesh",
+    "DemocracyIndex2023": 5.87,
+    "DemocracyIndex2022": 5.99,
+    "DemocracyIndex2006": 6.11,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.24,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Russian Federation",
+    "DemocracyIndex2023": 2.22,
+    "DemocracyIndex2022": 2.28,
+    "DemocracyIndex2006": 5.02,
+    "DemocracyIndexAbsoluteChange2006to2023": -2.8,
+    "DemocracyIndexRelativeChange2006to2023": -56
+  },
+  {
+    "country": "Ethiopia",
+    "DemocracyIndex2023": 3.37,
+    "DemocracyIndex2022": 3.17,
+    "DemocracyIndex2006": 4.72,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.35,
+    "DemocracyIndexRelativeChange2006to2023": -29
+  },
+  {
+    "country": "Mexico",
+    "DemocracyIndex2023": 5.14,
+    "DemocracyIndex2022": 5.25,
+    "DemocracyIndex2006": 6.67,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.53,
+    "DemocracyIndexRelativeChange2006to2023": -23
+  },
+  {
+    "country": "Japan",
+    "DemocracyIndex2023": 8.4,
+    "DemocracyIndex2022": 8.33,
+    "DemocracyIndex2006": 8.15,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.25,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Philippines",
+    "DemocracyIndex2023": 6.66,
+    "DemocracyIndex2022": 6.73,
+    "DemocracyIndex2006": 6.48,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.18,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Egypt",
+    "DemocracyIndex2023": 2.93,
+    "DemocracyIndex2022": 2.93,
+    "DemocracyIndex2006": 3.9,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.97,
+    "DemocracyIndexRelativeChange2006to2023": -25
+  },
+  {
+    "country": "Congo, Democratic Republic of the",
+    "DemocracyIndex2023": 1.68,
+    "DemocracyIndex2022": 1.48,
+    "DemocracyIndex2006": 2.76,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.08,
+    "DemocracyIndexRelativeChange2006to2023": -39
+  },
+  {
+    "country": "Viet Nam",
+    "DemocracyIndex2023": 2.62,
+    "DemocracyIndex2022": 2.73,
+    "DemocracyIndex2006": 2.75,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.13,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Iran (Islamic Republic of)",
+    "DemocracyIndex2023": 1.96,
+    "DemocracyIndex2022": 1.96,
+    "DemocracyIndex2006": 2.93,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.97,
+    "DemocracyIndexRelativeChange2006to2023": -33
+  },
+  {
+    "country": "Turkey",
+    "DemocracyIndex2023": 4.33,
+    "DemocracyIndex2022": 4.35,
+    "DemocracyIndex2006": 5.7,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.37,
+    "DemocracyIndexRelativeChange2006to2023": -24
+  },
+  {
+    "country": "Germany",
+    "DemocracyIndex2023": 8.8,
+    "DemocracyIndex2022": 8.8,
+    "DemocracyIndex2006": 8.82,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.02,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Thailand",
+    "DemocracyIndex2023": 6.35,
+    "DemocracyIndex2022": 6.67,
+    "DemocracyIndex2006": 5.67,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.68,
+    "DemocracyIndexRelativeChange2006to2023": 12
+  },
+  {
+    "country": "Tanzania, United Republic of",
+    "DemocracyIndex2023": 5.35,
+    "DemocracyIndex2022": 5.1,
+    "DemocracyIndex2006": 5.18,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.17,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "DemocracyIndex2023": 8.28,
+    "DemocracyIndex2022": 8.28,
+    "DemocracyIndex2006": 8.08,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.2,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "France",
+    "DemocracyIndex2023": 8.07,
+    "DemocracyIndex2022": 8.07,
+    "DemocracyIndex2006": 8.07,
+    "DemocracyIndexAbsoluteChange2006to2023": "0",
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "South Africa",
+    "DemocracyIndex2023": 7.05,
+    "DemocracyIndex2022": 7.05,
+    "DemocracyIndex2006": 7.91,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.86,
+    "DemocracyIndexRelativeChange2006to2023": -11
+  },
+  {
+    "country": "Italy",
+    "DemocracyIndex2023": 7.69,
+    "DemocracyIndex2022": 7.69,
+    "DemocracyIndex2006": 7.73,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.04,
+    "DemocracyIndexRelativeChange2006to2023": -1
+  },
+  {
+    "country": "Kenya",
+    "DemocracyIndex2023": 5.05,
+    "DemocracyIndex2022": 5.05,
+    "DemocracyIndex2006": 5.08,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.03,
+    "DemocracyIndexRelativeChange2006to2023": -1
+  },
+  {
+    "country": "Myanmar",
+    "DemocracyIndex2023": 0.85,
+    "DemocracyIndex2022": 0.74,
+    "DemocracyIndex2006": 1.77,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.92,
+    "DemocracyIndexRelativeChange2006to2023": -52
+  },
+  {
+    "country": "Colombia",
+    "DemocracyIndex2023": 6.55,
+    "DemocracyIndex2022": 6.72,
+    "DemocracyIndex2006": 6.4,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.15,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "South Korea",
+    "DemocracyIndex2023": 8.09,
+    "DemocracyIndex2022": 8.03,
+    "DemocracyIndex2006": 7.88,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.21,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Uganda",
+    "DemocracyIndex2023": 4.49,
+    "DemocracyIndex2022": 4.55,
+    "DemocracyIndex2006": 5.14,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.65,
+    "DemocracyIndexRelativeChange2006to2023": -13
+  },
+  {
+    "country": "Sudan",
+    "DemocracyIndex2023": 1.76,
+    "DemocracyIndex2022": 2.47,
+    "DemocracyIndex2006": 2.9,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.14,
+    "DemocracyIndexRelativeChange2006to2023": -39
+  },
+  {
+    "country": "Spain",
+    "DemocracyIndex2023": 8.07,
+    "DemocracyIndex2022": 8.07,
+    "DemocracyIndex2006": 8.34,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.27,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Iraq",
+    "DemocracyIndex2023": 2.88,
+    "DemocracyIndex2022": 3.13,
+    "DemocracyIndex2006": 4.01,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.13,
+    "DemocracyIndexRelativeChange2006to2023": -28
+  },
+  {
+    "country": "Algeria",
+    "DemocracyIndex2023": 3.66,
+    "DemocracyIndex2022": 3.66,
+    "DemocracyIndex2006": 3.17,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.49,
+    "DemocracyIndexRelativeChange2006to2023": 15
+  },
+  {
+    "country": "Argentina",
+    "DemocracyIndex2023": 6.62,
+    "DemocracyIndex2022": 6.85,
+    "DemocracyIndex2006": 6.63,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.01,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Afghanistan",
+    "DemocracyIndex2023": 0.26,
+    "DemocracyIndex2022": 0.32,
+    "DemocracyIndex2006": 3.06,
+    "DemocracyIndexAbsoluteChange2006to2023": -2.8,
+    "DemocracyIndexRelativeChange2006to2023": -92
+  },
+  {
+    "country": "Poland",
+    "DemocracyIndex2023": 7.18,
+    "DemocracyIndex2022": 7.04,
+    "DemocracyIndex2006": 7.3,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.12,
+    "DemocracyIndexRelativeChange2006to2023": -2
+  },
+  {
+    "country": "Canada",
+    "DemocracyIndex2023": 8.69,
+    "DemocracyIndex2022": 8.88,
+    "DemocracyIndex2006": 9.07,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.38,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Morocco",
+    "DemocracyIndex2023": 5.04,
+    "DemocracyIndex2022": 5.04,
+    "DemocracyIndex2006": 3.9,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.14,
+    "DemocracyIndexRelativeChange2006to2023": 29
+  },
+  {
+    "country": "Ukraine",
+    "DemocracyIndex2023": 5.06,
+    "DemocracyIndex2022": 5.42,
+    "DemocracyIndex2006": 6.94,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.88,
+    "DemocracyIndexRelativeChange2006to2023": -27
+  },
+  {
+    "country": "Angola",
+    "DemocracyIndex2023": 4.18,
+    "DemocracyIndex2022": 3.96,
+    "DemocracyIndex2006": 2.41,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.77,
+    "DemocracyIndexRelativeChange2006to2023": 73
+  },
+  {
+    "country": "Saudi Arabia",
+    "DemocracyIndex2023": 2.08,
+    "DemocracyIndex2022": 2.08,
+    "DemocracyIndex2006": 1.92,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.16,
+    "DemocracyIndexRelativeChange2006to2023": 8
+  },
+  {
+    "country": "Uzbekistan",
+    "DemocracyIndex2023": 2.12,
+    "DemocracyIndex2022": 2.12,
+    "DemocracyIndex2006": 1.85,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.27,
+    "DemocracyIndexRelativeChange2006to2023": 15
+  },
+  {
+    "country": "Yemen",
+    "DemocracyIndex2023": 1.95,
+    "DemocracyIndex2022": 1.95,
+    "DemocracyIndex2006": 2.98,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.03,
+    "DemocracyIndexRelativeChange2006to2023": -35
+  },
+  {
+    "country": "Mozambique",
+    "DemocracyIndex2023": 3.51,
+    "DemocracyIndex2022": 3.51,
+    "DemocracyIndex2006": 5.28,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.77,
+    "DemocracyIndexRelativeChange2006to2023": -34
+  },
+  {
+    "country": "Ghana",
+    "DemocracyIndex2023": 6.3,
+    "DemocracyIndex2022": 6.43,
+    "DemocracyIndex2006": 5.35,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.95,
+    "DemocracyIndexRelativeChange2006to2023": 18
+  },
+  {
+    "country": "Peru",
+    "DemocracyIndex2023": 5.81,
+    "DemocracyIndex2022": 5.92,
+    "DemocracyIndex2006": 6.11,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.3,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Malaysia",
+    "DemocracyIndex2023": 7.29,
+    "DemocracyIndex2022": 7.3,
+    "DemocracyIndex2006": 5.98,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.31,
+    "DemocracyIndexRelativeChange2006to2023": 22
+  },
+  {
+    "country": "Nepal",
+    "DemocracyIndex2023": 4.6,
+    "DemocracyIndex2022": 4.49,
+    "DemocracyIndex2006": 3.42,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.18,
+    "DemocracyIndexRelativeChange2006to2023": 35
+  },
+  {
+    "country": "Madagascar",
+    "DemocracyIndex2023": 5.26,
+    "DemocracyIndex2022": 5.7,
+    "DemocracyIndex2006": 5.82,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.56,
+    "DemocracyIndexRelativeChange2006to2023": -10
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "DemocracyIndex2023": 4.22,
+    "DemocracyIndex2022": 4.22,
+    "DemocracyIndex2006": 3.38,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.84,
+    "DemocracyIndexRelativeChange2006to2023": 25
+  },
+  {
+    "country": "Venezuela",
+    "DemocracyIndex2023": 2.31,
+    "DemocracyIndex2022": 2.23,
+    "DemocracyIndex2006": 5.42,
+    "DemocracyIndexAbsoluteChange2006to2023": -3.11,
+    "DemocracyIndexRelativeChange2006to2023": -57
+  },
+  {
+    "country": "Cameroon",
+    "DemocracyIndex2023": 2.56,
+    "DemocracyIndex2022": 2.56,
+    "DemocracyIndex2006": 3.27,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.71,
+    "DemocracyIndexRelativeChange2006to2023": -22
+  },
+  {
+    "country": "Niger",
+    "DemocracyIndex2023": 4.23,
+    "DemocracyIndex2022": 3.73,
+    "DemocracyIndex2006": 3.54,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.69,
+    "DemocracyIndexRelativeChange2006to2023": 19
+  },
+  {
+    "country": "Australia",
+    "DemocracyIndex2023": 8.66,
+    "DemocracyIndex2022": 8.71,
+    "DemocracyIndex2006": 9.09,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.43,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "North Korea",
+    "DemocracyIndex2023": 1.08,
+    "DemocracyIndex2022": 1.08,
+    "DemocracyIndex2006": 1.03,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.05,
+    "DemocracyIndexRelativeChange2006to2023": 5
+  },
+  {
+    "country": "Syrian Arab Republic",
+    "DemocracyIndex2023": 1.43,
+    "DemocracyIndex2022": 1.43,
+    "DemocracyIndex2006": 2.36,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.93,
+    "DemocracyIndexRelativeChange2006to2023": -39
+  },
+  {
+    "country": "Mali",
+    "DemocracyIndex2023": 2.58,
+    "DemocracyIndex2022": 3.23,
+    "DemocracyIndex2006": 5.99,
+    "DemocracyIndexAbsoluteChange2006to2023": -3.41,
+    "DemocracyIndexRelativeChange2006to2023": -57
+  },
+  {
+    "country": "Taiwan",
+    "DemocracyIndex2023": 8.92,
+    "DemocracyIndex2022": 8.99,
+    "DemocracyIndex2006": 7.82,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.1,
+    "DemocracyIndexRelativeChange2006to2023": 14
+  },
+  {
+    "country": "Burkina Faso",
+    "DemocracyIndex2023": 2.73,
+    "DemocracyIndex2022": 3.08,
+    "DemocracyIndex2006": 3.72,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.99,
+    "DemocracyIndexRelativeChange2006to2023": -27
+  },
+  {
+    "country": "Sri Lanka",
+    "DemocracyIndex2023": 6.17,
+    "DemocracyIndex2022": 6.47,
+    "DemocracyIndex2006": 6.58,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.41,
+    "DemocracyIndexRelativeChange2006to2023": -6
+  },
+  {
+    "country": "Malawi",
+    "DemocracyIndex2023": 5.85,
+    "DemocracyIndex2022": 5.91,
+    "DemocracyIndex2006": 4.97,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.88,
+    "DemocracyIndexRelativeChange2006to2023": 18
+  },
+  {
+    "country": "Zambia",
+    "DemocracyIndex2023": 5.8,
+    "DemocracyIndex2022": 5.8,
+    "DemocracyIndex2006": 5.25,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.55,
+    "DemocracyIndexRelativeChange2006to2023": 10
+  },
+  {
+    "country": "Kazakhstan",
+    "DemocracyIndex2023": 3.08,
+    "DemocracyIndex2022": 3.08,
+    "DemocracyIndex2006": 3.62,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.54,
+    "DemocracyIndexRelativeChange2006to2023": -15
+  },
+  {
+    "country": "Chile",
+    "DemocracyIndex2023": 7.98,
+    "DemocracyIndex2022": 8.22,
+    "DemocracyIndex2006": 7.89,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.09,
+    "DemocracyIndexRelativeChange2006to2023": 1
+  },
+  {
+    "country": "Romania",
+    "DemocracyIndex2023": 6.45,
+    "DemocracyIndex2022": 6.45,
+    "DemocracyIndex2006": 7.06,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.61,
+    "DemocracyIndexRelativeChange2006to2023": -9
+  },
+  {
+    "country": "Chad",
+    "DemocracyIndex2023": 1.67,
+    "DemocracyIndex2022": 1.67,
+    "DemocracyIndex2006": 1.65,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.02,
+    "DemocracyIndexRelativeChange2006to2023": 1
+  },
+  {
+    "country": "Ecuador",
+    "DemocracyIndex2023": 5.41,
+    "DemocracyIndex2022": 5.69,
+    "DemocracyIndex2006": 5.64,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.23,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Guatemala",
+    "DemocracyIndex2023": 4.47,
+    "DemocracyIndex2022": 4.68,
+    "DemocracyIndex2006": 6.07,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.6,
+    "DemocracyIndexRelativeChange2006to2023": -26
+  },
+  {
+    "country": "Senegal",
+    "DemocracyIndex2023": 5.48,
+    "DemocracyIndex2022": 5.72,
+    "DemocracyIndex2006": 5.37,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.11,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Netherlands",
+    "DemocracyIndex2023": 9,
+    "DemocracyIndex2022": 9,
+    "DemocracyIndex2006": 9.66,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.66,
+    "DemocracyIndexRelativeChange2006to2023": -7
+  },
+  {
+    "country": "Cambodia",
+    "DemocracyIndex2023": 3.05,
+    "DemocracyIndex2022": 3.18,
+    "DemocracyIndex2006": 4.77,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.72,
+    "DemocracyIndexRelativeChange2006to2023": -36
+  },
+  {
+    "country": "Zimbabwe",
+    "DemocracyIndex2023": 3.04,
+    "DemocracyIndex2022": 2.92,
+    "DemocracyIndex2006": 2.62,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.42,
+    "DemocracyIndexRelativeChange2006to2023": 16
+  },
+  {
+    "country": "Guinea",
+    "DemocracyIndex2023": 2.21,
+    "DemocracyIndex2022": 2.32,
+    "DemocracyIndex2006": 2.02,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.19,
+    "DemocracyIndexRelativeChange2006to2023": 9
+  },
+  {
+    "country": "Rwanda",
+    "DemocracyIndex2023": 3.3,
+    "DemocracyIndex2022": 3.1,
+    "DemocracyIndex2006": 3.82,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.52,
+    "DemocracyIndexRelativeChange2006to2023": -14
+  },
+  {
+    "country": "Benin",
+    "DemocracyIndex2023": 4.68,
+    "DemocracyIndex2022": 4.28,
+    "DemocracyIndex2006": 6.16,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.48,
+    "DemocracyIndexRelativeChange2006to2023": -24
+  },
+  {
+    "country": "Burundi",
+    "DemocracyIndex2023": 2.13,
+    "DemocracyIndex2022": 2.13,
+    "DemocracyIndex2006": 4.51,
+    "DemocracyIndexAbsoluteChange2006to2023": -2.38,
+    "DemocracyIndexRelativeChange2006to2023": -53
+  },
+  {
+    "country": "Bolivia (Plurinational State of)",
+    "DemocracyIndex2023": 4.2,
+    "DemocracyIndex2022": 4.51,
+    "DemocracyIndex2006": 5.98,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.78,
+    "DemocracyIndexRelativeChange2006to2023": -30
+  },
+  {
+    "country": "Tunisia",
+    "DemocracyIndex2023": 5.51,
+    "DemocracyIndex2022": 5.51,
+    "DemocracyIndex2006": 3.06,
+    "DemocracyIndexAbsoluteChange2006to2023": 2.45,
+    "DemocracyIndexRelativeChange2006to2023": 80
+  },
+  {
+    "country": "Haiti",
+    "DemocracyIndex2023": 2.81,
+    "DemocracyIndex2022": 2.81,
+    "DemocracyIndex2006": 4.19,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.38,
+    "DemocracyIndexRelativeChange2006to2023": -33
+  },
+  {
+    "country": "Belgium",
+    "DemocracyIndex2023": 7.64,
+    "DemocracyIndex2022": 7.64,
+    "DemocracyIndex2006": 8.15,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.51,
+    "DemocracyIndexRelativeChange2006to2023": -6
+  },
+  {
+    "country": "Dominican Republic",
+    "DemocracyIndex2023": 6.44,
+    "DemocracyIndex2022": 6.39,
+    "DemocracyIndex2006": 6.13,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.31,
+    "DemocracyIndexRelativeChange2006to2023": 5
+  },
+  {
+    "country": "Jordan",
+    "DemocracyIndex2023": 3.04,
+    "DemocracyIndex2022": 3.17,
+    "DemocracyIndex2006": 3.92,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.88,
+    "DemocracyIndexRelativeChange2006to2023": -22
+  },
+  {
+    "country": "Cuba",
+    "DemocracyIndex2023": 2.65,
+    "DemocracyIndex2022": 2.65,
+    "DemocracyIndex2006": 3.52,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.87,
+    "DemocracyIndexRelativeChange2006to2023": -25
+  },
+  {
+    "country": "Honduras",
+    "DemocracyIndex2023": 4.98,
+    "DemocracyIndex2022": 5.15,
+    "DemocracyIndex2006": 6.25,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.27,
+    "DemocracyIndexRelativeChange2006to2023": -20
+  },
+  {
+    "country": "Sweden",
+    "DemocracyIndex2023": 9.39,
+    "DemocracyIndex2022": 9.39,
+    "DemocracyIndex2006": 9.88,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.49,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Papua New Guinea",
+    "DemocracyIndex2023": 6.03,
+    "DemocracyIndex2022": 5.97,
+    "DemocracyIndex2006": 6.54,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.51,
+    "DemocracyIndexRelativeChange2006to2023": -8
+  },
+  {
+    "country": "Czechia",
+    "DemocracyIndex2023": 7.97,
+    "DemocracyIndex2022": 7.97,
+    "DemocracyIndex2006": 8.17,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.2,
+    "DemocracyIndexRelativeChange2006to2023": -2
+  },
+  {
+    "country": "Azerbaijan",
+    "DemocracyIndex2023": 2.8,
+    "DemocracyIndex2022": 2.87,
+    "DemocracyIndex2006": 3.31,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.51,
+    "DemocracyIndexRelativeChange2006to2023": -15
+  },
+  {
+    "country": "Tajikistan",
+    "DemocracyIndex2023": 1.94,
+    "DemocracyIndex2022": 1.94,
+    "DemocracyIndex2006": 2.45,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.51,
+    "DemocracyIndexRelativeChange2006to2023": -21
+  },
+  {
+    "country": "Greece",
+    "DemocracyIndex2023": 8.14,
+    "DemocracyIndex2022": 7.97,
+    "DemocracyIndex2006": 8.13,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.01,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Portugal",
+    "DemocracyIndex2023": 7.75,
+    "DemocracyIndex2022": 7.95,
+    "DemocracyIndex2006": 8.16,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.41,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Hungary",
+    "DemocracyIndex2023": 6.72,
+    "DemocracyIndex2022": 6.64,
+    "DemocracyIndex2006": 7.53,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.81,
+    "DemocracyIndexRelativeChange2006to2023": -11
+  },
+  {
+    "country": "United Arab Emirates",
+    "DemocracyIndex2023": 3.01,
+    "DemocracyIndex2022": 2.9,
+    "DemocracyIndex2006": 2.42,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.59,
+    "DemocracyIndexRelativeChange2006to2023": 24
+  },
+  {
+    "country": "Belarus",
+    "DemocracyIndex2023": 1.99,
+    "DemocracyIndex2022": 1.99,
+    "DemocracyIndex2006": 3.34,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.35,
+    "DemocracyIndexRelativeChange2006to2023": -40
+  },
+  {
+    "country": "Israel",
+    "DemocracyIndex2023": 7.8,
+    "DemocracyIndex2022": 7.93,
+    "DemocracyIndex2006": 7.28,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.52,
+    "DemocracyIndexRelativeChange2006to2023": 7
+  },
+  {
+    "country": "Togo",
+    "DemocracyIndex2023": 2.99,
+    "DemocracyIndex2022": 2.99,
+    "DemocracyIndex2006": 1.75,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.24,
+    "DemocracyIndexRelativeChange2006to2023": 71
+  },
+  {
+    "country": "Sierra Leone",
+    "DemocracyIndex2023": 4.32,
+    "DemocracyIndex2022": 5.03,
+    "DemocracyIndex2006": 3.57,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.75,
+    "DemocracyIndexRelativeChange2006to2023": 21
+  },
+  {
+    "country": "Austria",
+    "DemocracyIndex2023": 8.28,
+    "DemocracyIndex2022": 8.2,
+    "DemocracyIndex2006": 8.69,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.41,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Switzerland",
+    "DemocracyIndex2023": 9.14,
+    "DemocracyIndex2022": 9.14,
+    "DemocracyIndex2006": 9.02,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.12,
+    "DemocracyIndexRelativeChange2006to2023": 1
+  },
+  {
+    "country": "Lao People's Democratic Republic",
+    "DemocracyIndex2023": 1.71,
+    "DemocracyIndex2022": 1.77,
+    "DemocracyIndex2006": 2.1,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.39,
+    "DemocracyIndexRelativeChange2006to2023": -19
+  },
+  {
+    "country": "Hong Kong",
+    "DemocracyIndex2023": 5.24,
+    "DemocracyIndex2022": 5.28,
+    "DemocracyIndex2006": 6.03,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.79,
+    "DemocracyIndexRelativeChange2006to2023": -13
+  },
+  {
+    "country": "Nicaragua",
+    "DemocracyIndex2023": 2.26,
+    "DemocracyIndex2022": 2.5,
+    "DemocracyIndex2006": 5.68,
+    "DemocracyIndexAbsoluteChange2006to2023": -3.42,
+    "DemocracyIndexRelativeChange2006to2023": -60
+  },
+  {
+    "country": "Serbia",
+    "DemocracyIndex2023": 6.33,
+    "DemocracyIndex2022": 6.33,
+    "DemocracyIndex2006": 6.62,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.29,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Libya",
+    "DemocracyIndex2023": 1.78,
+    "DemocracyIndex2022": 2.06,
+    "DemocracyIndex2006": 1.84,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.06,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Paraguay",
+    "DemocracyIndex2023": 6,
+    "DemocracyIndex2022": 5.89,
+    "DemocracyIndex2006": 6.16,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.16,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Kyrgyzstan",
+    "DemocracyIndex2023": 3.7,
+    "DemocracyIndex2022": 3.62,
+    "DemocracyIndex2006": 4.08,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.38,
+    "DemocracyIndexRelativeChange2006to2023": -9
+  },
+  {
+    "country": "Bulgaria",
+    "DemocracyIndex2023": 6.41,
+    "DemocracyIndex2022": 6.53,
+    "DemocracyIndex2006": 7.1,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.69,
+    "DemocracyIndexRelativeChange2006to2023": -10
+  },
+  {
+    "country": "Turkmenistan",
+    "DemocracyIndex2023": 1.66,
+    "DemocracyIndex2022": 1.66,
+    "DemocracyIndex2006": 1.83,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.17,
+    "DemocracyIndexRelativeChange2006to2023": -9
+  },
+  {
+    "country": "El Salvador",
+    "DemocracyIndex2023": 4.71,
+    "DemocracyIndex2022": 5.06,
+    "DemocracyIndex2006": 6.22,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.51,
+    "DemocracyIndexRelativeChange2006to2023": -24
+  },
+  {
+    "country": "Congo",
+    "DemocracyIndex2023": 2.79,
+    "DemocracyIndex2022": 2.79,
+    "DemocracyIndex2006": 3.19,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.4,
+    "DemocracyIndexRelativeChange2006to2023": -13
+  },
+  {
+    "country": "Singapore",
+    "DemocracyIndex2023": 6.18,
+    "DemocracyIndex2022": 6.22,
+    "DemocracyIndex2006": 5.89,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.29,
+    "DemocracyIndexRelativeChange2006to2023": 5
+  },
+  {
+    "country": "Denmark",
+    "DemocracyIndex2023": 9.28,
+    "DemocracyIndex2022": 9.28,
+    "DemocracyIndex2006": 9.52,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.24,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Central African Republic",
+    "DemocracyIndex2023": 1.18,
+    "DemocracyIndex2022": 1.35,
+    "DemocracyIndex2006": 1.61,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.43,
+    "DemocracyIndexRelativeChange2006to2023": -27
+  },
+  {
+    "country": "Slovakia",
+    "DemocracyIndex2023": 7.07,
+    "DemocracyIndex2022": 7.07,
+    "DemocracyIndex2006": 7.4,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.33,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Finland",
+    "DemocracyIndex2023": 9.3,
+    "DemocracyIndex2022": 9.29,
+    "DemocracyIndex2006": 9.25,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.05,
+    "DemocracyIndexRelativeChange2006to2023": 1
+  },
+  {
+    "country": "Liberia",
+    "DemocracyIndex2023": 5.57,
+    "DemocracyIndex2022": 5.43,
+    "DemocracyIndex2006": 5.22,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.35,
+    "DemocracyIndexRelativeChange2006to2023": 7
+  },
+  {
+    "country": "Norway",
+    "DemocracyIndex2023": 9.81,
+    "DemocracyIndex2022": 9.81,
+    "DemocracyIndex2006": 9.55,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.26,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Palestine, State of",
+    "DemocracyIndex2023": 3.47,
+    "DemocracyIndex2022": 3.86,
+    "DemocracyIndex2006": 6.01,
+    "DemocracyIndexAbsoluteChange2006to2023": -2.54,
+    "DemocracyIndexRelativeChange2006to2023": -42
+  },
+  {
+    "country": "New Zealand",
+    "DemocracyIndex2023": 9.61,
+    "DemocracyIndex2022": 9.61,
+    "DemocracyIndex2006": 9.01,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.6,
+    "DemocracyIndexRelativeChange2006to2023": 7
+  },
+  {
+    "country": "Costa Rica",
+    "DemocracyIndex2023": 8.29,
+    "DemocracyIndex2022": 8.29,
+    "DemocracyIndex2006": 8.04,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.25,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Lebanon",
+    "DemocracyIndex2023": 3.56,
+    "DemocracyIndex2022": 3.64,
+    "DemocracyIndex2006": 5.82,
+    "DemocracyIndexAbsoluteChange2006to2023": -2.26,
+    "DemocracyIndexRelativeChange2006to2023": -39
+  },
+  {
+    "country": "Ireland",
+    "DemocracyIndex2023": 9.19,
+    "DemocracyIndex2022": 9.13,
+    "DemocracyIndex2006": 9.01,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.18,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Mauritania",
+    "DemocracyIndex2023": 4.14,
+    "DemocracyIndex2022": 4.03,
+    "DemocracyIndex2006": 3.12,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.02,
+    "DemocracyIndexRelativeChange2006to2023": 33
+  },
+  {
+    "country": "Oman",
+    "DemocracyIndex2023": 3.12,
+    "DemocracyIndex2022": 3.12,
+    "DemocracyIndex2006": 2.77,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.35,
+    "DemocracyIndexRelativeChange2006to2023": 13
+  },
+  {
+    "country": "Panama",
+    "DemocracyIndex2023": 6.91,
+    "DemocracyIndex2022": 6.91,
+    "DemocracyIndex2006": 7.35,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.44,
+    "DemocracyIndexRelativeChange2006to2023": -6
+  },
+  {
+    "country": "Kuwait",
+    "DemocracyIndex2023": 3.5,
+    "DemocracyIndex2022": 3.83,
+    "DemocracyIndex2006": 3.09,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.41,
+    "DemocracyIndexRelativeChange2006to2023": 13
+  },
+  {
+    "country": "Croatia",
+    "DemocracyIndex2023": 6.5,
+    "DemocracyIndex2022": 6.5,
+    "DemocracyIndex2006": 7.04,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.54,
+    "DemocracyIndexRelativeChange2006to2023": -8
+  },
+  {
+    "country": "Eritrea",
+    "DemocracyIndex2023": 1.97,
+    "DemocracyIndex2022": 2.03,
+    "DemocracyIndex2006": 2.31,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.34,
+    "DemocracyIndexRelativeChange2006to2023": -15
+  },
+  {
+    "country": "Georgia",
+    "DemocracyIndex2023": 5.2,
+    "DemocracyIndex2022": 5.2,
+    "DemocracyIndex2006": 4.9,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.3,
+    "DemocracyIndexRelativeChange2006to2023": 6
+  },
+  {
+    "country": "Mongolia",
+    "DemocracyIndex2023": 6.48,
+    "DemocracyIndex2022": 6.35,
+    "DemocracyIndex2006": 6.6,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.12,
+    "DemocracyIndexRelativeChange2006to2023": -2
+  },
+  {
+    "country": "Uruguay",
+    "DemocracyIndex2023": 8.66,
+    "DemocracyIndex2022": 8.91,
+    "DemocracyIndex2006": 7.96,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.7,
+    "DemocracyIndexRelativeChange2006to2023": 9
+  },
+  {
+    "country": "Moldova, Republic of",
+    "DemocracyIndex2023": 6.23,
+    "DemocracyIndex2022": 6.23,
+    "DemocracyIndex2006": 6.5,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.27,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "DemocracyIndex2023": 5,
+    "DemocracyIndex2022": 5,
+    "DemocracyIndex2006": 5.78,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.78,
+    "DemocracyIndexRelativeChange2006to2023": -13
+  },
+  {
+    "country": "Gambia",
+    "DemocracyIndex2023": 4.47,
+    "DemocracyIndex2022": 4.47,
+    "DemocracyIndex2006": 4.39,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.08,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Albania",
+    "DemocracyIndex2023": 6.28,
+    "DemocracyIndex2022": 6.41,
+    "DemocracyIndex2006": 5.91,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.37,
+    "DemocracyIndexRelativeChange2006to2023": 6
+  },
+  {
+    "country": "Jamaica",
+    "DemocracyIndex2023": 7.06,
+    "DemocracyIndex2022": 7.13,
+    "DemocracyIndex2006": 7.34,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.28,
+    "DemocracyIndexRelativeChange2006to2023": -4
+  },
+  {
+    "country": "Armenia",
+    "DemocracyIndex2023": 5.42,
+    "DemocracyIndex2022": 5.63,
+    "DemocracyIndex2006": 4.15,
+    "DemocracyIndexAbsoluteChange2006to2023": 1.27,
+    "DemocracyIndexRelativeChange2006to2023": 31
+  },
+  {
+    "country": "Qatar",
+    "DemocracyIndex2023": 3.65,
+    "DemocracyIndex2022": 3.65,
+    "DemocracyIndex2006": 2.78,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.87,
+    "DemocracyIndexRelativeChange2006to2023": 31
+  },
+  {
+    "country": "Botswana",
+    "DemocracyIndex2023": 7.73,
+    "DemocracyIndex2022": 7.73,
+    "DemocracyIndex2006": 7.6,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.13,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Lithuania",
+    "DemocracyIndex2023": 7.31,
+    "DemocracyIndex2022": 7.31,
+    "DemocracyIndex2006": 7.43,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.12,
+    "DemocracyIndexRelativeChange2006to2023": -2
+  },
+  {
+    "country": "Namibia",
+    "DemocracyIndex2023": 6.52,
+    "DemocracyIndex2022": 6.52,
+    "DemocracyIndex2006": 6.54,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.02,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Gabon",
+    "DemocracyIndex2023": 2.18,
+    "DemocracyIndex2022": 3.4,
+    "DemocracyIndex2006": 2.72,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.54,
+    "DemocracyIndexRelativeChange2006to2023": -20
+  },
+  {
+    "country": "Lesotho",
+    "DemocracyIndex2023": 6.06,
+    "DemocracyIndex2022": 6.19,
+    "DemocracyIndex2006": 6.48,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.42,
+    "DemocracyIndexRelativeChange2006to2023": -6
+  },
+  {
+    "country": "Guinea-Bissau",
+    "DemocracyIndex2023": 2.45,
+    "DemocracyIndex2022": 2.56,
+    "DemocracyIndex2006": 2,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.45,
+    "DemocracyIndexRelativeChange2006to2023": 23
+  },
+  {
+    "country": "Slovenia",
+    "DemocracyIndex2023": 7.75,
+    "DemocracyIndex2022": 7.75,
+    "DemocracyIndex2006": 7.96,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.21,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "North Macedonia",
+    "DemocracyIndex2023": 6.03,
+    "DemocracyIndex2022": 6.1,
+    "DemocracyIndex2006": 6.33,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.3,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Latvia",
+    "DemocracyIndex2023": 7.38,
+    "DemocracyIndex2022": 7.37,
+    "DemocracyIndex2006": 7.37,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.01,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "DemocracyIndex2023": 1.92,
+    "DemocracyIndex2022": 1.92,
+    "DemocracyIndex2006": 2.09,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.17,
+    "DemocracyIndexRelativeChange2006to2023": -8
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "DemocracyIndex2023": 7.16,
+    "DemocracyIndex2022": 7.16,
+    "DemocracyIndex2006": 7.18,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.02,
+    "DemocracyIndexRelativeChange2006to2023": "0"
+  },
+  {
+    "country": "Bahrain",
+    "DemocracyIndex2023": 2.52,
+    "DemocracyIndex2022": 2.52,
+    "DemocracyIndex2006": 3.53,
+    "DemocracyIndexAbsoluteChange2006to2023": -1.01,
+    "DemocracyIndexRelativeChange2006to2023": -29
+  },
+  {
+    "country": "Timor-Leste",
+    "DemocracyIndex2023": 7.06,
+    "DemocracyIndex2022": 7.06,
+    "DemocracyIndex2006": 6.41,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.65,
+    "DemocracyIndexRelativeChange2006to2023": 10
+  },
+  {
+    "country": "Estonia",
+    "DemocracyIndex2023": 7.96,
+    "DemocracyIndex2022": 7.96,
+    "DemocracyIndex2006": 7.74,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.22,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Mauritius",
+    "DemocracyIndex2023": 8.14,
+    "DemocracyIndex2022": 8.14,
+    "DemocracyIndex2006": 8.04,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.1,
+    "DemocracyIndexRelativeChange2006to2023": 1
+  },
+  {
+    "country": "Cyprus",
+    "DemocracyIndex2023": 7.38,
+    "DemocracyIndex2022": 7.38,
+    "DemocracyIndex2006": 7.6,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.22,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Eswatini",
+    "DemocracyIndex2023": 2.78,
+    "DemocracyIndex2022": 3.01,
+    "DemocracyIndex2006": 2.93,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.15,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Djibouti",
+    "DemocracyIndex2023": 2.7,
+    "DemocracyIndex2022": 2.74,
+    "DemocracyIndex2006": 2.37,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.33,
+    "DemocracyIndexRelativeChange2006to2023": 14
+  },
+  {
+    "country": "Fiji",
+    "DemocracyIndex2023": 5.55,
+    "DemocracyIndex2022": 5.55,
+    "DemocracyIndex2006": 5.66,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.11,
+    "DemocracyIndexRelativeChange2006to2023": -2
+  },
+  {
+    "country": "Comoros",
+    "DemocracyIndex2023": 3.04,
+    "DemocracyIndex2022": 3.2,
+    "DemocracyIndex2006": 3.9,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.86,
+    "DemocracyIndexRelativeChange2006to2023": -22
+  },
+  {
+    "country": "Guyana",
+    "DemocracyIndex2023": 6.26,
+    "DemocracyIndex2022": 6.34,
+    "DemocracyIndex2006": 6.15,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.11,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Bhutan",
+    "DemocracyIndex2023": 5.54,
+    "DemocracyIndex2022": 5.54,
+    "DemocracyIndex2006": 2.62,
+    "DemocracyIndexAbsoluteChange2006to2023": 2.92,
+    "DemocracyIndexRelativeChange2006to2023": 111
+  },
+  {
+    "country": "Luxembourg",
+    "DemocracyIndex2023": 8.81,
+    "DemocracyIndex2022": 8.81,
+    "DemocracyIndex2006": 9.1,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.29,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Suriname",
+    "DemocracyIndex2023": 6.88,
+    "DemocracyIndex2022": 6.95,
+    "DemocracyIndex2006": 6.52,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.36,
+    "DemocracyIndexRelativeChange2006to2023": 6
+  },
+  {
+    "country": "Montenegro",
+    "DemocracyIndex2023": 6.67,
+    "DemocracyIndex2022": 6.45,
+    "DemocracyIndex2006": 6.57,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.1,
+    "DemocracyIndexRelativeChange2006to2023": 2
+  },
+  {
+    "country": "Cabo Verde",
+    "DemocracyIndex2023": 7.65,
+    "DemocracyIndex2022": 7.65,
+    "DemocracyIndex2006": 7.43,
+    "DemocracyIndexAbsoluteChange2006to2023": 0.22,
+    "DemocracyIndexRelativeChange2006to2023": 3
+  },
+  {
+    "country": "Malta",
+    "DemocracyIndex2023": 7.93,
+    "DemocracyIndex2022": 7.7,
+    "DemocracyIndex2006": 8.39,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.46,
+    "DemocracyIndexRelativeChange2006to2023": -5
+  },
+  {
+    "country": "Iceland",
+    "DemocracyIndex2023": 9.45,
+    "DemocracyIndex2022": 9.52,
+    "DemocracyIndex2006": 9.71,
+    "DemocracyIndexAbsoluteChange2006to2023": -0.26,
+    "DemocracyIndexRelativeChange2006to2023": -3
+  }
+]

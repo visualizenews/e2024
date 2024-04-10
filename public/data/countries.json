@@ -1534,7 +1534,8 @@
     "intermediate-region-code": ""
   },
   {
-    "name": "Korea (Democratic People's Republic of)",
+    "name": "North Korea",
+    "complete-name": "Korea (Democratic People's Republic of)",
     "alpha-2": "KP",
     "alpha-3": "PRK",
     "country-code": 408,
@@ -1547,7 +1548,8 @@
     "intermediate-region-code": ""
   },
   {
-    "name": "Korea, Republic of",
+    "name": "South Korea",
+    "complete-name": "Korea, Republic of",
     "alpha-2": "KR",
     "alpha-3": "KOR",
     "country-code": 410,
@@ -3120,7 +3122,8 @@
     "intermediate-region-code": ""
   },
   {
-    "name": "Venezuela (Bolivarian Republic of)",
+    "name": "Venezuela",
+    "complete-name": "Venezuela (Bolivarian Republic of)",
     "alpha-2": "VE",
     "alpha-3": "VEN",
     "country-code": 862,
