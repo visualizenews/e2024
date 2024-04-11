@@ -4,15 +4,13 @@
 </script>
 
 <ul class="legend">
-    {#each data as d}
-        {#if d[1] && d[2] > 0}
-            <li>
-                <span style="background-color:{d[3]}"></span>
-                {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
-                {d[2]}{options.percentage ? "%" : ""}
-                {options.withPerc ? ` (${d[5]}%)` : ""}
-            </li>
-        {/if}
+    {#each data.filter((d) => options.withZero || d[1] || d[2] > 0) as d}
+        <li>
+            <span style="background-color:{d[3]}"></span>
+            {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
+            {d[2]}{options.percentage ? "%" : ""}
+            {options.withPerc ? ` (${d[5]}%)` : ""}
+        </li>
     {/each}
 </ul>
 

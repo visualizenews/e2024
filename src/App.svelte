@@ -4,16 +4,41 @@
     import { Runtime } from "@observablehq/runtime";
     import define from "https://api.observablehq.com/d/17358da922d09a68@22.js?v=4";
     import Megabar from "./lib/Megabar.svelte";
+    import DemocracyScatterplot from "./lib/DemocracyScatterplot.svelte";
     import Legend from "./lib/Legend.svelte";
 
     let data = [];
     let calendarData = [];
     let width = 600;
     let countries = [];
+    let democracyIndex = [];
 
     onMount(async () => {
         const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
+
+        const democracyIndexResponse = await fetch(
+            "./data/democracy-index-by-country-2024.json",
+        );
+        const democracyIndexJSON = await democracyIndexResponse.json();
+        democracyIndex = democracyIndexJSON.reduce((acc, d) => {
+            const countryInfo = countries.find((c) => c.name === d.country);
+
+            // d["alpha-2"] = countryInfo?.["alpha-2"];
+            // d["alpha-3"] = countryInfo?.["alpha-3"];
+            // d.democracy_eiu = +d.DemocracyIndex2023;
+            if (!countryInfo?.["alpha-2"]) {
+                console.log("!!!!!!", d);
+            }
+            acc[countryInfo["alpha-2"]] = {
+                name: d.country,
+                "alpha-2": countryInfo?.["alpha-2"],
+                "alpha-3": countryInfo?.["alpha-3"],
+                democracy_eiu: +d.DemocracyIndex2023,
+            };
+
+            return acc;
+        }, {});
 
         const runtime = new Runtime();
         const main = runtime.module(define, (name) => {
@@ -64,17 +89,78 @@
 <section id="intro" class="contents">
     <header>
         <p>
-            In the year 2024 almost 70 countries will hold elections, people in
-            8 of the 10 most populous countries in the world — <a href="#BD"
-                >Bangladesh</a
-            >, <a href="#BR">Brazil</a>, India, <a href="#ID">Indonesia</a>,
-            <a href="#MX">Mexico</a>,
-            <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the
-            <a href="#US">United States</a>— will cast a vote.
+            <b
+                >In the year 2024 almost 70 countries will hold elections,
+                people in 8 of the 10 most populous countries in the world — <a
+                    href="#BD">Bangladesh</a
+                >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
+                <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the United
+                States — will cast a vote.</b
+            >
+            <br /><br />
+            In this page, we provide a comprehensive visualization of these elections,
+            offering insights into the diverse and dynamic democratic processes unfolding
+            worldwide. Through interactive charts, informative analyses, and up-to-date
+            election results, we aim to foster a deeper understanding of the intricacies
+            of each electoral contest and their broader implications on global democracy.
+        </p>
+    </header>
+</section>
+<section id="intro" class="contents">
+    <header>
+        <h2>
+            Can Authoritarian Regimes Have Close Elections, Unlike Democracies?
+        </h2>
+        <p>
+            The following chart juxtaposes the spectrum of democracy, ranging
+            from
+            <b>Authoritarian regimes</b> to <b>Full-fledged democracies</b>,
+            against the variance in election results. Through this lens, we
+            endeavor to unravel the complex interplay between governance
+            structures and the vibrancy of electoral contests.
+        </p>
+        {#if data.length}
+            <div style="margin-bottom: 50px;">
+                <DemocracyScatterplot {data} {democracyIndex} {width} />
+            </div>
+        {/if}
+        <p>
+            This visual narrative transcends borders, spanning continents and
+            encompassing diverse political landscapes. From the tightly
+            controlled elections of authoritarian strongholds like Russia and
+            Cambodia to the closeness witnessed in democratic stalwarts like
+            Finland and Taiwan, each data point serves as a testament to the
+            nuanced dynamics shaping our global electoral fabric.
+        </p>
+    </header>
+</section>
+<section id="intro" class="contents">
+    <header>
+        <h2>All the elections in 2024</h2>
+        <p>
+            Step into the chronicles of democracy's heartbeat with the <b
+                >election calendar</b
+            > for the year 2024. This interactive calendar serves as a beacon, guiding
+            you through the ebb and flow of electoral processes across the globe.
+            From the shores of distant continents to the bustling metropolises of
+            the world, each date marks a pivotal moment in the democratic journey
+            of nations.
         </p>
     </header>
 </section>
 <Calendar data={calendarData} />
+<section id="intro" class="contents">
+    <header>
+        <p>
+            Our comprehensive list of results offers insights into the dynamic
+            spectrum of democratic processes worldwide. From closely contested
+            races to decisive victories, delve into the intricate tapestry of
+            political expression and outcomes. Stay tuned as we update the list
+            with new election results, enriching your understanding of the
+            evolving democratic narrative.
+        </p>
+    </header>
+</section>
 <section id="charts" class="contents">
     {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
         <div id={country.country} class="country">
@@ -144,6 +230,13 @@
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
+    }
+
+    #intro.contents h2 {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0;
     }
 
     .contents h3 {

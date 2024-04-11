@@ -11,22 +11,6 @@
     let calendarHeight;
     let binWidth = 100 / (numOfCols + 1);
     let binHeight = 100 / numOfRows;
-    $: calendarDays = Array(numOfDays)
-        .fill(0)
-        .map((_, i) => {
-            const timestamp = new Date(Date.UTC(2024, 0, i + 1));
-            return {
-                timestamp,
-                date: getDate(i),
-                day: getDay(i),
-                dayIndex: i,
-                columnIndex: Math.floor(i / numOfRows),
-                columnDelta: getDelta(i),
-                elections: data.filter((d) => {
-                    return +new Date(d.date) === +timestamp;
-                }),
-            };
-        });
 
     const getDay = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
@@ -48,6 +32,27 @@
         const oneDay = 1000 * 60 * 60 * 24;
         return Math.floor(diff / oneDay);
     };
+
+    const today = getDay(getDayNumberOfTheYear(new Date()) - 1);
+    $: console.log("TODAY", today);
+    $: calendarDays = Array(numOfDays)
+        .fill(0)
+        .map((_, i) => {
+            const timestamp = new Date(Date.UTC(2024, 0, i + 1));
+            return {
+                timestamp,
+                date: getDate(i),
+                day: getDay(i),
+                today: getDay(i) === today,
+                dayIndex: i,
+                columnIndex: Math.floor(i / numOfRows),
+                columnDelta: getDelta(i),
+                elections: data.filter((d) => {
+                    return +new Date(d.date) === +timestamp;
+                }),
+            };
+        });
+
     const getDelta = (index, year = 2024) => {
         return (
             Math.floor(
@@ -95,6 +100,7 @@
             {#each calendarDays as d, i}
                 <li
                     data-date={d.day}
+                    title={d.day}
                     class="{d.elections.length > 0
                         ? 'with-elections'
                         : ''} {d.elections.some((election) => election.hasData)
@@ -103,6 +109,9 @@
                 >
                     {#if d.elections.length}
                         <a href="#{d.elections[0].country}" />
+                    {/if}
+                    {#if d.today}
+                        <span class="today" />
                     {/if}
                 </li>
             {/each}
@@ -174,7 +183,7 @@
         width: 200%;
         /*height: calc(7 * 15px);*/
         height: calc(7 * var(--binHeight));
-        overflow-x: auto;
+        /* overflow-x: auto; */
         margin-left: var(--binWidth);
     }
     #calendar ul.days li {
@@ -231,7 +240,17 @@
         height: 100%;
         background-color: transparent;
     }
-
+    #calendar ul.days li span.today {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        pointer-events: none;
+        background: var(--dark);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
     #calendar .popover {
         background: var(--light);
         bottom: 50%;

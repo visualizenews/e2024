@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@observablehq/runtime": "^5.9.8",
-    "chrt": "^0.0.165"
+    "chrt": "^0.0.165",
+    "d3-array": "^3.2.4"
   },
   "overrides": {
     "vite": {
