@@ -97,7 +97,7 @@
                 left: 0,
                 right: 0,
             })
-            .x([0, 10])
+            .x([0.26, 9.9])
             .y([0, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
