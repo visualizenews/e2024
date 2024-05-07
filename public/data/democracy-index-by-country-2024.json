@@ -1334,5 +1334,14 @@
     "DemocracyIndex2006": 9.71,
     "DemocracyIndexAbsoluteChange2006to2023": -0.26,
     "DemocracyIndexRelativeChange2006to2023": -3
+  },
+  {
+    "country": "Maldives",
+    "DemocracyIndex2023": 4.53,
+    "DemocracyIndex2022": 4,
+    "Freedom2023": 41,
+    "Freedom2022": 40,
+    "vdemElectoral2023": 0.599,
+    "vdemLiberal2023": 0.453
   }
 ]

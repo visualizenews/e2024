@@ -4,6 +4,7 @@
     import { Runtime } from "@observablehq/runtime";
     import define from "https://api.observablehq.com/d/17358da922d09a68@22.js?v=4";
     import Megabar from "./lib/Megabar.svelte";
+    import Footer from "./lib/Footer.svelte";
     import DemocracyScatterplot from "./lib/DemocracyScatterplot.svelte";
     import Legend from "./lib/Legend.svelte";
 
@@ -109,7 +110,8 @@
 <section id="intro" class="contents">
     <header>
         <h2>
-            Can Authoritarian Regimes Have Close Elections, Unlike Democracies?
+            It's 2024, Can Authoritarian Regimes Have Close Elections, Unlike
+            Democracies?
         </h2>
         <p>
             The following chart juxtaposes the spectrum of democracy, ranging
@@ -201,7 +203,7 @@
         </div>
     {/each}
 </section>
-<footer></footer>
+<Footer />
 
 <style>
     .contents {

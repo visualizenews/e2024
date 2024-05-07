@@ -25,6 +25,15 @@
             acc[country] = acc[country] ?? [];
             elections.forEach((election) => {
                 if (election?.data?.length) {
+                    console.log(country, election);
+                    console.log(
+                        normalizeElection(
+                            election.data,
+                            elections?.options?.percentage,
+                        ),
+                    );
+                    console.log("######");
+
                     acc[country].push({
                         country,
                         countryInfo,
@@ -95,7 +104,7 @@
                     .filter((d) => d.length)
                     .sort((a, b) => a[0].variance - b[0].variance),
                 (d, i) => {
-                    console.log("--->", d);
+                    // console.log("--->", d);
                     return {
                         y: d[0].variance,
                         x: democracyIndex[d[0].country]?.democracy_eiu,
@@ -111,14 +120,14 @@
                             .axisTitle("↓ Close call")
                             .align("right")
                             .valign("bottom")
-                            .offset({ x: 0, y: 10 }),
+                            .offset({ x: 0, y: 15 }),
                     )
                     .add(
                         chrt
                             .axisTitle("↑ Landslide victory")
                             .align("right")
                             .valign("top")
-                            .offset({ x: 0, y: -5 }),
+                            .offset({ x: 0, y: -10 }),
                     ),
             )
             .add(
@@ -131,14 +140,14 @@
                             .axisTitle("Close call ↓")
                             .align("left")
                             .valign("bottom")
-                            .offset({ x: 0, y: 10 }),
+                            .offset({ x: 0, y: 15 }),
                     )
                     .add(
                         chrt
                             .axisTitle("Landslide victory ↑")
                             .align("left")
                             .valign("top")
-                            .offset({ x: 0, y: -5 }),
+                            .offset({ x: 0, y: -10 }),
                     ),
             )
             .add(
@@ -181,7 +190,10 @@
                 chrt
                     .points()
                     .radius(4)
-                    .fill("#333")
+                    .stroke("#331a00")
+                    .strokeOpacity(0.75)
+                    .fill("none")
+                    .strokeWidth(2)
                     .add(chrt.labels().value((d) => d[0].countryInfo.name))
                     .add(
                         chrt
@@ -250,6 +262,12 @@
         overflow: visible;
         font-size: 10px;
         font-weight: normal;
-        font-family: system-ui;
+        font-family: "Roboto Slab", serif, system-ui;
+    }
+    :global(.chrt-axis) {
+        font-size: 14px;
+    }
+    :global(.democracy-rank) {
+        font-size: 14px;
     }
 </style>
