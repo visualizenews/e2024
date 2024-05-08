@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import Calendar from "./lib/Calendar.svelte";
+    import Search from "./lib/Search.svelte";
     import { Runtime } from "@observablehq/runtime";
     import define from "https://api.observablehq.com/d/17358da922d09a68@22.js?v=4";
     import Megabar from "./lib/Megabar.svelte";
@@ -90,7 +91,7 @@
 <section id="intro" class="contents">
     <header>
         <p>
-            <b
+            <b class="highlight"
                 >In the year 2024 almost 70 countries will hold elections,
                 people in 8 of the 10 most populous countries in the world — <a
                     href="#BD">Bangladesh</a
@@ -163,13 +164,14 @@
         </p>
     </header>
 </section>
+<Search data={calendarData} />
 <section id="charts" class="contents">
     {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
-        <div id={country.country} class="country">
+        <div class="country" id={country.country}>
             <h2>{country.countryInfo.name}</h2>
-            {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election}
+            {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
                 <div class="election" bind:offsetWidth={width}>
-                    <h3>
+                    <h3 id={`zzz${country.country}${i ? i : ""}`}>
                         {new Intl.DateTimeFormat("en-GB", {
                             dateStyle: "full",
                         }).format(new Date(election.date))}
@@ -220,7 +222,7 @@
     :global(.country) {
         width: 100%;
         margin-bottom: 60px;
-        scroll-margin-top: 200px;
+        scroll-margin-top: calc(200px - 38px);
     }
     :global(.country .election) {
         display: flex;
@@ -232,6 +234,7 @@
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
+        margin-bottom: 1rem;
     }
 
     #intro.contents h2 {
@@ -259,8 +262,14 @@
         .contents header {
             max-width: 100%;
         }
-        header p {
+        header b.highlight {
             font-size: 28px;
+        }
+        header span.highlight {
+            font-size: 28px;
+        }
+        header p {
+            font-size: 20px;
             width: 100%;
             margin-bottom: 50px;
         }

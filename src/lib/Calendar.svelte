@@ -135,7 +135,6 @@
         align-items: stretch;
         font-size: 10px;
         width: 100%;
-        background-color: var(--lighter);
         z-index: 9999;
         padding-bottom: 20px;
 
@@ -149,6 +148,7 @@
         position: relative;
         overflow-x: auto;
         padding-bottom: 10px;
+        background-color: var(--lighter);
     }
     #calendar ul {
         position: relative;
