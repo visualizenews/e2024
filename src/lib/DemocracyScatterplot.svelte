@@ -12,7 +12,7 @@
             return data;
         }
         const sum = data.reduce((acc, d) => acc + d[2], 0);
-        console.log(data, sum);
+        // console.log(data, sum);
         return data.map((d) => {
             const newD = [...d];
             newD[2] = d[2] / sum;
@@ -25,14 +25,14 @@
             acc[country] = acc[country] ?? [];
             elections.forEach((election) => {
                 if (election?.data?.length) {
-                    console.log(country, election);
-                    console.log(
-                        normalizeElection(
-                            election.data,
-                            elections?.options?.percentage,
-                        ),
-                    );
-                    console.log("######");
+                    // console.log(country, election);
+                    // console.log(
+                    //     normalizeElection(
+                    //         election.data,
+                    //         elections?.options?.percentage,
+                    //     ),
+                    // );
+                    // console.log("######");
 
                     acc[country].push({
                         country,

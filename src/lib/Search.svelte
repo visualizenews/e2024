@@ -1,12 +1,33 @@
 <script>
     export let data = [];
+    let selected;
 
-    $: console.log("SEARCH", data);
+    function scrollIntoView(target) {
+        if (!target) return;
+        const el = document.querySelector(`#${target}`);
+        if (!el) return;
+        el.scrollIntoView({
+            behavior: "smooth",
+        });
+    }
+
+    $: {
+        // console.log("SELECTED", selected);
+        if (selected) {
+            window.history.pushState(
+                selected,
+                "country",
+                `/e2024/#${selected}`,
+            );
+            scrollIntoView(selected);
+        }
+    }
+    // $: console.log("SEARCH", data);
 </script>
 
 <section id="search">
-    <select>
-        <option>Select a country</option>
+    <select bind:value={selected}>
+        <option value={null}>Select a country</option>
         {#each Object.values(data.reduce((acc, e) => {
                 acc[e.country] = acc[e.country] ?? { country: e.country, info: e.countryInfo };
                 return acc;

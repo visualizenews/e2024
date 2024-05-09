@@ -23,7 +23,7 @@
     });
 
     const megaBar = (data, options = {}) => {
-        console.log(options);
+        // console.log(options);
         const middle =
             Math.floor(data.reduce((acc, d) => d[2] + acc, 0) / 2) + 1;
         chart

@@ -66,11 +66,11 @@
         );
     };
 
-    beforeUpdate(() => {
-        console.log(data);
+    // beforeUpdate(() => {
+    //     console.log(data);
 
-        console.log("calendarDays", calendarDays);
-    });
+    //     console.log("calendarDays", calendarDays);
+    // });
 </script>
 
 <section

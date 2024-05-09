@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, afterUpdate } from "svelte";
     import Calendar from "./lib/Calendar.svelte";
     import Search from "./lib/Search.svelte";
     import { Runtime } from "@observablehq/runtime";
@@ -14,8 +14,16 @@
     let width = 600;
     let countries = [];
     let democracyIndex = [];
+    let boxElList = [];
+
+    $: active = null;
+
+    $: console.log("ACTIVE", active);
 
     onMount(async () => {
+        window.onpopstate = history.onpushstate = function (e) {
+            console.log("PUSH STATE!!!!", e);
+        };
         const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
 
@@ -29,9 +37,9 @@
             // d["alpha-2"] = countryInfo?.["alpha-2"];
             // d["alpha-3"] = countryInfo?.["alpha-3"];
             // d.democracy_eiu = +d.DemocracyIndex2023;
-            if (!countryInfo?.["alpha-2"]) {
-                console.log("!!!!!!", d);
-            }
+            // if (!countryInfo?.["alpha-2"]) {
+            //     console.log("!!!!!!", d);
+            // }
             acc[countryInfo["alpha-2"]] = {
                 name: d.country,
                 "alpha-2": countryInfo?.["alpha-2"],
@@ -222,7 +230,7 @@
     :global(.country) {
         width: 100%;
         margin-bottom: 60px;
-        scroll-margin-top: calc(200px - 38px);
+        scroll-margin-top: calc(200px - 39px);
     }
     :global(.country .election) {
         display: flex;
