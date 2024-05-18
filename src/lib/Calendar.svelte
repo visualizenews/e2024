@@ -1,8 +1,9 @@
 <script>
-    import { onMount, beforeUpdate } from "svelte";
-    import App from "../App.svelte";
+    import { onMount, beforeUpdate } from 'svelte';
+    import App from '../App.svelte';
 
     export let data = [];
+    export let onSelect = () => {};
 
     const numOfDays = 366;
     const numOfRows = 7;
@@ -14,16 +15,16 @@
 
     const getDay = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
-        return date.toLocaleDateString("en-US", {
-            weekday: "short",
-            month: "short",
-            day: "numeric",
+        return date.toLocaleDateString('en-US', {
+            weekday: 'short',
+            month: 'short',
+            day: 'numeric',
         });
     };
     const getDate = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
-        return date.toLocaleDateString("en-US", {
-            day: "numeric",
+        return date.toLocaleDateString('en-US', {
+            day: 'numeric',
         });
     };
     const getDayNumberOfTheYear = (date) => {
@@ -34,7 +35,7 @@
     };
 
     const today = getDay(getDayNumberOfTheYear(new Date()) - 1);
-    $: console.log("TODAY", today);
+    $: console.log('TODAY', today);
     $: calendarDays = Array(numOfDays)
         .fill(0)
         .map((_, i) => {
@@ -79,7 +80,7 @@
 >
     <div>
         <ul class="months">
-            {#each ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] as m, i}
+            {#each ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as m, i}
                 <li
                     data-date={getDayNumberOfTheYear(new Date(2024, i, 1))}
                     data-column-index={Math.floor(
@@ -108,17 +109,27 @@
                         : ''}"
                 >
                     {#if d.elections.length}
-                        <a href="#{d.elections[0].country}" />
+                        <a
+                            href="#{d.elections[0].country}"
+                            on:click={(e) => {
+                                e.preventDefault();
+                                onSelect(d.elections[0].country);
+                            }}
+                        />
                     {/if}
                     {#if d.today}
                         <span class="today" />
                     {/if}
+                    <span
+                        data-text={`${d.day} ${d.elections.map((e) => e.countryInfo.name).join(', ')}`}
+                        class="tooltip"
+                    />
                 </li>
             {/each}
         </ul>
     </div>
     <ul class="days day-names">
-        {#each ["S", "M", "T", "W", "T", "F", "S"] as d}
+        {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as d}
             <li class="name-of-the-day">
                 {d}
             </li>
@@ -215,7 +226,7 @@
         font-size: 1vh;
     }
     #calendar ul.days li:not(.name-of-the-day):after {
-        content: "";
+        content: '';
         display: block;
         border-radius: 3px;
         background: #ede2ca;
@@ -251,81 +262,16 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
     }
-    #calendar .popover {
-        background: var(--light);
-        bottom: 50%;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        display: none;
-        font-family: "adomania", sans-serif;
-        height: auto;
-        left: 50%;
-        padding: 5px;
-        position: absolute;
-        transform: translate3d(-5px, -5px, 0);
-        width: 160px;
-        z-index: 99;
-    }
-
-    #calendar .popover::before {
-        content: "";
-        display: block;
-        left: 0;
-        position: absolute;
-        top: 100%;
-        transform: translate3d(0, 0, 0);
-
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid var(--light);
-    }
-
-    #calendar .popover.left {
-        left: auto;
-        right: 50%;
-        transform: translate3d(5px, -5px, 0);
-    }
-
-    #calendar .popover.left::before {
-        left: auto;
-        right: 0;
-    }
-
-    #calendar .popover.center {
-        left: 50%;
-        transform: translate3d(-50%, -5px, 0);
-    }
-
-    #calendar .popover.center::before {
-        left: 50%;
-        transform: translate3d(-50%, 0, 0);
-    }
-
-    #calendar .day:hover .popover {
-        display: block;
-    }
-
-    #calendar .popover .title {
-        font-size: 14px;
-        font-weight: 200;
-        margin-bottom: 10px;
-    }
-
-    #calendar .popover .country {
-        cursor: pointer;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
 
     @media screen and (min-width: 768px) {
         #calendar > div {
-            overflow-x: hidden;
+            /*overflow-x: hidden;*/
+            overflow: visible;
         }
         #calendar ul.days:not(.day-names) {
             width: 100%;
-            overflow-x: hidden;
+            /*overflow-x: hidden;*/
+            overflow: visible;
         }
         #calendar ul.months {
             width: 100%;
@@ -337,5 +283,56 @@
     }
 
     @media screen and (min-width: 1024px) {
+    }
+
+    #calendar ul li .tooltip {
+        position: absolute;
+        top: 50%;
+        height: 0;
+        pointer-events: none;
+    }
+    #calendar ul li .tooltip:before {
+        content: attr(data-text);
+        position: absolute;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+        left: 100%;
+        margin-left: 15px;
+
+        text-align: left;
+        min-width: 80px;
+        padding: 10px;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        z-index: 9;
+
+        display: none; /* hide by default */
+    }
+    #calendar ul li:hover .tooltip:before,
+    #calendar ul li:hover .tooltip:after {
+        display: block;
+    }
+
+    #calendar ul li .tooltip:after {
+        content: '';
+        position: absolute;
+
+        /* position tooltip correctly */
+        left: 100%;
+        margin-left: 2px;
+
+        /* vertically center */
+        top: 50%;
+        transform: translateY(-50%);
+
+        /* the arrow */
+        border: 10px solid #000;
+        border-color: transparent black transparent transparent;
+
+        display: none;
+        z-index: 9;
     }
 </style>

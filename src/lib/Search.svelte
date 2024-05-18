@@ -1,13 +1,13 @@
 <script>
     export let data = [];
-    let selected;
+    export let selected;
 
     function scrollIntoView(target) {
         if (!target) return;
         const el = document.querySelector(`#${target}`);
         if (!el) return;
         el.scrollIntoView({
-            behavior: "smooth",
+            behavior: 'smooth',
         });
     }
 
@@ -16,7 +16,7 @@
         if (selected) {
             window.history.pushState(
                 selected,
-                "country",
+                'country',
                 `/e2024/#${selected}`,
             );
             scrollIntoView(selected);
@@ -45,7 +45,7 @@
         z-index: 99999;
     }
     #search select {
-        font-family: "Roboto Slab", serif, system-ui;
+        font-family: 'Roboto Slab', serif, system-ui;
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
