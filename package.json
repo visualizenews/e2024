@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.0.2",
-    "svelte": "^4.2.12",
-    "vite": "^5.2.8"
+    "@sveltejs/vite-plugin-svelte": "^3.1.0",
+    "svelte": "^4.2.17",
+    "vite": "^5.2.11"
   },
   "dependencies": {
     "@observablehq/runtime": "^5.9.8",
-    "chrt": "^0.0.165",
+    "chrt": "^0.0.168",
     "d3-array": "^3.2.4"
   },
   "overrides": {
@@ -24,6 +24,6 @@
     }
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.6.1"
+    "@rollup/rollup-linux-x64-gnu": "4.17.2"
   }
 }

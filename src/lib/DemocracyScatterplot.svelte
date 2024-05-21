@@ -194,7 +194,21 @@
                     .strokeOpacity(0.75)
                     .fill("none")
                     .strokeWidth(2)
-                    .add(chrt.labels().value((d) => d[0].countryInfo.name))
+                    .add(
+                        chrt
+                            .labels()
+                            .value((d) => d[0].countryInfo.name)
+                            .valign((d) =>
+                                ["HR", "ID"].includes(d[0].country)
+                                    ? "bottom"
+                                    : "top",
+                            )
+                            .offset(0, (d) => {
+                                return ["HR", "ID"].includes(d[0].country)
+                                    ? 10
+                                    : 0;
+                            }),
+                    )
                     .add(
                         chrt
                             .label()
