@@ -1,13 +1,13 @@
 <script>
-    import { onMount, afterUpdate } from 'svelte';
-    import Calendar from './lib/Calendar.svelte';
-    import Search from './lib/Search.svelte';
-    import { Runtime } from '@observablehq/runtime';
-    import define from 'https://api.observablehq.com/d/17358da922d09a68@22.js?v=4';
-    import Megabar from './lib/Megabar.svelte';
-    import Footer from './lib/Footer.svelte';
-    import DemocracyScatterplot from './lib/DemocracyScatterplot.svelte';
-    import Legend from './lib/Legend.svelte';
+    import { onMount, afterUpdate } from "svelte";
+    import Calendar from "./lib/Calendar.svelte";
+    import Search from "./lib/Search.svelte";
+    import { Runtime } from "@observablehq/runtime";
+    import define from "https://api.observablehq.com/d/17358da922d09a68@22.js?v=4";
+    import Megabar from "./lib/Megabar.svelte";
+    import Footer from "./lib/Footer.svelte";
+    import DemocracyScatterplot from "./lib/DemocracyScatterplot.svelte";
+    import Legend from "./lib/Legend.svelte";
 
     let data = [];
     let calendarData = [];
@@ -23,13 +23,13 @@
 
     onMount(async () => {
         window.onpopstate = history.onpushstate = function (e) {
-            console.log('PUSH STATE!!!!', e);
+            console.log("PUSH STATE!!!!", e);
         };
-        const countriesResponse = await fetch('./data/countries.json');
+        const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
 
         const democracyIndexResponse = await fetch(
-            './data/democracy-index-by-country-2024.json',
+            "./data/democracy-index-by-country-2024.json",
         );
         const democracyIndexJSON = await democracyIndexResponse.json();
         democracyIndex = democracyIndexJSON.reduce((acc, d) => {
@@ -41,10 +41,10 @@
             // if (!countryInfo?.["alpha-2"]) {
             //     console.log("!!!!!!", d);
             // }
-            acc[countryInfo['alpha-2']] = {
+            acc[countryInfo["alpha-2"]] = {
                 name: d.country,
-                'alpha-2': countryInfo?.['alpha-2'],
-                'alpha-3': countryInfo?.['alpha-3'],
+                "alpha-2": countryInfo?.["alpha-2"],
+                "alpha-3": countryInfo?.["alpha-3"],
                 democracy_eiu: +d.DemocracyIndex2023,
             };
 
@@ -53,7 +53,7 @@
 
         const runtime = new Runtime();
         const main = runtime.module(define, (name) => {
-            if (name === 'elections')
+            if (name === "elections")
                 return {
                     pending() {},
                     fulfilled(value) {
@@ -64,10 +64,10 @@
                             country: d[0],
                             elections: d[1],
                             countryInfo: countries.find(
-                                (c) => c['alpha-2'] === d[0],
+                                (c) => c["alpha-2"] === d[0],
                             ),
                         }));
-                        console.log('data', data);
+                        console.log("data", data);
                         calendarData = data.reduce((acc, d) => {
                             acc = [
                                 ...acc,
@@ -84,7 +84,7 @@
 
                             return acc;
                         }, []);
-                        console.log('calendarData', calendarData);
+                        console.log("calendarData", calendarData);
                     },
                     rejected(error) {
                         console.error(`${name}: rejected`, error);
@@ -119,10 +119,7 @@
 </section>
 <section id="intro" class="contents">
     <header>
-        <h2>
-            It's 2024, Can Authoritarian Regimes Have Close Elections, Unlike
-            Democracies?
-        </h2>
+        <h2>How Tight Elections Reflect Healthy Democracies</h2>
         <p>
             The following chart juxtaposes the spectrum of democracy, ranging
             from
@@ -180,9 +177,9 @@
             <h2>{country.countryInfo.name}</h2>
             {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
                 <div class="election" bind:offsetWidth={width}>
-                    <h3 id={`zzz${country.country}${i ? i : ''}`}>
-                        {new Intl.DateTimeFormat('en-GB', {
-                            dateStyle: 'full',
+                    <h3 id={`zzz${country.country}${i ? i : ""}`}>
+                        {new Intl.DateTimeFormat("en-GB", {
+                            dateStyle: "full",
                         }).format(new Date(election.date))}
                     </h3>
                     {#if election.description}
