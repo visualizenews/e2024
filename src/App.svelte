@@ -7,7 +7,9 @@
     import Megabar from "./lib/Megabar.svelte";
     import Footer from "./lib/Footer.svelte";
     import DemocracyScatterplot from "./lib/DemocracyScatterplot.svelte";
+    import DemocracyScatterplotVertical from "./lib/DemocracyScatterplotVertical.svelte";
     import Legend from "./lib/Legend.svelte";
+    import Map from "./lib/Map.svelte";
 
     let data = [];
     let calendarData = [];
@@ -22,9 +24,9 @@
     // $: console.log("ACTIVE", active);
 
     onMount(async () => {
-        window.onpopstate = history.onpushstate = function (e) {
-            console.log("PUSH STATE!!!!", e);
-        };
+        // window.onpopstate = history.onpushstate = function (e) {
+        //     console.log("PUSH STATE!!!!", e);
+        // };
         const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
 
@@ -67,7 +69,7 @@
                                 (c) => c["alpha-2"] === d[0],
                             ),
                         }));
-                        console.log("data", data);
+                        console.log("App data", data);
                         calendarData = data.reduce((acc, d) => {
                             acc = [
                                 ...acc,
@@ -77,6 +79,9 @@
                                         country: d.country,
                                         countryInfo: d.countryInfo,
                                         hasData: election?.data?.length,
+                                        alreadyVoted:
+                                            d.elections[0]?.data?.length !=
+                                            null,
                                     };
                                 }),
                             ];
@@ -97,29 +102,40 @@
 <header id="header">
     <h1 class="show-calendar">2024 The Elections Year</h1>
 </header>
+
 <section id="intro" class="contents">
     <header>
         <p>
             <b class="highlight"
-                >In the year 2024 almost 70 countries will hold elections,
-                people in 8 of the 10 most populous countries in the world — <a
-                    href="#BD">Bangladesh</a
+                >Around 2 billion voters are expected to be heading to the polls
+                this year. Almost 70 countries will hold elections, people in 8
+                of the 10 most populous countries in the world — <a href="#BD"
+                    >Bangladesh</a
                 >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
                 <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the United
                 States — will cast a vote.</b
             >
-            <br /><br />
-            In this page, we provide a comprehensive visualization of these elections,
-            offering insights into the diverse and dynamic democratic processes unfolding
-            worldwide. Through interactive charts, informative analyses, and up-to-date
-            election results, we aim to foster a deeper understanding of the intricacies
-            of each electoral contest and their broader implications on global democracy.
         </p>
     </header>
 </section>
-<section id="intro" class="contents">
+<section id="map" class="contents">
+    <Map data={calendarData} {countries} />
+</section>
+<section id="introP2" class="contents">
     <header>
-        <h2>How Tight Elections Reflect Healthy Democracies</h2>
+        <p>
+            In this page, we provide a comprehensive visualization of these
+            elections, offering insights into the diverse and dynamic democratic
+            processes unfolding worldwide. Through interactive charts,
+            informative analyses, and up-to-date election results, we aim to
+            foster a deeper understanding of the intricacies of each electoral
+            contest and their broader implications on global democracy.
+        </p>
+    </header>
+</section>
+<section id="scatterplot" class="contents">
+    <header>
+        <h2>Do Tight Elections Reflect Healthy Democracies?</h2>
         <p>
             The following chart juxtaposes the spectrum of democracy, ranging
             from
@@ -132,6 +148,9 @@
             <div style="margin-bottom: 50px;">
                 <DemocracyScatterplot {data} {democracyIndex} {width} />
             </div>
+            <div style="margin-bottom: 50px;">
+                <DemocracyScatterplotVertical {data} {democracyIndex} {width} />
+            </div>
         {/if}
         <p>
             This visual narrative transcends borders, spanning continents and
@@ -143,7 +162,7 @@
         </p>
     </header>
 </section>
-<section id="intro" class="contents">
+<section id="introAllElections" class="contents">
     <header>
         <h2>All the elections in 2024</h2>
         <p>
@@ -158,10 +177,10 @@
     </header>
 </section>
 <Calendar data={calendarData} onSelect={(d) => (selected = d)} />
-<section id="intro" class="contents">
+<section id="introAllElections" class="contents">
     <header>
         <p>
-            Our comprehensive list of results offers insights into the dynamic
+            The following list of results offers insights into the dynamic
             spectrum of democratic processes worldwide. From closely contested
             races to decisive victories, delve into the intricate tapestry of
             political expression and outcomes. Stay tuned as we update the list
@@ -221,6 +240,10 @@
         /*min-height: 80vh;*/
         padding: 10px;
         position: relative;
+    }
+    .full-width {
+        width: 100vw;
+        position: absolute;
     }
     #charts {
         flex-direction: column;

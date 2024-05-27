@@ -16,7 +16,11 @@
   "dependencies": {
     "@observablehq/runtime": "^5.9.8",
     "chrt": "^0.0.168",
-    "d3-array": "^3.2.4"
+    "d3": "^7.9.0",
+    "d3-array": "^3.2.4",
+    "d3-geo": "^3.1.1",
+    "d3-geo-projection": "^4.0.0",
+    "d3-hexbin": "^0.2.2"
   },
   "overrides": {
     "vite": {
