@@ -93,12 +93,12 @@
     // }
     $: {
         // console.log("width", width);
-        chart?.size(width, (width * 9) / 16);
+        chart?.size(width, (width * 3) / 4);
     }
 
     const democracyScatterplot = (data, options = {}) => {
         chart
-            .size(width, (width * 9) / 16)
+            .size(width, (width * 3) / 4)
             .margins({
                 left: 0,
                 right: 0,
@@ -205,13 +205,22 @@
                             .labels()
                             .value((d) => d[0].countryInfo.name)
                             .valign((d) =>
-                                ["HR", "ID"].includes(d[0].country)
+                                ["HR", "ID", "ZA", "PL", "FI", "BT"].includes(
+                                    d[0].country,
+                                )
                                     ? "bottom"
                                     : "top",
                             )
                             .offset(0, (d) => {
-                                return ["HR", "ID"].includes(d[0].country)
-                                    ? 10
+                                return [
+                                    "HR",
+                                    "ID",
+                                    "ZA",
+                                    "PL",
+                                    "FI",
+                                    "BT",
+                                ].includes(d[0].country)
+                                    ? 7
                                     : 0;
                             })
                             .class("point-label"),

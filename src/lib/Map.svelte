@@ -170,20 +170,24 @@
 <style>
     .election-map {
         width: 100%;
-        height: 100%;
+        height: 200px;
         overflow: visible;
         position: relative;
     }
+    .election-map svg {
+        position: absolute;
+        top: -190px;
+    }
     .color-key {
         position: absolute;
-        bottom: 100px;
+        bottom: 0;
         left: 0;
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         font-size: 0.8rem;
     }
@@ -197,5 +201,20 @@
         height: 1rem;
         margin-right: 0.5rem;
         border-radius: 15%;
+    }
+
+    @media screen and (min-width: 768px) {
+        .election-map {
+            height: 100%;
+            overflow: visible;
+        }
+        .election-map svg {
+            position: relative;
+            top: auto;
+        }
+        .color-key {
+            bottom: 100px;
+            flex-direction: column;
+        }
     }
 </style>

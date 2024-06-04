@@ -5,7 +5,7 @@
     export let data = [];
     export let options = {};
     export let width;
-    const h = 120;
+    let h = 120;
 
     let chartNode;
 
@@ -18,6 +18,7 @@
     onMount(() => {
         // console.log("chrt", chrt);
         const bar = megaBar(data, options);
+        h = h + (options.majority ? 20 : 0);
         // console.log(bar);
         chartNode.appendChild(bar);
     });
@@ -113,7 +114,7 @@
                             .value(
                                 `${options.majorityText ?? middle} for a majority`,
                             )
-                            .offset(0, -(h / 2) + 15),
+                            .offset(0, -(h / 2) + 5),
                     ),
             );
         }

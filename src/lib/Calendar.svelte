@@ -1,6 +1,6 @@
 <script>
-    import { onMount, beforeUpdate } from 'svelte';
-    import App from '../App.svelte';
+    import { onMount, beforeUpdate } from "svelte";
+    import App from "../App.svelte";
 
     export let data = [];
     export let onSelect = () => {};
@@ -15,16 +15,16 @@
 
     const getDay = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
-        return date.toLocaleDateString('en-US', {
-            weekday: 'short',
-            month: 'short',
-            day: 'numeric',
+        return date.toLocaleDateString("en-US", {
+            weekday: "short",
+            month: "short",
+            day: "numeric",
         });
     };
     const getDate = (dayIndex, year = 2024) => {
         const date = new Date(year, 0, dayIndex + 1);
-        return date.toLocaleDateString('en-US', {
-            day: 'numeric',
+        return date.toLocaleDateString("en-US", {
+            day: "numeric",
         });
     };
     const getDayNumberOfTheYear = (date) => {
@@ -35,7 +35,7 @@
     };
 
     const today = getDay(getDayNumberOfTheYear(new Date()) - 1);
-    $: console.log('TODAY', today);
+    $: console.log("TODAY", today);
     $: calendarDays = Array(numOfDays)
         .fill(0)
         .map((_, i) => {
@@ -80,7 +80,7 @@
 >
     <div>
         <ul class="months">
-            {#each ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] as m, i}
+            {#each ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] as m, i}
                 <li
                     data-date={getDayNumberOfTheYear(new Date(2024, i, 1))}
                     data-column-index={Math.floor(
@@ -101,7 +101,7 @@
             {#each calendarDays as d, i}
                 <li
                     data-date={d.day}
-                    title={d.day}
+                    aria-label={d.day}
                     class="{d.elections.length > 0
                         ? 'with-elections'
                         : ''} {d.elections.some((election) => election.hasData)
@@ -121,7 +121,7 @@
                         <span class="today" />
                     {/if}
                     <span
-                        data-text={`${d.day} ${d.elections.map((e) => e.countryInfo.name).join(', ')}`}
+                        data-text={`${d.day} ${[...new Set(d.elections.map((e) => e.countryInfo.name))].join(", ")}`}
                         class="tooltip"
                     />
                 </li>
@@ -129,7 +129,7 @@
         </ul>
     </div>
     <ul class="days day-names">
-        {#each ['S', 'M', 'T', 'W', 'T', 'F', 'S'] as d}
+        {#each ["S", "M", "T", "W", "T", "F", "S"] as d}
             <li class="name-of-the-day">
                 {d}
             </li>
@@ -168,6 +168,7 @@
         padding: 0;
     }
     #calendar ul.months li {
+        font-size: 0.7rem;
     }
 
     #calendar ul.months {
@@ -226,7 +227,7 @@
         font-size: 1vh;
     }
     #calendar ul.days li:not(.name-of-the-day):after {
-        content: '';
+        content: "";
         display: block;
         border-radius: 3px;
         background: #ede2ca;
@@ -280,6 +281,9 @@
         #calendar ul li.name-of-the-day {
             font-size: 10px;
         }
+        #calendar ul.months li {
+            font-size: 0.8rem;
+        }
     }
 
     @media screen and (min-width: 1024px) {
@@ -294,7 +298,7 @@
     #calendar ul li .tooltip:before {
         content: attr(data-text);
         position: absolute;
-
+        font-size: 0.8rem;
         top: 50%;
         transform: translateY(-50%);
 
@@ -309,6 +313,8 @@
         color: #fff;
         z-index: 9;
 
+        white-space: nowrap;
+
         display: none; /* hide by default */
     }
     #calendar ul li:hover .tooltip:before,
@@ -317,7 +323,7 @@
     }
 
     #calendar ul li .tooltip:after {
-        content: '';
+        content: "";
         position: absolute;
 
         /* position tooltip correctly */

@@ -105,6 +105,11 @@
                 left: 0,
                 right: 0,
             })
+            .padding({
+                top: 0,
+                bottom: 0,
+                left: 15,
+            })
             .y([0.26, 9.9])
             .x([0, maxVariance * 1.1])
             .data(
@@ -128,7 +133,7 @@
                             .axisTitle("← Narrow margin")
                             .align("right")
                             .valign("bottom")
-                            .offset({ x: 0, y: 15 }),
+                            .offset({ x: 0, y: 35 }),
                     )
                     .add(
                         chrt
@@ -148,7 +153,7 @@
                             .axisTitle("Landslide victory →")
                             .align("left")
                             .valign("bottom")
-                            .offset({ x: 0, y: 15 }),
+                            .offset({ x: 0, y: 35 }),
                     )
                     .add(
                         chrt
@@ -207,13 +212,33 @@
                             .labels()
                             .value((d) => d[0].countryInfo.name)
                             .valign((d) =>
-                                ["HR", "ID"].includes(d[0].country)
+                                [
+                                    "HR",
+                                    "FI",
+                                    "PA",
+                                    "PL",
+                                    "DO",
+                                    "TW",
+                                    "BT",
+                                    "MG",
+                                    // "SN",
+                                ].includes(d[0].country)
                                     ? "bottom"
                                     : "top",
                             )
                             .offset(0, (d) => {
-                                return ["HR", "ID"].includes(d[0].country)
-                                    ? 10
+                                return [
+                                    "HR",
+                                    "FI",
+                                    "PA",
+                                    "PL",
+                                    "DO",
+                                    "TW",
+                                    "BT",
+                                    "MG",
+                                    //"SN",
+                                ].includes(d[0].country)
+                                    ? 7
                                     : 0;
                             })
                             .class("point-label"),
@@ -284,7 +309,7 @@
     .democracy-scatterplot-vertical {
         position: relative;
         width: 100%;
-        height: calc(100vh - 30px);
+        height: calc(80vh);
     }
     :global(svg) {
         overflow: visible;

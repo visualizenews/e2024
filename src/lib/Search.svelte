@@ -7,7 +7,7 @@
         const el = document.querySelector(`#${target}`);
         if (!el) return;
         el.scrollIntoView({
-            behavior: 'smooth',
+            behavior: "smooth",
         });
     }
 
@@ -16,7 +16,7 @@
         if (selected) {
             window.history.pushState(
                 selected,
-                'country',
+                "country",
                 `/e2024/#${selected}`,
             );
             scrollIntoView(selected);
@@ -40,12 +40,14 @@
 <style>
     #search {
         position: sticky;
-        top: 160px;
+        top: 133px;
         margin-top: 0;
         z-index: 99999;
+        padding: 0 10px;
     }
     #search select {
-        font-family: 'Roboto Slab', serif, system-ui;
+        width: 100%;
+        font-family: "Roboto Slab", serif, system-ui;
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
@@ -56,12 +58,20 @@
         border-bottom: 2px solid #c4b889;
         line-height: 1;
         outline: 0;
-        padding: 0.3em 2.5em 0.3em 10px;
+        padding: 0.3em 2.5em 0.3em 0px;
         /* border-radius: 0.5rem; */
-        background-color: #fff8e6dd;
+        background-color: #fff8e6;
         background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
         background-repeat: no-repeat;
         background-position-x: 100%;
         background-position-y: 5px;
+    }
+    @media screen and (min-width: 768px) {
+        #search {
+            top: 160px;
+        }
+        #search select {
+            /*background-color: #fff8e6dd;*/
+        }
     }
 </style>

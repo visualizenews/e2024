@@ -69,7 +69,7 @@
                                 (c) => c["alpha-2"] === d[0],
                             ),
                         }));
-                        console.log("App data", data);
+                        // console.log("App data", data);
                         calendarData = data.reduce((acc, d) => {
                             acc = [
                                 ...acc,
@@ -89,7 +89,7 @@
 
                             return acc;
                         }, []);
-                        console.log("calendarData", calendarData);
+                        // console.log("calendarData", calendarData);
                     },
                     rejected(error) {
                         console.error(`${name}: rejected`, error);
@@ -99,140 +99,222 @@
     });
 </script>
 
-<header id="header">
-    <h1 class="show-calendar">2024 The Elections Year</h1>
-</header>
+<div>
+    <header id="header">
+        <h1 class="main-title"><span>2024</span>Elections Year</h1>
+    </header>
 
-<section id="intro" class="contents">
-    <header>
-        <p>
-            <b class="highlight"
-                >Around 2 billion voters are expected to be heading to the polls
-                this year. Almost 70 countries will hold elections, people in 8
-                of the 10 most populous countries in the world — <a href="#BD"
-                    >Bangladesh</a
-                >, Brazil, India, <a href="#ID">Indonesia</a>, Mexico,
-                <a href="#PK">Pakistan</a>, <a href="#RU">Russia</a> and the United
-                States — will cast a vote.</b
-            >
-        </p>
-    </header>
-</section>
-<section id="map" class="contents">
-    <Map data={calendarData} {countries} />
-</section>
-<section id="introP2" class="contents">
-    <header>
-        <p>
-            In this page, we provide a comprehensive visualization of these
-            elections, offering insights into the diverse and dynamic democratic
-            processes unfolding worldwide. Through interactive charts,
-            informative analyses, and up-to-date election results, we aim to
-            foster a deeper understanding of the intricacies of each electoral
-            contest and their broader implications on global democracy.
-        </p>
-    </header>
-</section>
-<section id="scatterplot" class="contents">
-    <header>
-        <h2>Do Tight Elections Reflect Healthy Democracies?</h2>
-        <p>
-            The following chart juxtaposes the spectrum of democracy, ranging
-            from
-            <b>Authoritarian regimes</b> to <b>Full-fledged democracies</b>,
-            against the variance in election results. Through this lens, we
-            endeavor to unravel the complex interplay between governance
-            structures and the vibrancy of electoral contests.
-        </p>
-        {#if data.length}
-            <div style="margin-bottom: 50px;">
-                <DemocracyScatterplot {data} {democracyIndex} {width} />
-            </div>
-            <div style="margin-bottom: 50px;">
-                <DemocracyScatterplotVertical {data} {democracyIndex} {width} />
-            </div>
-        {/if}
-        <p>
-            This visual narrative transcends borders, spanning continents and
-            encompassing diverse political landscapes. From the tightly
-            controlled elections of authoritarian strongholds like Russia and
-            Cambodia to the closeness witnessed in democratic stalwarts like
-            Finland and Taiwan, each data point serves as a testament to the
-            nuanced dynamics shaping our global electoral fabric.
-        </p>
-    </header>
-</section>
-<section id="introAllElections" class="contents">
-    <header>
-        <h2>All the elections in 2024</h2>
-        <p>
-            Step into the chronicles of democracy's heartbeat with the <b
-                >election calendar</b
-            > for the year 2024. This interactive calendar serves as a beacon, guiding
-            you through the ebb and flow of electoral processes across the globe.
-            From the shores of distant continents to the bustling metropolises of
-            the world, each date marks a pivotal moment in the democratic journey
-            of nations.
-        </p>
-    </header>
-</section>
-<Calendar data={calendarData} onSelect={(d) => (selected = d)} />
-<section id="introAllElections" class="contents">
-    <header>
-        <p>
-            The following list of results offers insights into the dynamic
-            spectrum of democratic processes worldwide. From closely contested
-            races to decisive victories, delve into the intricate tapestry of
-            political expression and outcomes. Stay tuned as we update the list
-            with new election results, enriching your understanding of the
-            evolving democratic narrative.
-        </p>
-    </header>
-</section>
-<Search data={calendarData} {selected} />
-<section id="charts" class="contents">
-    {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
-        <div class="country" id={country.country}>
-            <h2>{country.countryInfo.name}</h2>
-            {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
-                <div class="election" bind:offsetWidth={width}>
-                    <h3 id={`zzz${country.country}${i ? i : ""}`}>
-                        {new Intl.DateTimeFormat("en-GB", {
-                            dateStyle: "full",
-                        }).format(new Date(election.date))}
-                    </h3>
-                    {#if election.description}
-                        <b style="margin-botton: 1rem;"
-                            >{election.description}</b
-                        >
-                    {/if}
-                    {#if election.summary}
-                        <p style="margin-bottom: 1rem">{election.summary}</p>
-                    {/if}
-                    {#if (election?.data?.length ?? 0) === 0}
-                        <p>No data available</p>
-                    {:else}
-                        <Megabar
-                            data={election.data}
-                            options={election.options}
-                            {width}
-                        />
-                        <Legend
-                            data={election.data}
-                            options={election.options}
-                        />
-                        {#if election.notes}
-                            <p class="notes">{election.notes}</p>
-                        {/if}
-                    {/if}
+    <section id="intro" class="contents">
+        <header>
+            <p>
+                <b class="highlight"
+                    >Around 2 billion voters are expected to be heading to the
+                    polls this year. Almost 70 countries will hold elections,
+                    people in 8 of the 10 most populous countries in the world — <a
+                        href="#BD">Bangladesh</a
+                    >, Brazil, <a href="#IN">India</a>,
+                    <a href="#ID">Indonesia</a>,
+                    <a href="#MX">Mexico</a>,<a href="#PK">Pakistan</a>,
+                    <a href="#RU">Russia</a>
+                    and the United States — will cast a vote.</b
+                >
+            </p>
+        </header>
+    </section>
+    <section id="map" class="contents">
+        <Map data={calendarData} {countries} />
+    </section>
+    <section id="introP2" class="contents">
+        <header>
+            <p>
+                In this page, we provide a comprehensive visualization of these
+                elections, offering insights into the diverse and dynamic
+                democratic processes unfolding worldwide. Through interactive
+                charts, informative analyses, and up-to-date election results,
+                we aim to foster a deeper understanding of the intricacies of
+                each electoral contest and their broader implications on global
+                democracy.
+            </p>
+        </header>
+    </section>
+    <section id="scatterplot" class="contents">
+        <header>
+            <h2>Do Tight Elections Reflect Healthy Democracies?</h2>
+            <p>
+                The following chart juxtaposes the spectrum of democracy,
+                ranging from
+                <b>Authoritarian regimes</b> to <b>Full-fledged democracies</b>,
+                against the variance in election results. Through this lens, we
+                endeavor to unravel the complex interplay between governance
+                structures and the vibrancy of electoral contests.
+            </p>
+            {#if data.length}
+                <div id="hScatter" style="margin-bottom: 50px;">
+                    <DemocracyScatterplot {data} {democracyIndex} {width} />
                 </div>
-            {/each}
-        </div>
-    {/each}
-</section>
+                <div id="vScatter" style="margin-bottom: 50px;">
+                    <DemocracyScatterplotVertical
+                        {data}
+                        {democracyIndex}
+                        {width}
+                    />
+                </div>
+            {/if}
+            <p>
+                This visual narrative transcends borders, spanning continents
+                and encompassing diverse political landscapes. From the tightly
+                controlled elections of authoritarian strongholds like Russia
+                and Cambodia to the closeness witnessed in democratic stalwarts
+                like Finland and Taiwan, each data point serves as a testament
+                to the nuanced dynamics shaping our global electoral fabric.
+            </p>
+        </header>
+    </section>
+    <section id="introAllElections" class="contents">
+        <header>
+            <h2>All the elections in 2024</h2>
+            <p>
+                The <b>Election Calendar</b> allows you to explore elections taking
+                place around the world throughout the year. Organized by date, the
+                calendar provides a comprehensive overview of the democratic processes
+                unfolding across the globe - from remote regions to major metropolises.
+                Use this interactive calendar to stay informed and engaged with the
+                heartbeat of democracy in 2024
+            </p>
+        </header>
+    </section>
+    <Calendar data={calendarData} onSelect={(d) => (selected = d)} />
+    <section id="introAllElections" class="contents">
+        <header>
+            <p>
+                The following list of results offers insights into the dynamic
+                spectrum of democratic processes worldwide. From closely
+                contested races to decisive victories, delve into the intricate
+                tapestry of political expression and outcomes. Stay tuned as we
+                update the list with new election results, enriching your
+                understanding of the evolving democratic narrative.
+            </p>
+        </header>
+    </section>
+    <Search data={calendarData} {selected} />
+    <section id="charts" class="contents">
+        {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
+            <div
+                class={`country ${(country?.elections[0]?.data?.length ?? 0) === 0 ? "not-voted" : "voted"}`}
+                id={country.country}
+            >
+                <h2>{country.countryInfo.name}</h2>
+                {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
+                    <div class="election" bind:offsetWidth={width}>
+                        <h3 id={`${country.country}${i ? i : ""}`}>
+                            {new Intl.DateTimeFormat("en-GB", {
+                                dateStyle: "full",
+                            }).format(new Date(election.date))}
+                        </h3>
+                        {#if election.description}
+                            <b style="margin-botton: 1rem;"
+                                >{election.description}</b
+                            >
+                        {/if}
+                        {#if election.summary}
+                            <p style="margin-bottom: 1rem">
+                                {election.summary}
+                            </p>
+                        {/if}
+                        {#if (election?.data?.length ?? 0) === 0}
+                            <p>Election results not yet available</p>
+                        {:else}
+                            <Megabar
+                                data={election.data}
+                                options={election.options}
+                                {width}
+                            />
+                            <Legend
+                                data={election.data}
+                                options={election.options}
+                            />
+                            {#if election.notes}
+                                <p class="notes">{election.notes}</p>
+                            {/if}
+                        {/if}
+                    </div>
+                {/each}
+            </div>
+        {/each}
+    </section>
+    <section id="charts" class="contents">
+        <header>
+            <h2>Data and methodology</h2>
+            <p>
+                The data presented on this website comes from a variety of
+                authoritative sources. Election results and details for each
+                country are primarily sourced from <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/List_of_elections_in_2024"
+                    >Wikipedia</a
+                >, which provides comprehensive coverage of national elections
+                around the world. To provide additional context on the state of
+                democracy in each country, we also incorporate data from the
+                <a
+                    target="_blank"
+                    href="https://en.wikipedia.org/wiki/The_Economist_Democracy_Index"
+                    >Democracy Index</a
+                >
+                reports (published by the Economist Group ) and
+                <a target="_blank" href="https://freedomhouse.org/"
+                    >Freedom House</a
+                >. These respected organizations assess the level of political
+                rights and civil liberties in countries globally, giving us a
+                sense of the democratic health of the nations holding elections.
+                By combining granular election data with broader measures of a
+                country's democratic institutions, we aim to give users a
+                well-rounded understanding of the electoral landscape in 2024.
+            </p>
+        </header>
+    </section>
+</div>
 <Footer />
 
 <style>
+    header {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+    }
+    header b.highlight {
+        font-size: 22px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /*header h1::after {
+        content: "🗳️";
+        display: inline-block;
+        filter: grayscale(100);
+        font-size: 16px;
+        padding-left: 10px;
+        vertical-align: top;
+    }
+
+    header h1::before {
+        content: "🗳️";
+        display: inline-block;
+        filter: grayscale(100);
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: top;
+    }*/
+    header h1 span {
+        display: block;
+        font-size: 48px;
+    }
+
     .contents {
         align-items: center;
         display: flex;
@@ -241,17 +323,13 @@
         padding: 10px;
         position: relative;
     }
-    .full-width {
-        width: 100vw;
-        position: absolute;
-    }
     #charts {
         flex-direction: column;
     }
     :global(.country) {
         width: 100%;
         margin-bottom: 60px;
-        scroll-margin-top: calc(200px - 39px);
+        scroll-margin-top: calc(200px - 70px);
     }
     :global(.country .election) {
         display: flex;
@@ -260,17 +338,14 @@
         margin-bottom: 2.5rem;
     }
     .contents h2 {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 1rem;
     }
 
-    #intro.contents h2 {
-        font-size: 28px;
-        font-weight: 800;
-        text-transform: uppercase;
-        margin: 0;
+    .country h2 {
+        font-size: 24px;
     }
 
     .contents h3 {
@@ -281,13 +356,50 @@
     .contents header {
         max-width: 600px;
     }
-
+    .contents header p {
+        margin-bottom: 2rem;
+    }
     .election p.notes {
         font-style: italic;
         margin-top: 20px;
     }
 
+    #vScatter {
+        display: block;
+    }
+    #hScatter {
+        display: none;
+    }
+
+    :global(.contents .country.not-voted) {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    :global(.contents .country.not-voted h2) {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.8rem;
+    }
+    :global(.contents .country.not-voted .election) {
+        margin-bottom: 0.5rem;
+    }
+
     @media screen and (min-width: 768px) {
+        header h1 {
+            font-size: 48px;
+            line-height: 96px;
+        }
+
+        header h1::before,
+        header h1::after {
+            font-size: 36px;
+        }
+        #vScatter {
+            display: none;
+        }
+        #hScatter {
+            display: block;
+        }
         .contents header {
             max-width: 100%;
         }
@@ -307,6 +419,16 @@
         }
         .contents h3 {
             font-size: 18px;
+        }
+        :global(.country) {
+            scroll-margin-top: calc(200px - 39px);
+        }
+
+        .country h2 {
+            font-size: 24px;
+        }
+        :global(.contents .country.not-voted h2) {
+            font-size: 1.1rem;
         }
     }
 </style>

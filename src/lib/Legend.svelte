@@ -31,7 +31,7 @@
         padding-left: 15px;
         position: relative;
         margin-bottom: 5px;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         line-height: 20px;
     }
     .legend li span {

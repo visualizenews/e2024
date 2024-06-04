@@ -62,49 +62,13 @@ a {
 a:hover {
     color: black;
 }
-header {
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
+.full-width {
+    width: 100vw;
+    position: absolute;
 }
-header h1 {
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 72px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-header h1::after {
-    content: "🗳️"; /* 🗓️🗳️ */
-    display: inline-block;
-    filter: grayscale(100);
-    font-size: 16px;
-    padding-left: 10px;
-    vertical-align: top;
-}
-
-header h1::before {
-    content: "🗳️"; /* 🗓️🗳️ */
-    display: inline-block;
-    filter: grayscale(100);
-    font-size: 16px;
-    padding-right: 10px;
-    vertical-align: top;
-}
-
 @media screen and (min-width: 768px) {
-    #app {
+    #app > div {
         margin: 0 auto;
         max-width: 1000px;
-    }
-    header h1 {
-        font-size: 48px;
-        line-height: 96px;
-    }
-
-    header h1::before,
-    header h1::after {
-        font-size: 36px;
     }
 }
