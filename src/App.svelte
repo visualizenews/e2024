@@ -387,9 +387,12 @@
     @media screen and (min-width: 768px) {
         header h1 {
             font-size: 48px;
-            line-height: 96px;
+            line-height: 72px;
         }
-
+        header h1 span {
+            font-size: 100px;
+            font-weight: 800;
+        }
         header h1::before,
         header h1::after {
             font-size: 36px;
