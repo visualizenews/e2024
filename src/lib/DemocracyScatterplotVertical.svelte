@@ -309,7 +309,7 @@
     .democracy-scatterplot-vertical {
         position: relative;
         width: 100%;
-        height: calc(80vh);
+        height: calc(150vh);
     }
     :global(svg) {
         overflow: visible;

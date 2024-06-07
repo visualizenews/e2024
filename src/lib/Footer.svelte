@@ -42,7 +42,10 @@
                         in Love with Data Visualization.
                     </p>
                 </div>
-                <div class="footer-vn footer-vn-corporate cols">
+                <div
+                    class="footer-vn footer-vn-corporate cols"
+                    style="margin-top: 2rem"
+                >
                     <div>
                         <h3>Contacts</h3>
                         <ul>
