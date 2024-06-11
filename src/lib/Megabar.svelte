@@ -79,15 +79,16 @@
         });
         chart.add(stack);
         if (options.majority) {
-            chart.add(
-                chrt
-                    .xAxis(1)
-                    .orient("top")
-                    .ticks([middle])
-                    .ticksWidth(2)
-                    .ticksLength(8)
-                    .hideAxis(),
-            );
+            // chart.add(
+            //     chrt
+            //         .xAxis(1)
+            //         .orient("top")
+            //         .ticks([middle])
+            //         .ticksWidth(2)
+            //         .ticksLength(8)
+            //         .hideAxis()
+            //         .hideLabels(),
+            // );
 
             chart.add(
                 chrt

@@ -23,7 +23,7 @@
 
 <section id="search">
     <select bind:value={selected}>
-        <option value={null}>Select a country (or just scroll)</option>
+        <option value={null}>Select a country</option>
         {#each Object.values(data.reduce((acc, e) => {
                 acc[e.country] = acc[e.country] ?? { country: e.country, info: e.countryInfo };
                 return acc;
