@@ -103,7 +103,7 @@
                 left: 0,
                 right: 0,
             })
-            .x([0.26, 9.9])
+            .x([1.5, 9.9])
             .y([0, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
@@ -186,7 +186,7 @@
             .add(
                 chrt
                     .verticalRange()
-                    .from(0)
+                    .from(1.5)
                     .to(3.99)
                     .fill("#a8261f")
                     .fillOpacity(0.1)
@@ -203,7 +203,11 @@
                     .add(
                         chrt
                             .labels()
-                            .value((d) => d[0].countryInfo.name)
+                            .value(
+                                (d) =>
+                                    d[0].countryInfo?.short ??
+                                    d[0].countryInfo?.name,
+                            )
                             .valign((d) =>
                                 ["HR", "ID", "ZA", "PL", "FI", "BT"].includes(
                                     d[0].country,
@@ -229,7 +233,7 @@
                         chrt
                             .label()
                             .value("Authoritarian regimes")
-                            .left(2)
+                            .left((1.5 + 3.99) / 2)
                             .offset(0, 5)
                             .top(
                                 Math.max(

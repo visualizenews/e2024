@@ -1,11 +1,20 @@
 <script>
     export let data = [];
     export let options = {};
+
+    const n = 5;
+    let showAll = false;
+    $: sortedData = [...data]
+        .sort((a, b) => b[2] - a[2])
+        .map((d) => `${d[0]}${d[1]}`);
+    $: topN = sortedData.slice(0, n);
+
+    $: console.log("topN", topN);
 </script>
 
 <ul class="legend">
     {#each data.filter((d) => options.withZero || d[1] || d[2] > 0) as d}
-        <li>
+        <li class={topN.includes(`${d[0]}${d[1]}`) || showAll ? "topN" : ""}>
             <span style="background-color:{d[3]}"></span>
             {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
             {d[2]}{options.percentage ? "%" : ""}
@@ -13,6 +22,24 @@
         </li>
     {/each}
 </ul>
+{#if data.length > n}
+    <ul class="legend show-more">
+        <li>
+            <span>{showAll ? "↥" : "↧"}</span><a
+                href="#"
+                on:click={(e) => {
+                    e.preventDefault();
+                }}
+                on:mousedown={(e) => {
+                    e.preventDefault();
+                    showAll = !showAll;
+                }}
+                >Show {showAll ? "less" : "all"}
+                {data[0][0] ? "candidates" : "parties"}</a
+            >
+        </li>
+    </ul>
+{/if}
 
 <style>
     .legend {
@@ -33,6 +60,19 @@
         margin-bottom: 5px;
         font-size: 0.8rem;
         line-height: 20px;
+        display: none;
+    }
+    .legend li.topN {
+        display: inline-block;
+    }
+    .legend.show-more {
+        margin: 0;
+    }
+    .legend.show-more li {
+        display: block;
+    }
+    .legend.show-more li span {
+        font-size: 1.5em;
     }
     .legend li span {
         display: inline-block;

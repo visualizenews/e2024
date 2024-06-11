@@ -11,6 +11,7 @@
     // import { hexgrid } from "d3-hexgrid";
     import { hexbin } from "d3-hexbin";
     import countryNameMapping from "./countryNameMapping.js";
+    import eu from "./eu.js";
 
     export let data;
     export let countries;
@@ -31,9 +32,10 @@
     let projection; //  = geoMollweide();
 
     $: {
-        console.log("world", world);
-        console.log("bins", bins);
-        console.log("data", data);
+        // console.log("world", world);
+        // console.log("bins", bins);
+        // console.log("data", data);
+        // console.log("eu", eu);
         // if (!projection && countries && world && bins?.length && w) {
         // projection = geoHyperelliptical().fitSize([w, (w * 9) / 16], world);
         // projection = geoMollweide().fitSize([width, height], world);
@@ -61,7 +63,9 @@
             .attr("d", xbin.hexagon())
             .attr("fill", (bin) => {
                 const cc = bin?.countryCodes?.[0];
-                const votedStatus = data.find((d) => d.country === cc);
+                const votedStatus = [...data, ...eu].find(
+                    (d) => d.country === cc,
+                );
                 if (votedStatus) {
                     return votedStatus.alreadyVoted ? "#735b00" : "#c4b889";
                 } else {
@@ -132,9 +136,9 @@
                             c2.name.toLowerCase() ===
                             (countryNameMapping[c] || c).toLowerCase(),
                     );
-                    if (!country) {
-                        console.log(c);
-                    }
+                    // if (!country) {
+                    //     console.log(c);
+                    // }
                     return country ? country["alpha-2"] : null;
                 }),
             })),

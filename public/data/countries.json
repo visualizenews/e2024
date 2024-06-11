@@ -1,5 +1,12 @@
 [
   {
+    "name": "European Union",
+    "short": "EU",
+    "alpha-2": "EU",
+    "alpha-3": "EUU",
+    "region": "Europe"
+  },
+  {
     "name": "Afghanistan",
     "alpha-2": "AF",
     "alpha-3": "AFG",
@@ -339,6 +346,7 @@
   },
   {
     "name": "Bolivia (Plurinational State of)",
+    "short": "Bolivia",
     "alpha-2": "BO",
     "alpha-3": "BOL",
     "country-code": "068",
@@ -1366,6 +1374,7 @@
   },
   {
     "name": "Iran (Islamic Republic of)",
+    "short": "Iran",
     "alpha-2": "IR",
     "alpha-3": "IRN",
     "country-code": 364,
@@ -1589,6 +1598,7 @@
   },
   {
     "name": "Lao People's Democratic Republic",
+    "short": "Laos",
     "alpha-2": "LA",
     "alpha-3": "LAO",
     "country-code": 418,
@@ -2382,6 +2392,7 @@
   },
   {
     "name": "Russian Federation",
+    "short": "Russia",
     "alpha-2": "RU",
     "alpha-3": "RUS",
     "country-code": 643,
@@ -2811,6 +2822,7 @@
   },
   {
     "name": "Syrian Arab Republic",
+    "shor": "Syria",
     "alpha-2": "SY",
     "alpha-3": "SYR",
     "country-code": 760,
@@ -2850,6 +2862,7 @@
   },
   {
     "name": "Tanzania, United Republic of",
+    "short": "Tanzania",
     "alpha-2": "TZ",
     "alpha-3": "TZA",
     "country-code": 834,
@@ -3045,6 +3058,7 @@
   },
   {
     "name": "United Kingdom of Great Britain and Northern Ireland",
+    "short": "UK",
     "alpha-2": "GB",
     "alpha-3": "GBR",
     "country-code": 826,
@@ -3058,6 +3072,7 @@
   },
   {
     "name": "United States of America",
+    "short": "USA",
     "alpha-2": "US",
     "alpha-3": "USA",
     "country-code": 840,

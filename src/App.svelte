@@ -7,7 +7,8 @@
     import Megabar from "./lib/Megabar.svelte";
     import Footer from "./lib/Footer.svelte";
     import DemocracyScatterplot from "./lib/DemocracyScatterplot.svelte";
-    import DemocracyScatterplotVertical from "./lib/DemocracyScatterplotVertical.svelte";
+    import DemocracyDotplot from "./lib/DemocracyDotplot.svelte";
+    // import DemocracyScatterplotVerticalWrapper from "./lib/DemocracyScatterplotVerticalWrapper.svelte";
     import Legend from "./lib/Legend.svelte";
     import Map from "./lib/Map.svelte";
 
@@ -34,6 +35,7 @@
             "./data/democracy-index-by-country-2024.json",
         );
         const democracyIndexJSON = await democracyIndexResponse.json();
+        // console.log("democracyIndexJSON", democracyIndexJSON);
         democracyIndex = democracyIndexJSON.reduce((acc, d) => {
             const countryInfo = countries.find((c) => c.name === d.country);
 
@@ -45,6 +47,7 @@
             // }
             acc[countryInfo["alpha-2"]] = {
                 name: d.country,
+                short: d.short,
                 "alpha-2": countryInfo?.["alpha-2"],
                 "alpha-3": countryInfo?.["alpha-3"],
                 democracy_eiu: +d.DemocracyIndex2023,
@@ -52,6 +55,7 @@
 
             return acc;
         }, {});
+        console.log("democracyIndex", democracyIndex);
 
         const runtime = new Runtime();
         const main = runtime.module(define, (name) => {
@@ -144,20 +148,16 @@
                 The following chart juxtaposes the spectrum of democracy,
                 ranging from
                 <b>Authoritarian regimes</b> to <b>Full-fledged democracies</b>,
-                against the variance in election results. Through this lens, we
-                endeavor to unravel the complex interplay between governance
-                structures and the vibrancy of electoral contests.
+                against <b>the variance in election results</b>. Through this
+                lens, we endeavor to unravel the complex interplay between
+                governance structures and the vibrancy of electoral contests.
             </p>
             {#if data.length}
                 <div id="hScatter" style="margin-bottom: 50px;">
                     <DemocracyScatterplot {data} {democracyIndex} {width} />
                 </div>
                 <div id="vScatter" style="margin-bottom: 50px;">
-                    <DemocracyScatterplotVertical
-                        {data}
-                        {democracyIndex}
-                        {width}
-                    />
+                    <DemocracyDotplot {data} {democracyIndex} />
                 </div>
             {/if}
             <p>
@@ -175,11 +175,12 @@
             <h2>All the elections in 2024</h2>
             <p>
                 The <b>Election Calendar</b> allows you to explore elections taking
-                place around the world throughout the year. Organized by date, the
-                calendar provides a comprehensive overview of the democratic processes
-                unfolding across the globe - from remote regions to major metropolises.
-                Use this interactive calendar to stay informed and engaged with the
-                heartbeat of democracy in 2024
+                place around the world throughout the year. The calendar provides
+                a comprehensive overview of the democratic processes unfolding across
+                the globe - from remote regions to major metropolises. We regularly
+                update the calendar with new elections. For example, France recently
+                announced legislative elections following the results of the European
+                Union parliament elections.
             </p>
         </header>
     </section>
@@ -189,8 +190,8 @@
             <p>
                 The following list of results offers insights into the dynamic
                 spectrum of democratic processes worldwide. From closely
-                contested races to decisive victories, delve into the intricate
-                tapestry of political expression and outcomes. Stay tuned as we
+                contested races to decisive victories, explore the intricate
+                landscape of political expression and outcomes. Stay tuned as we
                 update the list with new election results, enriching your
                 understanding of the evolving democratic narrative.
             </p>
@@ -328,7 +329,8 @@
     }
     :global(.country) {
         width: 100%;
-        margin-bottom: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         scroll-margin-top: calc(200px - 70px);
     }
     :global(.country .election) {
@@ -373,6 +375,7 @@
 
     :global(.contents .country.not-voted) {
         font-size: 0.8rem;
+        margin-top: 0;
         margin-bottom: 0;
     }
     :global(.contents .country.not-voted h2) {

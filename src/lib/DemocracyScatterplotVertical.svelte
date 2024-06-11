@@ -1,10 +1,12 @@
 <script>
     import { onMount } from "svelte";
-    import { variance } from "d3-array";
+    import { variance, extent } from "d3-array";
     import * as chrt from "chrt";
     export let data = [];
+    export let allData = [];
     export let democracyIndex = [];
     export let width;
+    export let group;
     let chartNode;
 
     let w, h;
@@ -61,9 +63,49 @@
         },
         {},
     );
+
+    $: allDataWithVariance = allData.reduce(
+        (acc, { country, elections, countryInfo }) => {
+            acc[country] = acc[country] ?? [];
+            elections.forEach((election) => {
+                if (election?.data?.length) {
+                    // console.log(country, election);
+                    // console.log(
+                    //     normalizeElection(
+                    //         election.data,
+                    //         elections?.options?.percentage,
+                    //     ),
+                    // );
+                    // console.log("######");
+
+                    acc[country].push({
+                        country,
+                        countryInfo,
+                        data: election.data,
+                        normalizedData: normalizeElection(
+                            election.data,
+                            elections?.options?.percentage,
+                        ),
+                        variance: variance(
+                            normalizeElection(
+                                election.data,
+                                elections?.options?.percentage,
+                            ),
+                            (d) => {
+                                return d[2];
+                            },
+                        ),
+                    });
+                }
+            });
+            // (d3.variance(elections.data, (party) => party[2]));
+            return acc;
+        },
+        {},
+    );
     // $: console.log("dataWithVariance", dataWithVariance);
     $: maxVariance = Math.max(
-        ...Object.values(dataWithVariance)
+        ...Object.values(allDataWithVariance)
             .filter((d) => d?.[0])
             .map((d) => d[0].variance),
     );
@@ -75,7 +117,6 @@
     onMount(() => {
         // console.log("chrt", chrt);
         const scatterPlot = democracyScatterplot(data);
-        // console.log(bar);
         chartNode.appendChild(scatterPlot);
 
         document.querySelectorAll("g.point-label").forEach((el) =>
@@ -84,21 +125,22 @@
             }),
         );
     });
-    // $: {
-    //     if (data) {
-    //         const scatterPlot = democracyScatterplot(data);
-    //         // console.log(bar);
-    //         if (chartNode) {
-    //             chartNode.appendChild(scatterPlot);
-    //         }
-    //     }
-    // }
+
     $: {
-        // console.log("width", width);
+        // console.log("SET SIZE", width);
         chart?.size(w, h);
+        // if (chartNode) {
+        //     const scatterPlot = democracyScatterplot(data);
+        //     chartNode.appendChild(scatterPlot);
+        // }
     }
 
     const democracyScatterplot = (data, options = {}) => {
+        const democracyIndexRange = extent(
+            data,
+            (d) => d.democracy.democracy_eiu,
+        );
+        console.log("democracyIndexRange", democracyIndexRange);
         chart
             .size(w || width, h || width)
             .margins({
@@ -110,7 +152,9 @@
                 bottom: 0,
                 left: 15,
             })
-            .y([0.26, 9.9])
+            // .y([0.26, 9.9])
+            //.y(group.range)
+            .y(democracyIndexRange)
             .x([0, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
@@ -133,14 +177,7 @@
                             .axisTitle("← Narrow margin")
                             .align("right")
                             .valign("bottom")
-                            .offset({ x: 0, y: 35 }),
-                    )
-                    .add(
-                        chrt
-                            .axisTitle("← Narrow margin")
-                            .align("right")
-                            .valign("top")
-                            .offset({ x: 0, y: -10 }),
+                            .offset({ x: 0, y: 15 }),
                     ),
             )
             .add(
@@ -153,49 +190,15 @@
                             .axisTitle("Landslide victory →")
                             .align("left")
                             .valign("bottom")
-                            .offset({ x: 0, y: 35 }),
-                    )
-                    .add(
-                        chrt
-                            .axisTitle("Landslide victory →")
-                            .align("left")
-                            .valign("top")
-                            .offset({ x: 0, y: -10 }),
+                            .offset({ x: 0, y: 15 }),
                     ),
             )
             .add(
                 chrt
                     .horizontalRange()
-                    .from(8)
-                    .to(10)
-                    .fill("#2f5cd5")
-                    .fillOpacity(0.1)
-                    .stroke("none"),
-            )
-            .add(
-                chrt
-                    .horizontalRange()
-                    .from(6)
-                    .to(7.99)
-                    .fill("#6bd2df")
-                    .fillOpacity(0.1)
-                    .stroke("none"),
-            )
-            .add(
-                chrt
-                    .horizontalRange()
-                    .from(4)
-                    .to(5.99)
-                    .fill("#fad45d")
-                    .fillOpacity(0.1)
-                    .stroke("none"),
-            )
-            .add(
-                chrt
-                    .horizontalRange()
-                    .from(0)
-                    .to(3.99)
-                    .fill("#a8261f")
+                    .from(democracyIndexRange[0])
+                    .to(democracyIndexRange[1])
+                    .fill(group.color)
                     .fillOpacity(0.1)
                     .stroke("none"),
             )
@@ -246,51 +249,14 @@
                     .add(
                         chrt
                             .label()
-                            .value("Authoritarian regimes")
-                            .top(4)
-                            .offset(-10, 5)
-                            .left(maxVariance * 1.1)
-                            .align("end")
+                            .value(group.name)
+                            .top(group.range[1])
+                            .offset(-10, -20)
+                            .left(0)
+                            .align("start")
                             .valign("bottom")
                             .class("democracy-rank")
-                            .fill("#a8261f"),
-                    )
-                    .add(
-                        chrt
-                            .label()
-                            .value("Hybrid regimes")
-                            .top(6)
-                            .left(maxVariance * 1.1)
-                            .offset(-10, 5)
-                            .align("end")
-                            .valign("bottom")
-                            .class("democracy-rank")
-                            .fill("rgb(175 141 33)"),
-                    )
-                    .add(
-                        chrt
-                            .label()
-                            .value("Flawed democracies")
-                            .top(8)
-                            .offset(-10, 5)
-                            .left(maxVariance * 1.1)
-                            .align("end")
-                            .valign("bottom")
-                            .class("democracy-rank")
-                            .fill("rgb(71 172 184)"),
-                    )
-                    .add(
-                        chrt
-                            .label()
-                            .value("Full democracies")
-                            .top(10)
-                            .offset(-10, 5)
-                            .left(maxVariance * 1.1)
-                            .align("end")
-                            .valign("bottom")
-                            .class("democracy-rank")
-                            .color("#2f5cd5")
-                            .fill("#2f5cd5"),
+                            .fill(group.color),
                     ),
             );
         return chart.node();
@@ -309,7 +275,7 @@
     .democracy-scatterplot-vertical {
         position: relative;
         width: 100%;
-        height: calc(150vh);
+        height: calc(60vh);
     }
     :global(svg) {
         overflow: visible;
