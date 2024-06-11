@@ -14,11 +14,7 @@
     $: {
         // console.log("SELECTED", selected);
         if (selected) {
-            window.history.pushState(
-                selected,
-                "country",
-                `/e2024/#${selected}`,
-            );
+            window.history.pushState(selected, "country", `/#${selected}`);
             scrollIntoView(selected);
         }
     }
