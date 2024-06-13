@@ -165,9 +165,12 @@
                 This visual narrative transcends borders, spanning continents
                 and encompassing diverse political landscapes. From the tightly
                 controlled elections of authoritarian strongholds like Russia
-                and Cambodia to the closeness witnessed in democratic stalwarts
-                like Finland and Taiwan, each data point serves as a testament
-                to the nuanced dynamics shaping our global electoral fabric.
+                and Cambodia (top left of the chart, showing a low score in the
+                democracy index and landslide victories) to the closeness
+                witnessed in democratic stalwarts like Finland and Taiwan
+                (bottom right, showing high democracy index and tight
+                elections), each data point serves as a testament to the nuanced
+                dynamics shaping our global electoral fabric.
             </p>
         </header>
     </section>
@@ -286,6 +289,63 @@
                 country's democratic institutions, we aim to give users a
                 well-rounded understanding of the electoral landscape in 2024.
             </p>
+            <h2></h2>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/The_Economist_Democracy_Index#cite_note-index2015-6"
+                    target="_blank">The Economist Democracy Index</a
+                >
+                is published by the
+                <a
+                    href="https://en.wikipedia.org/wiki/Economist_Group"
+                    target="_blank">Economist Group</a
+                >, and it is an index measuring the quality of democracy across
+                the world. The index categorizes each country into one of four
+                regime types: full democracies, flawed democracies, hybrid
+                regimes, and authoritarian regimes as follow:
+            </p>
+            <ul class="democracy-index">
+                <li>
+                    <b>Full democracies</b> are nations where civil liberties and
+                    fundamental political freedoms are not only respected but also
+                    reinforced by a political culture conducive to the thriving of
+                    democratic principles. These nations have a valid system of governmental
+                    checks and balances, an independent judiciary whose decisions
+                    are enforced, governments that function adequately, and diverse
+                    and independent media. These nations have only limited problems
+                    in democratic functioning.
+                </li>
+                <li>
+                    <b>Flawed democracies</b> are nations where elections are fair
+                    and free and basic civil liberties are honoured but may have
+                    issues (e.g. media freedom infringement and minor suppression
+                    of political opposition and critics). These nations can have
+                    significant faults in other democratic aspects, including underdeveloped
+                    political culture, low levels of participation in politics, and
+                    issues in the functioning of governance.
+                </li>
+                <li>
+                    <b>Hybrid regimes</b> are nations with regular electoral frauds,
+                    preventing them from being fair and free democracies. These nations
+                    commonly have governments that apply pressure on political opposition,
+                    non-independent judiciaries, widespread corruption, harassment
+                    and pressure placed on the media, anaemic rule of law, and more
+                    pronounced faults than flawed democracies in the realms of underdeveloped
+                    political culture, low levels of participation in politics, and
+                    issues in the functioning of governance.
+                </li>
+                <li>
+                    <b>Authoritarian regimes</b> are nations where political pluralism
+                    is nonexistent or severely limited. These nations are often absolute
+                    monarchies or dictatorships, may have some conventional institutions
+                    of democracy but with meagre significance, infringements and
+                    abuses of civil liberties are commonplace, elections (if they
+                    take place) are not fair or free (including sham elections),
+                    the media is often state-owned or controlled by groups associated
+                    with the ruling regime, the judiciary is not independent, and
+                    censorship and suppression of governmental criticism are commonplace
+                </li>
+            </ul>
         </header>
     </section>
 </div>
@@ -407,6 +467,13 @@
     }
     :global(.contents .country.not-voted .election) {
         margin-bottom: 0.5rem;
+    }
+
+    ul.democracy-index {
+        list-style-position: inside;
+    }
+    ul.democracy-index li {
+        margin: 0.5em 0;
     }
 
     @media screen and (min-width: 768px) {

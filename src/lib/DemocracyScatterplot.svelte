@@ -25,15 +25,6 @@
             acc[country] = acc[country] ?? [];
             elections.forEach((election) => {
                 if (election?.data?.length) {
-                    // console.log(country, election);
-                    // console.log(
-                    //     normalizeElection(
-                    //         election.data,
-                    //         elections?.options?.percentage,
-                    //     ),
-                    // );
-                    // console.log("######");
-
                     acc[country].push({
                         country,
                         countryInfo,

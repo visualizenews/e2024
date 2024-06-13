@@ -115,8 +115,8 @@
             //.size(width, (width * 3) / 4)
             .size(w, h)
             .margins({ left: 0, right: 0, bottom: 0, top: 0 })
-            .padding({ top: 20, left: 10 })
-            .x([0, maxVariance * 1.1])
+            .padding({ top: 20, right: 10 })
+            .x([maxVariance * 1.1, 0])
             .y({ scale: "ordinal" })
             .add(
                 chrt
@@ -136,18 +136,18 @@
                     .hideLabels()
                     .add(
                         chrt
-                            .axisTitle("← Narrow margin")
+                            .axisTitle("← Landslide victory")
                             .align("left")
                             .valign("bottom")
-                            .fill("#666")
+                            .fill("#999")
                             .offset({ x: 0, y: 0 }),
                     )
                     .add(
                         chrt
-                            .axisTitle("Landslide victory →")
+                            .axisTitle("Narrow margin →")
                             .align("right")
                             .valign("bottom")
-                            .fill("#666")
+                            .fill("#999")
                             .offset({ x: 0, y: 0 }),
                     ),
             )
@@ -160,18 +160,18 @@
                     .color("#666")
                     .add(
                         chrt
-                            .axisTitle("← Narrow margin")
+                            .axisTitle("← Landslide victory")
                             .align("left")
                             .valign("top")
-                            .fill("#666")
+                            .fill("#999")
                             .offset({ x: 0, y: 10 }),
                     )
                     .add(
                         chrt
-                            .axisTitle("Landslide victory →")
+                            .axisTitle("Narrow margin →")
                             .align("right")
                             .valign("top")
-                            .fill("#666")
+                            .fill("#999")
                             .offset({ x: 0, y: 10 }),
                     ),
             )
