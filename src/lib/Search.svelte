@@ -1,6 +1,9 @@
 <script>
+    import { afterUpdate } from "svelte";
+
     export let data = [];
     export let selected;
+    let previous = null;
 
     function scrollIntoView(target) {
         if (!target) return;
@@ -13,11 +16,22 @@
 
     $: {
         // console.log("SELECTED", selected);
-        if (selected) {
-            window.history.pushState(selected, "country", `/#${selected}`);
+        if (selected && previous !== selected && data.length) {
+            previous = selected;
+            if (window.history.state !== selected) {
+                window.history.pushState(selected, "country", `/#${selected}`);
+            }
             scrollIntoView(selected);
         }
     }
+
+    // afterUpdate(() => {
+    //     console.log("SEARCH", "afterUpdate", selected, data);
+    //     if (selected && previous !== selected && data.length) {
+    //         previous = selected;
+    //         scrollIntoView(selected);
+    //     }
+    // });
     // $: console.log("SEARCH", data);
 </script>
 

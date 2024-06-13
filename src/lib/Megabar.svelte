@@ -5,6 +5,7 @@
     export let data = [];
     export let options = {};
     export let width;
+    export let callback;
     let h = 120;
 
     let chartNode;
@@ -116,6 +117,9 @@
                             .offset(0, -(h / 2) + 12),
                     ),
             );
+        }
+        if (callback) {
+            callback(chartNode);
         }
         return chart.node();
     };

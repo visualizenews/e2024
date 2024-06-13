@@ -24,11 +24,9 @@
     // $: active = null;
 
     // $: console.log("ACTIVE", active);
+    const preSelectedCountry = window.location.hash?.replace("#", "");
 
     onMount(async () => {
-        // window.onpopstate = history.onpushstate = function (e) {
-        //     console.log("PUSH STATE!!!!", e);
-        // };
         const countriesResponse = await fetch("./data/countries.json");
         countries = await countriesResponse.json();
 
@@ -64,37 +62,35 @@
                 return {
                     pending() {},
                     fulfilled(value) {
-                        data = value;
-                        // console.log("data", data);
-
-                        data = Object.entries(value).map((d) => ({
+                        // data = value;
+                        const _data = Object.entries(value).map((d) => ({
                             country: d[0],
                             elections: d[1],
                             countryInfo: countries.find(
                                 (c) => c["alpha-2"] === d[0],
                             ),
                         }));
-                        // console.log("App data", data);
-                        calendarData = data.reduce((acc, d) => {
-                            acc = [
-                                ...acc,
-                                ...d.elections.map((election) => {
-                                    return {
-                                        date: election.date,
-                                        country: d.country,
-                                        countryInfo: d.countryInfo,
-                                        hasData: election?.data?.length,
-                                        alreadyVoted:
-                                            d.elections[0]?.data?.length !=
-                                            null,
-                                    };
-                                }),
-                            ];
-                            // console.log(country, elections);
+                        [data, calendarData] = [
+                            _data,
+                            _data.reduce((acc, d) => {
+                                acc = [
+                                    ...acc,
+                                    ...d.elections.map((election) => {
+                                        return {
+                                            date: election.date,
+                                            country: d.country,
+                                            countryInfo: d.countryInfo,
+                                            hasData: election?.data?.length,
+                                            alreadyVoted:
+                                                d.elections[0]?.data?.length !=
+                                                null,
+                                        };
+                                    }),
+                                ];
 
-                            return acc;
-                        }, []);
-                        // console.log("calendarData", calendarData);
+                                return acc;
+                            }, []),
+                        ];
                     },
                     rejected(error) {
                         console.error(`${name}: rejected`, error);
@@ -102,6 +98,29 @@
                 };
         });
     });
+
+    let count = 0;
+    /** @type {import('svelte/action').Action}  */
+    function foo(node, country) {
+        // the node has been mounted in the DOM
+        // console.log(
+        //     "FOO",
+        //     country,
+        //     count,
+        //     data.filter((d) => d.elections[0].data?.length),
+        // );
+        const l = data.filter((d) => d.elections[0].data?.length).length;
+        count++;
+        if (count >= l) {
+            selected = preSelectedCountry !== "" ? preSelectedCountry : null;
+        }
+
+        return {
+            destroy() {
+                // the node has been removed from the DOM
+            },
+        };
+    }
 </script>
 
 <div>
@@ -247,6 +266,7 @@
                                     country: country.country,
                                 }}
                                 {width}
+                                callback={(node) => foo(node, country.country)}
                             />
                             <Legend
                                 data={election.data}
