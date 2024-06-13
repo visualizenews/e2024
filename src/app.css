@@ -50,7 +50,7 @@ html {
 body {
     background: var(--lighter);
     color: var(--darkest);
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
