@@ -113,7 +113,7 @@
                             .value(
                                 `${options.majorityText ?? middle} for a majority`,
                             )
-                            .offset(0, -(h / 2) + 5),
+                            .offset(0, -(h / 2) + 12),
                     ),
             );
         }
