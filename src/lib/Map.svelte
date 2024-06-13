@@ -155,20 +155,22 @@
 </script>
 
 <div class="election-map" bind:clientWidth={w} bind:clientHeight={h}>
-    <svg
-        bind:this={svg}
-        width={w}
-        height={w / 1.8}
-        viewBox={`${width * 0.15} 0 ${width * 0.85} ${height * 0.85}`}
-    ></svg>
-    <ul class="color-key">
-        <li>
-            <span style="background-color: #735b00;" />Already voted
-        </li>
-        <li>
-            <span style="background-color: #c4b889;" />Voting later in 2024
-        </li>
-    </ul>
+    {#if w}
+        <svg
+            bind:this={svg}
+            width={w}
+            height={w / 1.8}
+            viewBox={`${width * 0.15} 0 ${width * 0.85} ${height * 0.85}`}
+        ></svg>
+        <ul class="color-key">
+            <li>
+                <span style="background-color: #735b00;" />Already voted
+            </li>
+            <li>
+                <span style="background-color: #c4b889;" />Voting later in 2024
+            </li>
+        </ul>
+    {/if}
 </div>
 
 <style>

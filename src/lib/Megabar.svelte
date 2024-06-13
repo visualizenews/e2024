@@ -25,6 +25,7 @@
 
     const megaBar = (data, options = {}) => {
         // console.log(options);
+        const total = data.reduce((acc, d) => d[2] + acc, 0);
         const middle =
             Math.floor(data.reduce((acc, d) => d[2] + acc, 0) / 2) + 1;
         chart
@@ -37,8 +38,13 @@
             .x({ domain: [0, null] })
             .y({ scale: "ordinal" });
         const stack = chrt.stack().orientation("left");
+        const overlapFilter = (d, i, arr) => {
+            return width > 600
+                ? d.anchorPoints?.width > 20
+                : d.anchorPoints?.width > 50;
+        };
         data.filter((d) => d[2]).forEach((party) => {
-            const labelFilter = options.labelFilter ?? (() => true);
+            const labelFilter = options.labelFilter || (() => true);
             stack.add(
                 chrt
                     .bars()
@@ -58,24 +64,15 @@
                         chrt
                             .labels()
                             .filter((d) => labelFilter(d))
+                            .filter(overlapFilter)
                             .value(
                                 (d) => `${d.x}${options.percentage ? "%" : ""}`,
                             )
                             .relativePosition([0.5, party[4] ? 0 : 1])
                             .align("middle")
                             .valign(party[4] ? "top" : "bottom"),
-                        // .color(party?.[2] ?? '#000')
                     ),
             );
-            // .add(
-            //   chrt.labels()
-            //   .value(d => d.party)
-            //   .relativePosition([0.5, 0])
-            //   .align('middle')
-            //   .valign('top')
-            //   .color('#000')
-            //   .class('choco-labels'))
-            // )
         });
         chart.add(stack);
         if (options.majority) {

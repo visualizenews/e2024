@@ -239,7 +239,10 @@
                         {:else}
                             <Megabar
                                 data={election.data}
-                                options={election.options}
+                                options={{
+                                    ...election.options,
+                                    country: country.country,
+                                }}
                                 {width}
                             />
                             <Legend
