@@ -9,12 +9,18 @@
         .map((d) => `${d[0]}${d[1]}`);
     $: topN = sortedData.slice(0, n);
 
-    $: console.log("topN", topN);
+    $: filteredData = data.filter((d) => options.withZero || d[1] || d[2] > 0);
 </script>
 
 <ul class="legend">
-    {#each data.filter((d) => options.withZero || d[1] || d[2] > 0) as d}
-        <li class={topN.includes(`${d[0]}${d[1]}`) || showAll ? "topN" : ""}>
+    {#each filteredData as d}
+        <li
+            class={topN.includes(`${d[0]}${d[1]}`) ||
+            showAll ||
+            topN.length >= filteredData.length - 2
+                ? "topN"
+                : ""}
+        >
             <span style="background-color:{d[3]}"></span>
             {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
             {d[2]}{options.percentage ? "%" : ""}
@@ -22,7 +28,7 @@
         </li>
     {/each}
 </ul>
-{#if data.length > n}
+{#if filteredData.length > n && topN.length < filteredData.length - 2}
     <ul class="legend show-more">
         <li>
             <span>{showAll ? "↥" : "↧"}</span><a

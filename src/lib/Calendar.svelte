@@ -35,7 +35,7 @@
     };
 
     const today = getDay(getDayNumberOfTheYear(new Date()) - 1);
-    $: console.log("TODAY", today);
+    // $: console.log("TODAY", today);
     $: calendarDays = Array(numOfDays)
         .fill(0)
         .map((_, i) => {
@@ -263,10 +263,13 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
     }
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 641px) {
+        #calendar {
+            --monthHeight: 22px;
+        }
+    }
+    @media screen and (min-width: 641px) {
         #calendar > div {
-            /*overflow-x: hidden;*/
             overflow: visible;
         }
         #calendar ul.days:not(.day-names) {

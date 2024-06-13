@@ -11,6 +11,7 @@
     // import DemocracyScatterplotVerticalWrapper from "./lib/DemocracyScatterplotVerticalWrapper.svelte";
     import Legend from "./lib/Legend.svelte";
     import Map from "./lib/Map.svelte";
+    import { getDemocracyGroup } from "./lib/democracyGroups.js";
 
     let data = [];
     let calendarData = [];
@@ -55,7 +56,7 @@
 
             return acc;
         }, {});
-        console.log("democracyIndex", democracyIndex);
+        // console.log("democracyIndex", democracyIndex);
 
         const runtime = new Runtime();
         const main = runtime.module(define, (name) => {
@@ -125,7 +126,7 @@
             </p>
         </header>
     </section>
-    <section id="map" class="contents">
+    <section id="map" class="contents no-padding">
         <Map data={calendarData} {countries} />
     </section>
     <section id="introP2" class="contents">
@@ -199,12 +200,23 @@
     </section>
     <Search data={calendarData} {selected} />
     <section id="charts" class="contents">
-        {#each data.sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date)) as country}
+        {#each data
+            .sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date))
+            .map( (d) => ({ ...d, group: getDemocracyGroup(democracyIndex[d.country]?.democracy_eiu) }), ) as country}
             <div
                 class={`country ${(country?.elections[0]?.data?.length ?? 0) === 0 ? "not-voted" : "voted"}`}
                 id={country.country}
             >
-                <h2>{country.countryInfo.name}</h2>
+                <h2>
+                    {country.countryInfo.name}
+                    <span
+                        ><b style="color:{country.group?.color}"
+                            >{country?.group?.singularName ?? ""}</b
+                        >
+                        <!--({democracyIndex[country.country]?.democracy_eiu} democracy index)--></span
+                    >
+                </h2>
+
                 {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
                     <div class="election" bind:offsetWidth={width}>
                         <h3 id={`${country.country}${i ? i : ""}`}>
@@ -283,7 +295,7 @@
         /*align-items: center;*/
     }
     header b.highlight {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     header h1 {
@@ -324,6 +336,9 @@
         padding: 10px;
         position: relative;
     }
+    .no-padding {
+        padding: 0 !important;
+    }
     #charts {
         flex-direction: column;
     }
@@ -349,6 +364,11 @@
     .country h2 {
         font-size: 24px;
     }
+    .country h2 span {
+        margin-top: 8px;
+        font-size: 12px;
+        display: block;
+    }
 
     .contents h3 {
         font-size: 14px;
@@ -358,9 +378,7 @@
     .contents header {
         max-width: 600px;
     }
-    .contents header p {
-        margin-bottom: 2rem;
-    }
+
     .election p.notes {
         font-style: italic;
         margin-top: 20px;
@@ -368,6 +386,7 @@
 
     #vScatter {
         display: block;
+        margin-top: 2rem;
     }
     #hScatter {
         display: none;
@@ -391,6 +410,9 @@
         header h1 {
             font-size: 48px;
             line-height: 72px;
+        }
+        .contents header p {
+            margin-bottom: 1rem;
         }
         header h1 span {
             font-size: 100px;

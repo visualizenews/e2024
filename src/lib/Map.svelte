@@ -26,7 +26,7 @@
     let bins;
 
     let width = 960;
-    let height = 500;
+    let height = width / 2;
     let svg;
 
     let projection; //  = geoMollweide();
@@ -44,7 +44,7 @@
 
         const xbin = hexbin()
             // .size([w, (w * 9) / 16])
-            .size([width, height])
+            .size([w, w / 2])
             .radius(3)
             .x((d) => d.projection[0])
             .y((d) => d.projection[1]);
@@ -158,7 +158,7 @@
     <svg
         bind:this={svg}
         width={w}
-        {height}
+        height={w / 1.8}
         viewBox={`${width * 0.15} 0 ${width * 0.85} ${height * 0.85}`}
     ></svg>
     <ul class="color-key">
@@ -174,21 +174,22 @@
 <style>
     .election-map {
         width: 100%;
-        height: 200px;
+        height: fit-content;
+        max-height: 90vh;
         overflow: visible;
         position: relative;
     }
     .election-map svg {
-        position: absolute;
-        top: -190px;
+        /*position: absolute;*/
     }
     .color-key {
-        position: absolute;
+        position: relative;
         bottom: 0;
         left: 0;
         list-style: none;
         padding: 0;
         margin: 0;
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -217,8 +218,9 @@
             top: auto;
         }
         .color-key {
-            bottom: 100px;
+            bottom: 20px;
             flex-direction: column;
+            position: absolute;
         }
     }
 </style>

@@ -2,34 +2,12 @@
     import { onMount } from "svelte";
     import { variance } from "d3-array";
     import * as chrt from "chrt";
+    import democracyGroups from "./democracyGroups.js";
     export let data = [];
     export let democracyIndex = [];
     let chartNode;
 
     let w, h;
-
-    const democracyGroups = [
-        {
-            name: "Full democracies",
-            range: [8, 10],
-            color: "#00a651",
-        },
-        {
-            name: "Flawed democracies",
-            range: [6, 8],
-            color: "#f9a700",
-        },
-        {
-            name: "Hybrid regimes",
-            range: [4, 6],
-            color: "#f9a700",
-        },
-        {
-            name: "Authoritarian regimes",
-            range: [0, 4],
-            color: "#ed1c24",
-        },
-    ];
 
     function normalizeElection(data, percentage) {
         if (percentage) {
@@ -85,7 +63,7 @@
         },
         {},
     );
-    $: console.log("democracyDotPlot dataWithVariance", dataWithVariance);
+    // $: console.log("democracyDotPlot dataWithVariance", dataWithVariance);
     $: maxVariance = Math.max(
         ...Object.values(dataWithVariance)
             .filter((d) => d?.[0])
@@ -130,7 +108,7 @@
     $: {
         chart?.size(w, h);
     }
-    $: console.log("Democracy DOTPOLOT", data);
+    // $: console.log("Democracy DOTPOLOT", data);
 
     const democracyScatterplot = (data, options = {}) => {
         chart

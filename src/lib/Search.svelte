@@ -36,7 +36,7 @@
 <style>
     #search {
         position: sticky;
-        top: 133px;
+        top: 129px;
         margin-top: 0;
         z-index: 99999;
         padding: 0 10px;
@@ -61,6 +61,11 @@
         background-repeat: no-repeat;
         background-position-x: 100%;
         background-position-y: 5px;
+    }
+    @media screen and (min-width: 641px) {
+        #search {
+            top: 118px;
+        }
     }
     @media screen and (min-width: 768px) {
         #search {

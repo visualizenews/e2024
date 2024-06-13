@@ -82,19 +82,7 @@
             }),
         );
     });
-    // $: {
-    //     if (data) {
-    //         const scatterPlot = democracyScatterplot(data);
-    //         // console.log(bar);
-    //         if (chartNode) {
-    //             chartNode.appendChild(scatterPlot);
-    //         }
-    //     }
-    // }
-    $: {
-        // console.log("width", width);
-        chart?.size(width, (width * 3) / 4);
-    }
+    $: chart?.size(width, (width * 3) / 4);
 
     const democracyScatterplot = (data, options = {}) => {
         chart
