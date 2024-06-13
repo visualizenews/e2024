@@ -56,7 +56,7 @@
                                 >
                             </li>
                             <li>
-                                Twitter: <a
+                                X/Twitter: <a
                                     href="https://twitter.com/visualizenews"
                                     target="_twitter">@visualizenews</a
                                 >

@@ -289,7 +289,6 @@
                 country's democratic institutions, we aim to give users a
                 well-rounded understanding of the electoral landscape in 2024.
             </p>
-            <h2></h2>
             <p>
                 <a
                     href="https://en.wikipedia.org/wiki/The_Economist_Democracy_Index#cite_note-index2015-6"
@@ -346,6 +345,27 @@
                     censorship and suppression of governmental criticism are commonplace
                 </li>
             </ul>
+        </header>
+    </section>
+    <section id="charts" class="contents">
+        <header>
+            <h2>Tech stack</h2>
+            <p>
+                Built with <a href="https://svelte.dev/" target="_blank"
+                    >Svelte</a
+                >.<br /><br />All charts built with
+                <b>chrt, <i>a spontaneous approach to chart creation</i>.</b>
+                <b>chrt</b>
+                is still under development but we like to use it in our projects.
+                If you want to know more about it, visit our
+                <a
+                    href="https://observablehq.com/@chrt/introducing-chrt"
+                    target="_blank">Observable Collection</a
+                >.<br /><br />We love Observable, and for this project we have
+                initially experimented the <i>megabar view</i> in a notebook. The
+                election data is collected from Wikipedia and published in dedicated
+                notebook where the data is smoothly flowing directly to this page.
+            </p>
         </header>
     </section>
 </div>
