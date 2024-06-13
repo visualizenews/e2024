@@ -1,8 +1,9 @@
 <script>
     export let data = [];
     export let options = {};
+    export let width;
 
-    const n = 5;
+    $: n = width > 641 ? 8 : 5;
     let showAll = false;
     $: sortedData = [...data]
         .sort((a, b) => b[2] - a[2])
@@ -21,10 +22,16 @@
                 ? "topN"
                 : ""}
         >
-            <span style="background-color:{d[3]}"></span>
-            {d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}
-            {d[2]}{options.percentage ? "%" : ""}
-            {options.withPerc ? ` (${d[5]}%)` : ""}
+            <div class="color-key">
+                <span style="background-color:{d[3]}"></span>
+            </div>
+            <div class="description">
+                <span class="value"
+                    >{d[2]}{options.percentage ? "%" : ""}
+                    <i>{options.withPerc ? `${d[5]}%` : ""}</i></span
+                >
+                <span>{d[1]}{d[0] && d[1] !== d[0] ? `(${d[0]})` : ""}</span>
+            </div>
         </li>
     {/each}
 </ul>
@@ -60,16 +67,19 @@
         margin-bottom: 0;
     }
     .legend li {
-        margin-right: 10px;
-        padding-left: 15px;
+        margin-right: 20px;
+        padding-left: 0;
         position: relative;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 0.8rem;
-        line-height: 20px;
+        line-height: 15px;
         display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
     }
     .legend li.topN {
-        display: inline-block;
+        display: flex;
     }
     .legend.show-more {
         margin: 0;
@@ -80,15 +90,33 @@
     .legend.show-more li span {
         font-size: 1.5em;
     }
-    .legend li span {
+    .legend li .color-key span {
         display: inline-block;
-        width: 10px;
-        height: 20px;
+        width: 7px;
+        min-width: 7px;
+        height: 100%;
         border-radius: 2px;
         margin-right: 3px;
-        position: absolute;
+        position: relative;
         left: 0;
-        line-height: 20px;
+    }
+
+    .legend li div {
+        display: flex;
+        flex-direction: column;
+    }
+    .legend li div.description {
+        max-width: calc(100% - 10px);
+        height: fit-content;
+    }
+    .legend li div.description span.value {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .legend li div.description span.value i {
+        font-size: 0.8rem;
+        font-weight: normal;
+        font-style: normal;
     }
     @media screen and (min-width: 768px) {
         .legend {
@@ -96,9 +124,13 @@
             flex-wrap: wrap;
         }
         .legend li {
-            white-space: nowrap;
             font-size: 0.8rem;
-            margin-bottom: 15px;
+            line-height: 20px;
+            margin-bottom: 10px;
+            min-width: 22%;
+        }
+        .legend li div.description {
+            max-width: 200px;
         }
     }
 </style>

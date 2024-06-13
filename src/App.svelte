@@ -271,6 +271,7 @@
                             <Legend
                                 data={election.data}
                                 options={election.options}
+                                {width}
                             />
                             {#if election.notes}
                                 <p class="notes">{election.notes}</p>
