@@ -64,9 +64,10 @@
                         chrt
                             .labels()
                             .filter((d) => labelFilter(d))
-                            .filter(overlapFilter)
-                            .value(
-                                (d) => `${d.x}${options.percentage ? "%" : ""}`,
+                            .value((d, i, arr) =>
+                                overlapFilter(d, i, arr)
+                                    ? `${d.x}${options.percentage ? "%" : ""}`
+                                    : "",
                             )
                             .relativePosition([0.5, party[4] ? 0 : 1])
                             .align("middle")
