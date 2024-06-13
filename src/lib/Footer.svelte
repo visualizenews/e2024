@@ -152,9 +152,6 @@
         text-align: left;
         width: auto;
     }
-    #footer-vn {
-        margin-top: 20px;
-    }
     #footer .sources,
     #footer .cols {
         margin-bottom: 40px;

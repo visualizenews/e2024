@@ -88,7 +88,7 @@
         "PT",
         "ID",
         "ZA",
-        // "SK",
+        "AZ",
         "KH",
     ];
 
@@ -115,8 +115,8 @@
             //.size(width, (width * 3) / 4)
             .size(w, h)
             .margins({ left: 0, right: 0, bottom: 0, top: 0 })
-            .padding({ top: 20, right: 10 })
-            .x([maxVariance * 1.1, 0])
+            .padding({ top: 20, left: 10 })
+            .x([0, maxVariance * 1.1])
             .y({ scale: "ordinal" })
             .add(
                 chrt
@@ -136,7 +136,7 @@
                     .hideLabels()
                     .add(
                         chrt
-                            .axisTitle("← Landslide victory")
+                            .axisTitle("← Narrow margin")
                             .align("left")
                             .valign("bottom")
                             .fill("#999")
@@ -144,7 +144,7 @@
                     )
                     .add(
                         chrt
-                            .axisTitle("Narrow margin →")
+                            .axisTitle("Landslide victory →")
                             .align("right")
                             .valign("bottom")
                             .fill("#999")
@@ -160,7 +160,7 @@
                     .color("#666")
                     .add(
                         chrt
-                            .axisTitle("← Landslide victory")
+                            .axisTitle("← Narrow margin")
                             .align("left")
                             .valign("top")
                             .fill("#999")
@@ -168,7 +168,7 @@
                     )
                     .add(
                         chrt
-                            .axisTitle("Narrow margin →")
+                            .axisTitle("Landslide victory →")
                             .align("right")
                             .valign("top")
                             .fill("#999")
@@ -221,14 +221,14 @@
                             .offset(0, 10)
                             .align("middle")
                             .valign((d) =>
-                                ["KM", "MX", "FI", "PT", "ID"].includes(
+                                ["KM", "MX", "FI", "PT", "ID", "BY"].includes(
                                     d[0].country,
                                 )
                                     ? "top"
                                     : "bottom",
                             )
                             .offset(0, (d) =>
-                                ["KM", "MX", "FI", "PT", "ID"].includes(
+                                ["KM", "MX", "FI", "PT", "ID", "BY"].includes(
                                     d[0].country,
                                 )
                                     ? -7

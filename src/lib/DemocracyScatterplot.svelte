@@ -283,8 +283,8 @@
     :global(.democracy-rank) {
         font-size: 14px;
     }
-    :global(g.point-label:hover text) {
+    /*:global(g.point-label:hover text) {
         font-weight: bold;
         cursor: pointer;
-    }
+        }*/
 </style>

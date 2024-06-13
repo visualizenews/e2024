@@ -184,12 +184,12 @@
                 This visual narrative transcends borders, spanning continents
                 and encompassing diverse political landscapes. From the tightly
                 controlled elections of authoritarian strongholds like Russia
-                and Cambodia (top left of the chart, showing a low score in the
-                democracy index and landslide victories) to the closeness
-                witnessed in democratic stalwarts like Finland and Taiwan
-                (bottom right, showing high democracy index and tight
-                elections), each data point serves as a testament to the nuanced
-                dynamics shaping our global electoral fabric.
+                and Cambodia (showing a low score in the democracy index with
+                large victories from the governing parties) to the closeness
+                witnessed in democratic stalwarts like Finland and Taiwan (high
+                democracy index and tight election result), each data point
+                serves as a testament to the nuanced dynamics shaping our global
+                electoral fabric.
             </p>
         </header>
     </section>
@@ -543,9 +543,6 @@
             max-width: 100%;
         }
         header b.highlight {
-            font-size: 28px;
-        }
-        header span.highlight {
             font-size: 28px;
         }
         header p {
