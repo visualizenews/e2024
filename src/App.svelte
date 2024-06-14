@@ -242,10 +242,15 @@
                 {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
                     <div class="election" bind:offsetWidth={width}>
                         <h3 id={`${country.country}${i ? i : ""}`}>
-                            {new Intl.DateTimeFormat("en-GB", {
-                                dateStyle: "full",
-                            }).format(new Date(election.date))}
+                            {#if election.nodate}
+                                No date available
+                            {:else}
+                                {new Intl.DateTimeFormat("en-GB", {
+                                    dateStyle: "full",
+                                }).format(new Date(election.date))}
+                            {/if}
                         </h3>
+
                         {#if election.description}
                             <b style="margin-botton: 1rem;"
                                 >{election.description}</b
@@ -257,7 +262,7 @@
                             </p>
                         {/if}
                         {#if (election?.data?.length ?? 0) === 0}
-                            <p>Election results not yet available</p>
+                            <p>Election results yet available</p>
                         {:else}
                             <Megabar
                                 data={election.data}

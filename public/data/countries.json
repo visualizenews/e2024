@@ -1544,6 +1544,7 @@
   },
   {
     "name": "North Korea",
+    "short": "North Korea",
     "complete-name": "Korea (Democratic People's Republic of)",
     "alpha-2": "KP",
     "alpha-3": "PRK",
@@ -1898,6 +1899,7 @@
   },
   {
     "name": "Moldova, Republic of",
+    "short": "Moldova",
     "alpha-2": "MD",
     "alpha-3": "MDA",
     "country-code": 498,
@@ -2627,6 +2629,7 @@
   },
   {
     "name": "Sint Maarten (Dutch part)",
+    "short": "Sint Maarten",
     "alpha-2": "SX",
     "alpha-3": "SXM",
     "country-code": 534,
