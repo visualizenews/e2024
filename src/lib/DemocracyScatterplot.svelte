@@ -86,7 +86,7 @@
             .y([0, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
-                    .filter((d) => d.length)
+                    .filter((d) => d.length && democracyIndex[d[0].country])
                     .sort((a, b) => a[0].variance - b[0].variance),
                 (d, i) => {
                     // console.log("--->", d);
