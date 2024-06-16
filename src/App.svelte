@@ -11,13 +11,16 @@
     // import DemocracyScatterplotVerticalWrapper from "./lib/DemocracyScatterplotVerticalWrapper.svelte";
     import Legend from "./lib/Legend.svelte";
     import Map from "./lib/Map.svelte";
-    import { getDemocracyGroup } from "./lib/democracyGroups.js";
+    import democracyGroups, {
+        getDemocracyGroup,
+    } from "./lib/democracyGroups.js";
 
     let data = [];
     let calendarData = [];
     let width = 600;
     let countries = [];
     let democracyIndex = [];
+    let democraciesTypes;
     let boxElList = [];
     let selected;
 
@@ -77,8 +80,6 @@
                 };
         });
     });
-
-    $: console.log("data", data);
 
     let count = 0;
     /** @type {import('svelte/action').Action}  */
@@ -210,12 +211,25 @@
                             ><b>{country.countryInfo.gov}</b><br /><b
                                 style="color:{country.group?.color}"
                                 >{country?.group?.singularName ?? ""}</b
-                            ><!--<a
-                                href="#data-and-methodology"
+                            ><a
+                                href="#"
                                 title="Data and Methodology"
-                                class="info">&quest;</a
-                            >-->
+                                class="info"
+                                on:click={(e) => {
+                                    e.preventDefault();
+                                    e.target.parentElement.nextElementSibling.classList.toggle(
+                                        "hidden",
+                                    );
+                                }}>&quest;</a
+                            >
                         </span>
+                        <p class="democracy-description hidden">
+                            <b>{country?.group?.singularName}</b>: {democracyGroups.find(
+                                (d) =>
+                                    d.singularName ===
+                                    country?.group?.singularName,
+                            ).descr}
+                        </p>
                     {/if}
                 </h2>
 
@@ -310,46 +324,11 @@
                 regimes, and authoritarian regimes as follow:
             </p>
             <ul class="democracy-index">
-                <li>
-                    <b>Full democracies</b> are nations where civil liberties and
-                    fundamental political freedoms are not only respected but also
-                    reinforced by a political culture conducive to the thriving of
-                    democratic principles. These nations have a valid system of governmental
-                    checks and balances, an independent judiciary whose decisions
-                    are enforced, governments that function adequately, and diverse
-                    and independent media. These nations have only limited problems
-                    in democratic functioning.
-                </li>
-                <li>
-                    <b>Flawed democracies</b> are nations where elections are fair
-                    and free and basic civil liberties are honoured but may have
-                    issues (e.g. media freedom infringement and minor suppression
-                    of political opposition and critics). These nations can have
-                    significant faults in other democratic aspects, including underdeveloped
-                    political culture, low levels of participation in politics, and
-                    issues in the functioning of governance.
-                </li>
-                <li>
-                    <b>Hybrid regimes</b> are nations with regular electoral frauds,
-                    preventing them from being fair and free democracies. These nations
-                    commonly have governments that apply pressure on political opposition,
-                    non-independent judiciaries, widespread corruption, harassment
-                    and pressure placed on the media, anaemic rule of law, and more
-                    pronounced faults than flawed democracies in the realms of underdeveloped
-                    political culture, low levels of participation in politics, and
-                    issues in the functioning of governance.
-                </li>
-                <li>
-                    <b>Authoritarian regimes</b> are nations where political pluralism
-                    is nonexistent or severely limited. These nations are often absolute
-                    monarchies or dictatorships, may have some conventional institutions
-                    of democracy but with meagre significance, infringements and
-                    abuses of civil liberties are commonplace, elections (if they
-                    take place) are not fair or free (including sham elections),
-                    the media is often state-owned or controlled by groups associated
-                    with the ruling regime, the judiciary is not independent, and
-                    censorship and suppression of governmental criticism are commonplace
-                </li>
+                {#each democracyGroups as group}
+                    <li>
+                        <b>{group.singularName}</b>: {group.descr}
+                    </li>
+                {/each}
             </ul>
         </header>
     </section>
@@ -427,6 +406,16 @@
         background-color: var(--dark);
         opacity: 1;
     }
+    .democracy-description {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        font-weight: normal;
+        text-transform: none;
+    }
+    .democracy-description.hidden {
+        display: none;
+    }
+
     .no-padding {
         padding: 0 !important;
     }
