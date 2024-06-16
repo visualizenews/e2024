@@ -180,7 +180,7 @@
                     .dotPlot()
                     .data(
                         Object.values(dataWithVariance)
-                            .filter((d) => d.length)
+                            .filter((d) => d.length && d[0]?.group?.name)
                             .sort(
                                 (a, b) =>
                                     democracyGroups.findIndex(
