@@ -188,9 +188,15 @@
                                     d[0].countryInfo?.name,
                             )
                             .valign((d) =>
-                                ["HR", "ID", "ZA", "PL", "FI", "BT"].includes(
-                                    d[0].country,
-                                )
+                                [
+                                    "HR",
+                                    "ID",
+                                    "ZA",
+                                    "PL",
+                                    "FI",
+                                    "BT",
+                                    "BG",
+                                ].includes(d[0].country)
                                     ? "bottom"
                                     : "top",
                             )
@@ -202,6 +208,7 @@
                                     "PL",
                                     "FI",
                                     "BT",
+                                    "BG",
                                 ].includes(d[0].country)
                                     ? 7
                                     : 0;

@@ -27,34 +27,13 @@
     const preSelectedCountry = window.location.hash?.replace("#", "");
 
     onMount(async () => {
-        const countriesResponse = await fetch("./data/countries.json");
+        const countriesResponse = await fetch("./data/countriesWithGov.json");
         countries = await countriesResponse.json();
 
         const democracyIndexResponse = await fetch(
-            "./data/democracy-index-by-country-2024.json",
+            "./data/democracyIndex.json",
         );
-        const democracyIndexJSON = await democracyIndexResponse.json();
-        // console.log("democracyIndexJSON", democracyIndexJSON);
-        democracyIndex = democracyIndexJSON.reduce((acc, d) => {
-            const countryInfo = countries.find((c) => c.name === d.country);
-
-            // d["alpha-2"] = countryInfo?.["alpha-2"];
-            // d["alpha-3"] = countryInfo?.["alpha-3"];
-            // d.democracy_eiu = +d.DemocracyIndex2023;
-            // if (!countryInfo?.["alpha-2"]) {
-            //     console.log("!!!!!!", d);
-            // }
-            acc[countryInfo["alpha-2"]] = {
-                name: d.country,
-                short: d.short,
-                "alpha-2": countryInfo?.["alpha-2"],
-                "alpha-3": countryInfo?.["alpha-3"],
-                democracy_eiu: +d.DemocracyIndex2023,
-            };
-
-            return acc;
-        }, {});
-        // console.log("democracyIndex", democracyIndex);
+        democracyIndex = await democracyIndexResponse.json();
 
         const runtime = new Runtime();
         const main = runtime.module(define, (name) => {
@@ -99,16 +78,11 @@
         });
     });
 
+    $: console.log("data", data);
+
     let count = 0;
     /** @type {import('svelte/action').Action}  */
     function foo(node, country) {
-        // the node has been mounted in the DOM
-        // console.log(
-        //     "FOO",
-        //     country,
-        //     count,
-        //     data.filter((d) => d.elections[0].data?.length),
-        // );
         const l = data.filter((d) => d.elections[0].data?.length).length;
         count++;
         if (count >= l) {
@@ -224,19 +198,25 @@
     <section id="charts" class="contents">
         {#each data
             .sort((a, b) => +new Date(a.elections[0].date) - +new Date(b.elections[0].date))
-            .map( (d) => ({ ...d, group: getDemocracyGroup(democracyIndex[d.country]?.democracy_eiu) }), ) as country}
+            .map( (d) => ({ ...d, group: getDemocracyGroup(democracyIndex[d.country]?.democracy_eiu), gov: democracyIndex[d.country]?.gov }), ) as country}
             <div
                 class={`country ${(country?.elections[0]?.data?.length ?? 0) === 0 ? "not-voted" : "voted"}`}
                 id={country.country}
             >
                 <h2>
                     {country.countryInfo.name}
-                    <span
-                        ><b style="color:{country.group?.color}"
-                            >{country?.group?.singularName ?? ""}</b
-                        >
-                        <!--({democracyIndex[country.country]?.democracy_eiu} democracy index)--></span
-                    >
+                    {#if country?.group}
+                        <span
+                            ><b>{country.countryInfo.gov}</b><br /><b
+                                style="color:{country.group?.color}"
+                                >{country?.group?.singularName ?? ""}</b
+                            ><!--<a
+                                href="#data-and-methodology"
+                                title="Data and Methodology"
+                                class="info">&quest;</a
+                            >-->
+                        </span>
+                    {/if}
                 </h2>
 
                 {#each country.elections.sort((a, b) => +new Date(a.date) - +new Date(b.date)) as election, i}
@@ -288,7 +268,7 @@
         {/each}
     </section>
     <section id="charts" class="contents">
-        <header>
+        <header id="data-and-methodology">
             <h2>Data and methodology</h2>
             <p>
                 The data presented on this website comes from a variety of
@@ -414,24 +394,6 @@
         text-align: center;
         text-transform: uppercase;
     }
-
-    /*header h1::after {
-        content: "🗳️";
-        display: inline-block;
-        filter: grayscale(100);
-        font-size: 16px;
-        padding-left: 10px;
-        vertical-align: top;
-    }
-
-    header h1::before {
-        content: "🗳️";
-        display: inline-block;
-        filter: grayscale(100);
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: top;
-    }*/
     header h1 span {
         display: block;
         font-size: 48px;
@@ -444,6 +406,26 @@
         /*min-height: 80vh;*/
         padding: 10px;
         position: relative;
+    }
+    a.info {
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--brown1);
+        opacity: 0.5;
+        transform: translateY(-1px);
+        margin-left: 0.4rem;
+        vertical-align: middle;
+        line-height: 12px;
+    }
+    a.info:hover {
+        background-color: var(--dark);
+        opacity: 1;
     }
     .no-padding {
         padding: 0 !important;
