@@ -11,6 +11,7 @@
     // import DemocracyScatterplotVerticalWrapper from "./lib/DemocracyScatterplotVerticalWrapper.svelte";
     import Legend from "./lib/Legend.svelte";
     import Map from "./lib/Map.svelte";
+    import Social from "./lib/Social.svelte";
     import democracyGroups, {
         getDemocracyGroup,
     } from "./lib/democracyGroups.js";
@@ -99,8 +100,11 @@
 </script>
 
 <div>
+    <Social />
+
     <header id="header">
-        <h1 class="main-title"><span>2024</span>Elections Year</h1>
+        <h1 class="main-title">2024</h1>
+        <h2 class="sub-title">Elections Year</h2>
     </header>
 
     <section id="intro" class="contents">
@@ -353,6 +357,7 @@
             </p>
         </header>
     </section>
+    <Social />
 </div>
 <Footer />
 
@@ -366,16 +371,17 @@
         font-size: 20px;
     }
 
-    header h1 {
+    header h1,
+    header h2.sub-title {
         font-size: 24px;
         font-weight: 200;
-        line-height: 48px;
         text-align: center;
         text-transform: uppercase;
     }
-    header h1 span {
+    header h1.main-title {
         display: block;
         font-size: 48px;
+        overflow: hidden;
     }
 
     .contents {
@@ -496,18 +502,17 @@
     @media screen and (min-width: 768px) {
         header h1 {
             font-size: 48px;
-            line-height: 72px;
         }
         .contents header p {
             margin-bottom: 1rem;
         }
-        header h1 span {
+        header h1.main-title {
             font-size: 100px;
             font-weight: 800;
+            line-height: 100px;
         }
-        header h1::before,
-        header h1::after {
-            font-size: 36px;
+        header h2.sub-title {
+            font-size: 48px;
         }
         #vScatter {
             display: none;
