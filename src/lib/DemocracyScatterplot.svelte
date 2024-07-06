@@ -1,8 +1,8 @@
 <script>
-    import { onMount } from 'svelte';
-    import { variance } from 'd3-array';
-    import * as chrt from 'chrt';
-    import App from '../App.svelte';
+    import { onMount } from "svelte";
+    import { variance } from "d3-array";
+    import * as chrt from "chrt";
+    import App from "../App.svelte";
     export let data = [];
     export let democracyIndex = [];
     export let width;
@@ -10,9 +10,9 @@
 
     function getScatterPlotOffsetX(d) {
         switch (d[0].country) {
-            case 'MN':
+            case "MN":
                 return 28;
-            case 'PL':
+            case "PL":
                 return 10;
             default:
                 return 0;
@@ -20,15 +20,16 @@
     }
     function getScatterPlotOffsetY(d) {
         switch (d[0].country) {
-            case 'HR':
-            case 'ID':
-            case 'ZA':
-            case 'PL':
-            case 'FI':
-            case 'BT':
-            case 'BG':
+            case "HR":
+            case "ID":
+            case "ZA":
+            case "PL":
+            case "FI":
+            case "BT":
+            case "BG":
+            case "BY":
                 return 7;
-            case 'MN':
+            case "MN":
                 return 8;
             default:
                 return 0;
@@ -95,8 +96,8 @@
         // console.log(bar);
         chartNode.appendChild(scatterPlot);
 
-        document.querySelectorAll('g.point-label').forEach((el) =>
-            el.addEventListener('click', (e) => {
+        document.querySelectorAll("g.point-label").forEach((el) =>
+            el.addEventListener("click", (e) => {
                 console.log(e.target);
             }),
         );
@@ -130,36 +131,36 @@
                     .hideAxis()
                     .add(
                         chrt
-                            .axisTitle('↓ Narrow margin')
-                            .align('right')
-                            .valign('bottom')
+                            .axisTitle("↓ Narrow margin")
+                            .align("right")
+                            .valign("bottom")
                             .offset({ x: 0, y: 15 }),
                     )
                     .add(
                         chrt
-                            .axisTitle('↑ Landslide victory')
-                            .align('right')
-                            .valign('top')
+                            .axisTitle("↑ Landslide victory")
+                            .align("right")
+                            .valign("top")
                             .offset({ x: 0, y: -10 }),
                     ),
             )
             .add(
                 chrt
                     .yAxis(0)
-                    .orient('right')
+                    .orient("right")
                     .hideAxis()
                     .add(
                         chrt
-                            .axisTitle('Narrow margin ↓')
-                            .align('left')
-                            .valign('bottom')
+                            .axisTitle("Narrow margin ↓")
+                            .align("left")
+                            .valign("bottom")
                             .offset({ x: 0, y: 15 }),
                     )
                     .add(
                         chrt
-                            .axisTitle('Landslide victory ↑')
-                            .align('left')
-                            .valign('top')
+                            .axisTitle("Landslide victory ↑")
+                            .align("left")
+                            .valign("top")
                             .offset({ x: 0, y: -10 }),
                     ),
             )
@@ -168,44 +169,44 @@
                     .verticalRange()
                     .from(8)
                     .to(10)
-                    .fill('#2f5cd5')
+                    .fill("#2f5cd5")
                     .fillOpacity(0.1)
-                    .stroke('none'),
+                    .stroke("none"),
             )
             .add(
                 chrt
                     .verticalRange()
                     .from(6)
                     .to(7.99)
-                    .fill('#6bd2df')
+                    .fill("#6bd2df")
                     .fillOpacity(0.1)
-                    .stroke('none'),
+                    .stroke("none"),
             )
             .add(
                 chrt
                     .verticalRange()
                     .from(4)
                     .to(5.99)
-                    .fill('#fad45d')
+                    .fill("#fad45d")
                     .fillOpacity(0.1)
-                    .stroke('none'),
+                    .stroke("none"),
             )
             .add(
                 chrt
                     .verticalRange()
                     .from(1.5)
                     .to(3.99)
-                    .fill('#a8261f')
+                    .fill("#a8261f")
                     .fillOpacity(0.1)
-                    .stroke('none'),
+                    .stroke("none"),
             )
             .add(
                 chrt
                     .points()
                     .radius(4)
-                    .stroke('#331a00')
+                    .stroke("#331a00")
                     .strokeOpacity(0.75)
-                    .fill('none')
+                    .fill("none")
                     .strokeWidth(2)
                     .add(
                         chrt
@@ -217,27 +218,28 @@
                             )
                             .valign((d) =>
                                 [
-                                    'HR',
-                                    'ID',
-                                    'ZA',
-                                    'PL',
-                                    'FI',
-                                    'BT',
-                                    'BG',
+                                    "HR",
+                                    "ID",
+                                    "ZA",
+                                    "PL",
+                                    "FI",
+                                    "BT",
+                                    "BG",
+                                    "BY",
                                 ].includes(d[0].country)
-                                    ? 'bottom'
-                                    : 'top',
+                                    ? "bottom"
+                                    : "top",
                             )
                             .offset(
                                 (d) => getScatterPlotOffsetX(d),
                                 (d) => getScatterPlotOffsetY(d),
                             )
-                            .class('point-label'),
+                            .class("point-label"),
                     )
                     .add(
                         chrt
                             .label()
-                            .value('Authoritarian regimes')
+                            .value("Authoritarian regimes")
                             .left((1.5 + 3.99) / 2)
                             .offset(0, 5)
                             .top(
@@ -247,47 +249,47 @@
                                         .map((d) => d[0].variance),
                                 ) * 1.1,
                             )
-                            .align('middle')
-                            .valign('bottom')
-                            .class('democracy-rank')
-                            .fill('#a8261f'),
+                            .align("middle")
+                            .valign("bottom")
+                            .class("democracy-rank")
+                            .fill("#a8261f"),
                     )
                     .add(
                         chrt
                             .label()
-                            .value('Hybrid regimes')
+                            .value("Hybrid regimes")
                             .left(5)
                             .top(maxVariance * 1.1)
                             .offset(0, 5)
-                            .align('middle')
-                            .valign('bottom')
-                            .class('democracy-rank')
-                            .fill('rgb(175 141 33)'),
+                            .align("middle")
+                            .valign("bottom")
+                            .class("democracy-rank")
+                            .fill("rgb(175 141 33)"),
                     )
                     .add(
                         chrt
                             .label()
-                            .value('Flawed democracies')
+                            .value("Flawed democracies")
                             .left(7)
                             .offset(0, 5)
                             .top(maxVariance * 1.1)
-                            .align('middle')
-                            .valign('bottom')
-                            .class('democracy-rank')
-                            .fill('rgb(71 172 184)'),
+                            .align("middle")
+                            .valign("bottom")
+                            .class("democracy-rank")
+                            .fill("rgb(71 172 184)"),
                     )
                     .add(
                         chrt
                             .label()
-                            .value('Full democracies')
+                            .value("Full democracies")
                             .left(9)
                             .offset(0, 5)
                             .top(maxVariance * 1.1)
-                            .align('middle')
-                            .valign('bottom')
-                            .class('democracy-rank')
-                            .color('#2f5cd5')
-                            .fill('#2f5cd5'),
+                            .align("middle")
+                            .valign("bottom")
+                            .class("democracy-rank")
+                            .color("#2f5cd5")
+                            .fill("#2f5cd5"),
                     ),
             );
         return chart.node();
@@ -301,7 +303,7 @@
         overflow: visible;
         font-size: 10px;
         font-weight: normal;
-        font-family: 'Roboto Slab', serif, system-ui;
+        font-family: "Roboto Slab", serif, system-ui;
     }
     :global(.chrt-axis) {
         font-size: 14px;
