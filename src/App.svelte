@@ -153,7 +153,11 @@
             </p>
             {#if data.length}
                 <div id="hScatter" style="margin-bottom: 50px;">
-                    <DemocracyScatterplot {data} {democracyIndex} {width} />
+                    <DemocracyScatterplot
+                        data={data.filter((d) => d.country !== "EU")}
+                        {democracyIndex}
+                        {width}
+                    />
                 </div>
                 <div id="vScatter" style="margin-bottom: 50px;">
                     <DemocracyDotplot {data} {democracyIndex} />

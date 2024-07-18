@@ -85,11 +85,12 @@
         "BY",
         "SV",
         "BD",
-        "PT",
+        // "PT",
         "ID",
         "ZA",
         "AZ",
         "KH",
+        "RW",
     ];
 
     onMount(() => {
@@ -221,16 +222,30 @@
                             .offset(0, 10)
                             .align("middle")
                             .valign((d) =>
-                                ["KM", "MX", "FI", "PT", "ID", "BY"].includes(
-                                    d[0].country,
-                                )
+                                [
+                                    "KM",
+                                    "MX",
+                                    "FI",
+                                    "PT",
+                                    "ID",
+                                    "BY",
+                                    "RU",
+                                    "SV",
+                                ].includes(d[0].country)
                                     ? "top"
                                     : "bottom",
                             )
                             .offset(0, (d) =>
-                                ["KM", "MX", "FI", "PT", "ID", "BY"].includes(
-                                    d[0].country,
-                                )
+                                [
+                                    "KM",
+                                    "MX",
+                                    "FI",
+                                    "PT",
+                                    "ID",
+                                    "BY",
+                                    "RU",
+                                    "SV",
+                                ].includes(d[0].country)
                                     ? -7
                                     : 7,
                             )
