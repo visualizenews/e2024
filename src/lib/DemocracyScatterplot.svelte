@@ -82,7 +82,7 @@
         },
         {},
     );
-    $: console.log("dataWithVariance", dataWithVariance);
+    // $: console.log("dataWithVariance", dataWithVariance);
     $: maxVariance = Math.max(
         ...Object.values(dataWithVariance)
             .filter((d) => d?.[0])
