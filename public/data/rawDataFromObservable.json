@@ -1,0 +1,4820 @@
+[
+    {
+        "country": "BD",
+        "elections": [
+            {
+                "date": "2024-01-07",
+                "data": [
+                    [
+                        null,
+                        "Awami League",
+                        222,
+                        "#006a4e"
+                    ],
+                    [
+                        null,
+                        "Jatiya Party (Ershad)",
+                        11,
+                        "#F6F600"
+                    ],
+                    [
+                        null,
+                        "Bangladesh Kalyan Party",
+                        1,
+                        "#E02640"
+                    ],
+                    [
+                        null,
+                        "Jatiya Samajtantrik Dal",
+                        1,
+                        "#E02640",
+                        1
+                    ],
+                    [
+                        null,
+                        "Workers Party of Bangladesh",
+                        1,
+                        "#992d46"
+                    ],
+                    [
+                        null,
+                        "Other parties",
+                        0
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        62,
+                        "#999"
+                    ],
+                    [
+                        null,
+                        "Vacant",
+                        2,
+                        "#DCDCDC"
+                    ]
+                ],
+                "description": "Bangladeshi general election",
+                "turnout": 41.8,
+                "options": {
+                    "majority": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Bangladesh",
+            "alpha-2": "BD",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "BT",
+        "elections": [
+            {
+                "date": "2024-01-09",
+                "data": [
+                    [
+                        "People's Democratic Party",
+                        "People's Democratic Party",
+                        30,
+                        "#324D7A"
+                    ],
+                    [
+                        "Bhutan Tendrel Party",
+                        "Bhutan Tendrel Party",
+                        17,
+                        "#812A2E"
+                    ]
+                ],
+                "turnout": 65.6,
+                "description": "2023–24 Bhutanese National Assembly election",
+                "options": {
+                    "majority": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Bhutan",
+            "alpha-2": "BT",
+            "gov": "Constitutional monarchy"
+        }
+    },
+    {
+        "country": "SX",
+        "elections": [
+            {
+                "date": "2024-01-11",
+                "description": "Sint Maarten general election",
+                "data": [
+                    [
+                        null,
+                        "National Alliance",
+                        4,
+                        "#262262",
+                        null,
+                        23.92
+                    ],
+                    [
+                        null,
+                        "United People's Party",
+                        3,
+                        "#94D60A",
+                        null,
+                        19.48
+                    ],
+                    [
+                        null,
+                        "Unified Resilient St. Maarten Movement",
+                        2,
+                        "#00576d",
+                        null,
+                        14.04
+                    ],
+                    [
+                        null,
+                        "Democratic Party",
+                        2,
+                        "#e21c1a",
+                        null,
+                        13.64
+                    ],
+                    [
+                        null,
+                        "Party for Progress",
+                        2,
+                        "#FFCA06",
+                        null,
+                        11.89
+                    ],
+                    [
+                        null,
+                        "Nation Opportunity Wealth",
+                        2,
+                        "#ffed25",
+                        null,
+                        10.25
+                    ]
+                ],
+                "turnout": 65.51,
+                "options": {
+                    "majority": true,
+                    "majorityText": "8 seats needed",
+                    "percentage": false,
+                    "withZero": true,
+                    "withPerc": true
+                }
+            },
+            {
+                "date": "2024-08-19",
+                "description": "Sint Maarten general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Sint Maarten (Dutch part)",
+            "short": "Sint Maarten",
+            "alpha-2": "SX",
+            "gov": "Parliamentary representative democracy within a constitutional monarchy"
+        }
+    },
+    {
+        "country": "TW",
+        "elections": [
+            {
+                "date": "2024-01-13",
+                "data": [
+                    [
+                        "Democratic Progressive Party",
+                        "Lai Ching-te",
+                        40.05,
+                        "#028100"
+                    ],
+                    [
+                        "Taiwan People's Party",
+                        "Ko Wen-je",
+                        26.46,
+                        "#27C8C8"
+                    ],
+                    [
+                        "Kuomintang",
+                        "Hou Yu-ih",
+                        33.49,
+                        "#0000AB"
+                    ]
+                ],
+                "turnout": 71.86,
+                "description": "Taiwanese presidential election",
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-01-13",
+                "data": [
+                    [
+                        "Democratic Progressive Party",
+                        "Democratic Progressive Party",
+                        52,
+                        "#028100"
+                    ],
+                    [
+                        "Taiwan People's Party",
+                        "Taiwan People's Party",
+                        8,
+                        "#27C8C8"
+                    ],
+                    [
+                        "Kuomintang",
+                        "Kuomintang",
+                        52,
+                        "#0000AB"
+                    ]
+                ],
+                "turnout": 71.28,
+                "description": "Taiwanese legislative Yuan elections",
+                "options": {
+                    "majority": true,
+                    "majorityText": "57 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Taiwan",
+            "alpha-2": "TW",
+            "gov": "Unitary semi-presidential republic"
+        }
+    },
+    {
+        "country": "KM",
+        "elections": [
+            {
+                "date": "2024-01-14",
+                "description": "Comorian presidential election",
+                "data": [
+                    [
+                        "Convention for the Renewal of the Comoros",
+                        "Azali Assoumani",
+                        62.97,
+                        "#18489C"
+                    ],
+                    [
+                        "Juwa Party",
+                        "Salim Issa Abdillah",
+                        20.26,
+                        "#14B232"
+                    ],
+                    [
+                        "Orange Party",
+                        "Mohamed Daoudou",
+                        5.88,
+                        "#F0520C"
+                    ],
+                    [
+                        "Independent",
+                        "Bourhane Hamidou",
+                        5.14,
+                        "#DCDCDC"
+                    ],
+                    [
+                        "Democratic Rally of the Comoros",
+                        "Mouigni Baraka",
+                        4.75,
+                        "#32CD32"
+                    ],
+                    [
+                        "TSASI",
+                        "Aboudou Soefou",
+                        1,
+                        "#1f7246"
+                    ]
+                ],
+                "turnout": 56.44,
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Comoros",
+            "alpha-2": "KM",
+            "gov": "Federal presidential republic"
+        }
+    },
+    {
+        "country": "FI",
+        "elections": [
+            {
+                "date": "2024-01-29",
+                "description": "Finnish presidential election (first round)",
+                "data": [
+                    [
+                        "Alexander Stubb",
+                        "National Coalition Party",
+                        27.21,
+                        "#006288"
+                    ],
+                    [
+                        "Pekka Haavisto",
+                        "Green League",
+                        25.8,
+                        "#006845"
+                    ],
+                    [
+                        "Jussi Halla-aho",
+                        "Finns Party",
+                        18.99,
+                        "#FFDE55"
+                    ],
+                    [
+                        "Olli Rehn",
+                        "Centre Party",
+                        15.32,
+                        "#3AAD2E"
+                    ],
+                    [
+                        "Li Andersson",
+                        "Left Alliance",
+                        4.88,
+                        "#F00A64"
+                    ],
+                    [
+                        "Jutta Urpilainen",
+                        "Social Democratic Party",
+                        4.34,
+                        "#F54B4B"
+                    ],
+                    [
+                        "Sari Essayah",
+                        "Christian Democrats",
+                        1.48,
+                        "#2B67C9",
+                        1
+                    ],
+                    [
+                        "Mika Aaltola",
+                        "Independent",
+                        1.46,
+                        "#ddd"
+                    ],
+                    [
+                        "Hjallis Harkimo",
+                        "Movement Now",
+                        0.52,
+                        "#ae2375",
+                        1
+                    ]
+                ],
+                "turnout": 71.55,
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-02-11",
+                "description": "Finnish presidential election (second round)",
+                "data": [
+                    [
+                        "Alexander Stubb",
+                        "National Coalition Party",
+                        51.6,
+                        "#006288"
+                    ],
+                    [
+                        "Pekka Haavisto",
+                        "Green League",
+                        48.4,
+                        "#006845"
+                    ]
+                ],
+                "turnout": 67.58,
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Finland",
+            "alpha-2": "FI",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "SV",
+        "elections": [
+            {
+                "date": "2024-02-04",
+                "description": "Salvadoran general election",
+                "data": [
+                    [
+                        "Nayib Bukele",
+                        "Nuevas Ideas",
+                        84.7,
+                        "#00ADEF"
+                    ],
+                    [
+                        "Manuel Flores",
+                        "Farabundo Martí National Liberation Front",
+                        6.37,
+                        "#D3252F"
+                    ],
+                    [
+                        "Joel Sánchez",
+                        "Nationalist Republican Alliance",
+                        5.57,
+                        "#234B9A"
+                    ],
+                    [
+                        "Luis Parada",
+                        "Nuestro Tiempo",
+                        2.03,
+                        "#93C97D"
+                    ],
+                    [
+                        "Javier Renderos",
+                        "Solidary Force",
+                        0.73,
+                        "#E2E415"
+                    ],
+                    [
+                        "Marina Murillo",
+                        "Salvadoran Patriotic Fraternity",
+                        0.6,
+                        "#ADD8E6",
+                        1
+                    ]
+                ],
+                "turnout": 52.6,
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "El Salvador",
+            "alpha-2": "SV",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "AZ",
+        "elections": [
+            {
+                "date": "2024-02-07",
+                "description": "Azerbaijani presidential election",
+                "data": [
+                    [
+                        "New Azerbaijan Party",
+                        "Ilham Aliyev",
+                        92.12,
+                        "#0075C1"
+                    ],
+                    [
+                        "Independent",
+                        "Zahid Oruj",
+                        2.17,
+                        "#DCDCDC"
+                    ],
+                    [
+                        "Great Order Party",
+                        "Fazil Mustafa",
+                        1.98,
+                        "#ED2939"
+                    ],
+                    [
+                        "Azerbaijan Popular Front Party",
+                        "Qüdrat Hasanquliyev",
+                        1.72,
+                        "#003399"
+                    ],
+                    [
+                        "National Front Party",
+                        "Razi Nurullayev",
+                        0.8,
+                        "#14B5E1"
+                    ],
+                    [
+                        "Great Azerbaijan Party",
+                        "Elşad Musayev",
+                        0.66,
+                        "#C72127"
+                    ],
+                    [
+                        "Independent",
+                        "Fuad Aliyev",
+                        0.53,
+                        "#DCDCDC"
+                    ]
+                ],
+                "turnout": 76.68,
+                "notes": "With 54.5% of the votes reportedly counted, Ilham Aliyev was declared the winner of the election, securing over 92.1% of the vote",
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-09-01",
+                "description": "Azerbaijani parliamentary election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Azerbaijan",
+            "alpha-2": "AZ",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "PK",
+        "elections": [
+            {
+                "date": "2024-02-08",
+                "data": [
+                    [
+                        null,
+                        "Pakistan Tehreek-e-Insaf",
+                        93,
+                        "#FF0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan Muslim League (N)",
+                        75,
+                        "#228b22",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan People's Party",
+                        54,
+                        "#000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Muttahida Qaumi Movement – Pakistan",
+                        17,
+                        "#be1212",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Jamiat Ulema-e-Islam (F)",
+                        4,
+                        "#003800",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Istehkam-e-Pakistan Party",
+                        3,
+                        "#67BA27",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan Muslim League (Q)",
+                        3,
+                        "#00FF00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Balochistan National Party (Mengal)",
+                        2,
+                        "#FFEF00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Balochistan Awami Party",
+                        1,
+                        "#6B8E23",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Majlis Wahdat-e-Muslimeen",
+                        1,
+                        "#0B9A51",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "National Party",
+                        1,
+                        "#CD5C5C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan Muslim League (Z)",
+                        1,
+                        "#00A877",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pashtunkhwa Milli Awami Party",
+                        1,
+                        "#FF4500",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pashtunkhwa National Awami Party Pakistan",
+                        1,
+                        "#fa3927",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        8,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "turnout": 47.8,
+                "description": "Pakistani general election",
+                "options": {
+                    "majority": true,
+                    "majorityText": "169 seats",
+                    "percentage": false
+                }
+            },
+            {
+                "date": "2024-03-09",
+                "data": [
+                    [
+                        null,
+                        "Asif Ali Zardari (PPP)",
+                        69.43,
+                        "#000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Mahmood Khan Achakzai (PMAP)",
+                        30.57,
+                        "#FF4500",
+                        null,
+                        null
+                    ]
+                ],
+                "description": "Pakistani Presidential election",
+                "turnout": 85.06,
+                "summary": "The president of Pakistan is indirectly elected by the Electoral College of Pakistan – a joint sitting of the Senate, National Assembly and Provincial Assemblies.",
+                "options": {
+                    "majority": true,
+                    "majorityText": "50% + 1 vote",
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-04-03",
+                "description": "Pakistani Senate election",
+                "data": [
+                    [
+                        null,
+                        "Pakistan People's Party",
+                        24,
+                        "#000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan Muslim League (Nawaz)",
+                        19,
+                        "#228b22",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Pakistan Tehreek-e-Insaf",
+                        17,
+                        "#E70A0A",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "49 seats",
+                    "percentage": false
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Pakistan",
+            "alpha-2": "PK",
+            "gov": "Federal parliamentary republic"
+        }
+    },
+    {
+        "country": "ID",
+        "elections": [
+            {
+                "date": "2024-02-14",
+                "description": "Indonesian general election",
+                "data": [
+                    [
+                        "Great Indonesia Movement Party",
+                        "Prabowo Subianto",
+                        58.83,
+                        "#8B0000"
+                    ],
+                    [
+                        "Independent",
+                        "Anies Baswedan",
+                        24.49,
+                        "#DCDCDC"
+                    ],
+                    [
+                        "Indonesian Democratic Party of Struggle",
+                        "Ganjar Pranowo",
+                        16.68,
+                        "#DB2016"
+                    ]
+                ],
+                "turnout": 82.39,
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Indonesia",
+            "alpha-2": "ID",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "BY",
+        "elections": [
+            {
+                "date": "2024-02-25",
+                "description": "Belarusian parliamentary election",
+                "data": [
+                    [
+                        null,
+                        "Belaya Rus",
+                        51,
+                        "#488d07",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Republican Party of Labour and Justice",
+                        8,
+                        "#DE7673",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Communist Party of Belarus",
+                        7,
+                        "#D30400",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Liberal Democratic Party of Belarus",
+                        4,
+                        "#011E41",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        40,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "turnout": 73.09,
+                "options": {
+                    "majority": true,
+                    "majorityText": "56 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Belarus",
+            "alpha-2": "BY",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "KH",
+        "elections": [
+            {
+                "date": "2024-02-25",
+                "description": "Cambodian Senate election",
+                "turnout": 99.86,
+                "data": [
+                    [
+                        null,
+                        "Cambodian People's Party",
+                        55,
+                        "#1E90FF",
+                        null,
+                        85.92
+                    ],
+                    [
+                        null,
+                        "Khmer Will Party",
+                        3,
+                        "#EC3438",
+                        null,
+                        11.92
+                    ],
+                    [
+                        null,
+                        "Nation Power Party",
+                        0,
+                        "#FD4A3C",
+                        null,
+                        2
+                    ],
+                    [
+                        null,
+                        "FUNCINPEC",
+                        0,
+                        "#FDD017",
+                        null,
+                        0.16
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "31 seats needed",
+                    "percentage": false,
+                    "withZero": true,
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Cambodia",
+            "alpha-2": "KH",
+            "gov": "Parliamentary constitutional monarchy"
+        }
+    },
+    {
+        "country": "PT",
+        "elections": [
+            {
+                "date": "2024-03-10",
+                "description": "Portuguese legislative election",
+                "data": [
+                    [
+                        null,
+                        "Unitary Democratic Coalition",
+                        3.3,
+                        "#FF0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Left Bloc",
+                        4.46,
+                        "#8B0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "LIVRE",
+                        3.26,
+                        "#C2D216",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Socialist",
+                        28.66,
+                        "#FF66FF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "People–Animals–Nature",
+                        1.93,
+                        "teal",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Alliance",
+                        29.5,
+                        "#3777BC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Liberal Initiative",
+                        5.08,
+                        "#00ADEF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "CHEGA",
+                        18.06,
+                        "#202056",
+                        null,
+                        null
+                    ]
+                ],
+                "turnout": 59.9,
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Portugal",
+            "alpha-2": "PT",
+            "gov": "Semi-presidential republic"
+        }
+    },
+    {
+        "country": "RU",
+        "elections": [
+            {
+                "date": "2024-03-17",
+                "description": "Russian presidential election",
+                "turnout": 77.49,
+                "data": [
+                    [
+                        "Independent",
+                        "Vladimir Putin",
+                        88.48,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Communist Party",
+                        "Nikolay Kharitonov",
+                        4.37,
+                        "#CC1111",
+                        null,
+                        null
+                    ],
+                    [
+                        "New People",
+                        "Vladislav Davankov",
+                        3.9,
+                        "#0AD1C9",
+                        null,
+                        null
+                    ],
+                    [
+                        "Leonid Slutsky",
+                        "Liberal Democratic Party",
+                        3.24,
+                        "#48C",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Russian Federation",
+            "short": "Russia",
+            "alpha-2": "RU",
+            "gov": "Federal semi-presidential republic"
+        }
+    },
+    {
+        "country": "SK",
+        "elections": [
+            {
+                "date": "2024-03-23",
+                "description": "Slovak presidential election (first round)",
+                "turnout": 51.9,
+                "data": [
+                    [
+                        "Independent",
+                        "Ivan Korčok",
+                        42.52,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Voice – Social Democracy",
+                        "Peter Pellegrini",
+                        37.03,
+                        "#7E1447",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Štefan Harabin",
+                        11.74,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Hungarian Alliance",
+                        "Krisztián Forró",
+                        2.91,
+                        "#ED8B19",
+                        null,
+                        null
+                    ],
+                    [
+                        "Slovakia",
+                        "Igor Matovič",
+                        2.18,
+                        "#45515D",
+                        1,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Ján Kubiš",
+                        2.04,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "For the People",
+                        "Patrik Dubovský",
+                        0.71,
+                        "#fdbb12",
+                        null,
+                        null
+                    ],
+                    [
+                        "Kotlebists – People's Party Our Slovakia",
+                        "Marian Kotleba",
+                        0.57,
+                        "#005222",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Milan Náhlik",
+                        0.14,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-04-06",
+                "description": "Slovak presidential election (second round)",
+                "turnout": 61.12,
+                "data": [
+                    [
+                        "Independent",
+                        "Ivan Korčok",
+                        46.88,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Voice – Social Democracy",
+                        "Peter Pellegrini",
+                        53.12,
+                        "#7E1447",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "percentage": true,
+                    "majorityText": "50% + 1 vote"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Slovakia",
+            "alpha-2": "SK",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "SN",
+        "elections": [
+            {
+                "date": "2024-03-24",
+                "description": "Senegalese presidential election",
+                "turnout": 61.3,
+                "data": [
+                    [
+                        "PASTEF",
+                        "Bassirou Diomaye Faye",
+                        54.28,
+                        "#9E1A16",
+                        null,
+                        null
+                    ],
+                    [
+                        "Alliance for the Republic",
+                        "Amadou Ba",
+                        35.79,
+                        "#5C482F",
+                        null,
+                        null
+                    ],
+                    [
+                        "Party for Unity and Rally",
+                        "Aliou Mamadou Dia",
+                        2.8,
+                        "#349a51",
+                        null,
+                        null
+                    ],
+                    [
+                        "Manko Taxawu Sénégal",
+                        "Khalifa Sall",
+                        1.56,
+                        "#FF8040",
+                        true,
+                        null
+                    ],
+                    [
+                        "< 1%",
+                        "Other candidates",
+                        5.57,
+                        "#333",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "percentage": true,
+                    "majorityText": "50% + 1 vote"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Senegal",
+            "alpha-2": "SN",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "KW",
+        "elections": [
+            {
+                "date": "2024-04-04",
+                "description": "Kuwaiti general election",
+                "turnout": 62.1,
+                "data": [
+                    [
+                        null,
+                        "Islamic Salafi Alliance",
+                        3,
+                        "#FF7E03",
+                        null,
+                        3.41
+                    ],
+                    [
+                        null,
+                        "Islamic Constitutional Movement",
+                        1,
+                        "#0098F1",
+                        null,
+                        3.36
+                    ],
+                    [
+                        null,
+                        "National Islamic Alliance (Taalof)",
+                        2,
+                        "#235643",
+                        null,
+                        3.18
+                    ],
+                    [
+                        null,
+                        "Popular Action Bloc",
+                        2,
+                        "#D39148",
+                        null,
+                        3.09
+                    ],
+                    [
+                        null,
+                        "Thawabit Al-Umma",
+                        2,
+                        "#0744DA",
+                        null,
+                        3.03
+                    ],
+                    [
+                        null,
+                        "Kuwait Democratic Forum",
+                        1,
+                        "#ffd500",
+                        null,
+                        0.98
+                    ],
+                    [
+                        null,
+                        "Justice and Peace Alliance",
+                        1,
+                        "#F5C779",
+                        null,
+                        0.86
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        38,
+                        "#DCDCDC",
+                        null,
+                        82.08
+                    ]
+                ],
+                "options": {
+                    "majority": false,
+                    "percentage": false,
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Kuwait",
+            "alpha-2": "KW",
+            "gov": "Constitutional monarchy"
+        }
+    },
+    {
+        "country": "PL",
+        "elections": [
+            {
+                "date": "2024-04-07",
+                "description": "Polish local elections",
+                "turnout": 51.94,
+                "data": [
+                    [
+                        null,
+                        "The Left",
+                        6.32,
+                        "#AC145A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Bezpartyjni Samorządowcy",
+                        3.01,
+                        "#E6001A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "National Polish Local Government Coalition",
+                        1.15,
+                        "#126AB4",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Civic Coalition",
+                        30.59,
+                        "#F68F2D",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Silesian Localists",
+                        0.37,
+                        "#0C2E51",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Third Way",
+                        14.25,
+                        "#3DB53A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Law and Justice",
+                        34.27,
+                        "#263778",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Confederation and Nonpartisan Localists",
+                        7.23,
+                        "#122746",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Poland",
+            "alpha-2": "PL",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "KR",
+        "elections": [
+            {
+                "date": "2024-04-10",
+                "description": "South Korean legislative election",
+                "turnout": 66.99,
+                "data": [
+                    [
+                        null,
+                        "Democratic",
+                        175,
+                        "#004EA2",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "People Power",
+                        108,
+                        "#E61E2B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rebuilding Korea",
+                        12,
+                        "#0172cf",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "New Reform",
+                        3,
+                        "#FF7920",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "New Future",
+                        1,
+                        "#45BABD",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Progressive",
+                        0,
+                        "#d6001c",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "151 seats needed",
+                    "percentage": false,
+                    "withZero": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "South Korea",
+            "complete-name": "Korea, Republic of",
+            "alpha-2": "KR",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "HR",
+        "elections": [
+            {
+                "date": "2024-04-17",
+                "description": "Croatian parliamentary election",
+                "turnout": 62.31,
+                "data": [
+                    [
+                        null,
+                        "We can!",
+                        10,
+                        "#C3D746",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independent Democratic Serb Party",
+                        3,
+                        "#2D3C8C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rivers of Justice",
+                        42,
+                        "#ED1C24",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Our Croatia",
+                        4,
+                        "#1C91BC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Focus–Republic",
+                        1,
+                        "#196CA4",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Union of Hungarians",
+                        1,
+                        "#15803C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Croatian Romani Union \"Kali Sara\"",
+                        1,
+                        "#FF0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Bošnjaci zajedno!",
+                        1,
+                        "#F8F9FA",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        2,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "The Bridge–Croatian Sovereignists",
+                        11,
+                        "#E85726",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Croatian Democratic Union coalition",
+                        61,
+                        "#005BAA",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Homeland Movement coalition",
+                        14,
+                        "#A5A5A5",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "76 seats needed",
+                    "percentage": false,
+                    "withZero": true
+                }
+            },
+            {
+                "date": "2024-12-15",
+                "description": "Croatian presidential election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Croatia",
+            "alpha-2": "HR",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "SB",
+        "elections": [
+            {
+                "date": "2024-04-17",
+                "description": "Solomon Islands general election",
+                "data": [
+                    [
+                        "Manasseh Sogavare",
+                        "Ownership, Unity and Responsibility Party",
+                        15,
+                        "#F7EF07",
+                        null,
+                        24.07
+                    ],
+                    [
+                        "Jimmie Rodgers",
+                        "People First",
+                        3,
+                        "#9000AD",
+                        null,
+                        3.19
+                    ],
+                    [
+                        "Martin Housanau",
+                        "Kadere Party",
+                        1,
+                        "#FFBC03",
+                        null,
+                        4.89
+                    ],
+                    [
+                        "–",
+                        "Independents",
+                        11,
+                        "#DCDCDC",
+                        null,
+                        21.88
+                    ],
+                    [
+                        "Gordon Darcy Lilo",
+                        "Solomon Islands Party for Rural Advancement",
+                        1,
+                        "#9fdacc",
+                        null,
+                        4.55
+                    ],
+                    [
+                        "Peter Kenilorea Jr.",
+                        "Solomon Islands United Party",
+                        6,
+                        "#0844d6",
+                        null,
+                        13.49
+                    ],
+                    [
+                        "Rick Houenipwela",
+                        "Democratic Alliance",
+                        1,
+                        "#68C76D",
+                        null,
+                        1.59
+                    ],
+                    [
+                        "Matthew Wale",
+                        "Solomon Islands Democratic Party",
+                        11,
+                        "#012887",
+                        null,
+                        19.31
+                    ],
+                    [
+                        "Daniel Suidani",
+                        "Umi for Change",
+                        1,
+                        "#0FF643",
+                        null,
+                        3
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "76 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Solomon Islands",
+            "alpha-2": "SB",
+            "gov": "Constitutional monarchy with a parliamentary system"
+        }
+    },
+    {
+        "country": "MV",
+        "elections": [
+            {
+                "date": "2024-04-21",
+                "description": "Maldivian parliamentary election",
+                "turnout": 60.43,
+                "data": [
+                    [
+                        null,
+                        "Independents",
+                        11,
+                        "#DCDCDC",
+                        null,
+                        13.87
+                    ],
+                    [
+                        null,
+                        "Maldivian Democratic Party",
+                        12,
+                        "#ffcc33",
+                        null,
+                        30.73
+                    ],
+                    [
+                        null,
+                        "Jumhooree Party",
+                        1,
+                        "#DC143C",
+                        null,
+                        1.49
+                    ],
+                    [
+                        null,
+                        "People's National Congress",
+                        66,
+                        "#24DBCB",
+                        null,
+                        48.06
+                    ],
+                    [
+                        null,
+                        "The Democrats",
+                        0,
+                        "#89CFF0",
+                        null,
+                        2.2
+                    ],
+                    [
+                        null,
+                        "Maldives Development Alliance",
+                        2,
+                        "#DB5702",
+                        null,
+                        1.93
+                    ],
+                    [
+                        null,
+                        "Adhaalath Party",
+                        0,
+                        "#00A86A",
+                        null,
+                        1.21
+                    ],
+                    [
+                        null,
+                        "Maldives National Party",
+                        1,
+                        "#1034a6",
+                        null,
+                        0.5
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "47 seats needed",
+                    "percentage": false,
+                    "withZero": true,
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Maldives",
+            "alpha-2": "MV",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "MK",
+        "elections": [
+            {
+                "date": "2024-04-24",
+                "description": "North Macedonian presidential election (first round)",
+                "turnout": 49.91,
+                "data": [
+                    [
+                        "Social Democratic Union of Macedonia",
+                        "Stevo Pendarovski",
+                        35.79,
+                        "#BF1E24",
+                        null,
+                        null
+                    ],
+                    [
+                        "For Our Macedonia",
+                        "Maksim Dimitrievski",
+                        9.52,
+                        "#416DB4",
+                        null,
+                        null
+                    ],
+                    [
+                        "Democratic Union for Integration",
+                        "Bujar Osmani",
+                        13.71,
+                        "#344b9b",
+                        null,
+                        null
+                    ],
+                    [
+                        "Alliance for Albanians",
+                        "Arben Taravari",
+                        9.46,
+                        "#6D3D87",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Biljana Vankovska",
+                        4.69,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Option for Macedonia",
+                        "Stevčo Jakimovski\tCitizen",
+                        0.92,
+                        "#21B7CE",
+                        null,
+                        null
+                    ],
+                    [
+                        "VMRO-DPMNE",
+                        "Gordana Siljanovska-Davkova",
+                        41.21,
+                        "#FFA500",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-05-08",
+                "description": "North Macedonian presidential election (second round)",
+                "turnout": 47.47,
+                "data": [
+                    [
+                        "Social Democratic Union of Macedonia",
+                        "Stevo Pendarovski",
+                        30.99,
+                        "#BF1E24",
+                        null,
+                        null
+                    ],
+                    [
+                        "VMRO-DPMNE",
+                        "Gordana Siljanovska-Davkova",
+                        69.01,
+                        "#FFA500",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "percentage": true,
+                    "majorityText": "50% + 1 vote"
+                }
+            },
+            {
+                "date": "2024-05-08",
+                "description": "North Macedonian parliamentary election",
+                "turnout": 55.44,
+                "data": [
+                    [
+                        null,
+                        "The Left",
+                        6,
+                        "#FF0000",
+                        null,
+                        7.01
+                    ],
+                    [
+                        null,
+                        "For Our Macedonia",
+                        6,
+                        "#416DB4",
+                        null,
+                        5.75
+                    ],
+                    [
+                        null,
+                        "For a European Future",
+                        18,
+                        "#BF1E24",
+                        null,
+                        15.8
+                    ],
+                    [
+                        null,
+                        "European Front",
+                        19,
+                        "#053772",
+                        null,
+                        14.05
+                    ],
+                    [
+                        null,
+                        "VLEN Coalition",
+                        13,
+                        "#A6011F",
+                        null,
+                        10.94
+                    ],
+                    [
+                        null,
+                        "Your Macedonia",
+                        58,
+                        "#FFA500",
+                        null,
+                        44.54
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "61 seats needed",
+                    "percentage": false,
+                    "withZero": true,
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "North Macedonia",
+            "alpha-2": "MK",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "TG",
+        "elections": [
+            {
+                "date": "2024-04-29",
+                "description": "Togolese parliamentary election",
+                "turnout": 61.03,
+                "data": [
+                    [
+                        null,
+                        "Alliance of Democrats for Integral Development",
+                        2,
+                        "#11C925",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "National Alliance for Change",
+                        1,
+                        "#FF8201",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Dynamic for the Majority of the People",
+                        1,
+                        "#E09F02",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Forces for the Republic",
+                        1,
+                        "#792280",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Union for the Republic",
+                        108,
+                        "#38a8e6",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "57 seats needed",
+                    "percentage": false,
+                    "withZero": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Togo",
+            "alpha-2": "TG",
+            "gov": "Unitary presidential republic under an authoritarian dictatorship"
+        }
+    },
+    {
+        "country": "PA",
+        "elections": [
+            {
+                "date": "2024-05-05",
+                "description": "Presidential election",
+                "turnout": 77.64,
+                "data": [
+                    [
+                        null,
+                        "José Raúl Mulino (Realizing Goals)",
+                        34.25,
+                        "#0B76C0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ricardo Lombana (Another Way Movement)",
+                        24.64,
+                        "#F27321",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Martín Torrijos (People's Party)",
+                        16.03,
+                        "#7AC043",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rómulo Roux (Democratic Change)",
+                        11.36,
+                        "#2A889B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Zulay Rodríguez (Independent)",
+                        6.57,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "José Gabriel Carrizo (Democratic Revolutionary Party)",
+                        5.85,
+                        "#003F87",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Maribel Gordón (Independent)",
+                        1.08,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Melitón Arrocha (Independent)",
+                        0.21,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-05-05",
+                "description": "Legislative election",
+                "turnout": 75.49,
+                "data": [
+                    [
+                        null,
+                        "Independents",
+                        21,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Realizing Goals",
+                        13,
+                        "#0B76C0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Revolutionary Party",
+                        12,
+                        "#003F87",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Change",
+                        8,
+                        "#2A889B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Panameñista Party",
+                        8,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Another Way Movement",
+                        4,
+                        "#F27321",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "People's Party",
+                        2,
+                        "#7AC043",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Alliance Party",
+                        2,
+                        "#E2211C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Nationalist Republican Liberal Movement",
+                        1,
+                        "#FDD900",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "36 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Panama",
+            "alpha-2": "PA",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "TD",
+        "elections": [
+            {
+                "date": "2024-05-06",
+                "description": "Chadian presidential election",
+                "turnout": 75.78,
+                "data": [
+                    [
+                        "Patriotic Salvation Movement",
+                        "Mahamat Déby",
+                        61.03,
+                        "#3333CC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Les Transformateurs",
+                        "Succès Masra",
+                        18.53,
+                        "#0048D1",
+                        null,
+                        null
+                    ],
+                    [
+                        "Padacké\tNational Rally for Democracy in Chad",
+                        "Albert Pahimi",
+                        16.91,
+                        "#055737",
+                        null,
+                        null
+                    ],
+                    [
+                        "Party for Democracy and Full Independence",
+                        "Lydie Beassemda",
+                        0.96,
+                        "#45A790",
+                        null,
+                        null
+                    ],
+                    [
+                        "< 1%",
+                        "Other candidates",
+                        2.57,
+                        "#333",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Chad",
+            "alpha-2": "TD",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "LT",
+        "elections": [
+            {
+                "date": "2024-05-12",
+                "description": "Presidential election (first round)",
+                "turnout": 59.28,
+                "data": [
+                    [
+                        "Independent",
+                        "Gitanas Nausėda",
+                        44.46,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Homeland Union",
+                        "Ingrida Šimonytė",
+                        20.02,
+                        "#2F6CD1",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Ignas Vėgėlė",
+                        12.47,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Dawn of Nemunas",
+                        "Remigijus Žemaitaitis",
+                        9.33,
+                        "#F25D23",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Eduardas Vaitkus",
+                        7.39,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Dainius Žalimas",
+                        3.58,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Labour Party",
+                        "Andrius Mazuronis",
+                        1.39,
+                        "#1D578C",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Giedrimas Jeglinskas",
+                        1.37,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-05-26",
+                "description": "Presidential election (second round)",
+                "turnout": 49.15,
+                "data": [
+                    [
+                        "Independent",
+                        "Gitanas Nausėda",
+                        75.58,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Homeland Union",
+                        "Ingrida Šimonytė",
+                        24.42,
+                        "#2F6CD1",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-10-13",
+                "description": "Lithuanian parliamentary election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Lithuania",
+            "alpha-2": "LT",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "DO",
+        "elections": [
+            {
+                "date": "2024-05-19",
+                "description": "Dominican Republic general election",
+                "turnout": 54.37,
+                "data": [
+                    [
+                        "Modern Revolutionary Party",
+                        "Luis Abinader",
+                        57.53,
+                        "#005BAA",
+                        null,
+                        null
+                    ],
+                    [
+                        "People's Force",
+                        "Leonel Fernández",
+                        28.84,
+                        "#00AC5B",
+                        null,
+                        null
+                    ],
+                    [
+                        "Dominican Liberation Party",
+                        "Abel Martínez",
+                        10.35,
+                        "#870B9C",
+                        null,
+                        null
+                    ],
+                    [
+                        "Democratic Hope Party",
+                        "Roque Espaillat",
+                        1.35,
+                        "#14532A",
+                        null,
+                        null
+                    ],
+                    [
+                        "< 1%",
+                        "Other candidates",
+                        2.57,
+                        "#333",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Dominican Republic",
+            "alpha-2": "DO",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "MG",
+        "elections": [
+            {
+                "date": "2024-05-29",
+                "description": "Malagasy parliamentary election",
+                "turnout": 48,
+                "data": [
+                    [
+                        "Andry Rajoelina",
+                        "TGV",
+                        84,
+                        "#FFA500",
+                        null,
+                        null
+                    ],
+                    [
+                        "Ravalomanana",
+                        "TIM",
+                        16,
+                        "#0441C0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "MA.TI.TA",
+                        1,
+                        "#00A650",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "MTS",
+                        1,
+                        "#FE0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "GYMP",
+                        1,
+                        "#000000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "MDM",
+                        1,
+                        "#439ECD",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "RPSD Vaovao",
+                        1,
+                        "#826ba3",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        46,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "76 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Madagascar",
+            "alpha-2": "MG",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "ZA",
+        "elections": [
+            {
+                "date": "2024-05-29",
+                "description": "South African general election",
+                "turnout": 58.64,
+                "data": [
+                    [
+                        "Julius Malema",
+                        "Economic Freedom Fighters",
+                        39,
+                        "#852A2A",
+                        null,
+                        9.52
+                    ],
+                    [
+                        "Mzwanele Nyhontso",
+                        "PAC",
+                        1,
+                        "#008718",
+                        null,
+                        0.23
+                    ],
+                    [
+                        "Wonder Mahlatsi",
+                        "UAT",
+                        1,
+                        "#363362",
+                        null,
+                        0.22
+                    ],
+                    [
+                        "Ganief Hendricks",
+                        "Al Jama-ah",
+                        2,
+                        "#1c9069",
+                        null,
+                        0.24
+                    ],
+                    [
+                        "Jacob Zuma",
+                        "uMkhonto weSizwe",
+                        58,
+                        "#56AA48",
+                        null,
+                        14.58
+                    ],
+                    [
+                        "Cyril Ramaphosa",
+                        "African National Congress",
+                        159,
+                        "#006600",
+                        null,
+                        40.18
+                    ],
+                    [
+                        "Bantu Holomisa",
+                        "UDM",
+                        3,
+                        "#FFB300",
+                        null,
+                        0.49
+                    ],
+                    [
+                        "Patricia de Lille",
+                        "Good",
+                        1,
+                        "#F36900",
+                        null,
+                        0.18
+                    ],
+                    [
+                        "Mmusi Maimane",
+                        "BOSA",
+                        2,
+                        "#E7B04A",
+                        null,
+                        0.41
+                    ],
+                    [
+                        "Songezo Zibi",
+                        "RISE",
+                        2,
+                        "#0336D8",
+                        null,
+                        0.42
+                    ],
+                    [
+                        "John Steenhuisen",
+                        "Democratic Alliance",
+                        87,
+                        "#005BA6",
+                        null,
+                        21.81
+                    ],
+                    [
+                        "Fadiel Adams",
+                        "NCC",
+                        2,
+                        "#161616",
+                        null,
+                        0.23
+                    ],
+                    [
+                        "Vuyolwethu Zungula",
+                        "ATM",
+                        2,
+                        "#00ADEE",
+                        null,
+                        0.4
+                    ],
+                    [
+                        "Kenneth Meshoe",
+                        "ACDP",
+                        3,
+                        "#ba0c2f",
+                        null,
+                        0.6
+                    ],
+                    [
+                        "Herman Mashaba",
+                        "ActionSA",
+                        6,
+                        "#05B615",
+                        null,
+                        1.2
+                    ],
+                    [
+                        "Velenkosini Hlabisa",
+                        "IFP",
+                        17,
+                        "#FF0000",
+                        null,
+                        3.85
+                    ],
+                    [
+                        "Pieter Groenewald",
+                        "VF+",
+                        6,
+                        "#FF6600",
+                        null,
+                        1.36
+                    ],
+                    [
+                        "Gayton McKenzie",
+                        "PA",
+                        9,
+                        "#388F35",
+                        null,
+                        2.06
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "201 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "South Africa",
+            "alpha-2": "ZA",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "IN",
+        "elections": [
+            {
+                "date": "2024-06-01",
+                "description": "Indian general election - Result by Alliance",
+                "turnout": 65.79,
+                "data": [
+                    [
+                        null,
+                        "NDA (National Democratic Alliance)",
+                        293,
+                        "#F98C1F",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Other parties",
+                        16,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "INDIA (Indian National Developmental Inclusive Alliance)",
+                        234,
+                        "#00B7EB",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "272 seats needed"
+                }
+            },
+            {
+                "date": "2024-06-01",
+                "description": "General election - Result by Party",
+                "turnout": 65.79,
+                "data": [
+                    [
+                        null,
+                        "Bharatiya Janata Party",
+                        240,
+                        "#FF9933",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Telugu Desam Party",
+                        16,
+                        "#FFED00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Janata Dal (United)",
+                        12,
+                        "#003366",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Shiv Sena",
+                        7,
+                        "#F37020",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Lok Janshakti Party (Ram Vilas)",
+                        5,
+                        "#5B006A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Janata Dal (Secular)",
+                        1,
+                        "#02865A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Jana Sena Party",
+                        2,
+                        "#ca420f",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rashtriya Lok Dal",
+                        2,
+                        "#006400",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "All Jharkhand Students Union",
+                        1,
+                        "#6827B5",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Nationalist Congress Party",
+                        1,
+                        "#00B2B2",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "United People's Party Liberal",
+                        1,
+                        "#FAED09",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Sikkim Krantikari Morcha",
+                        1,
+                        "#ED1E26",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Apna Dal (Soneylal)",
+                        1,
+                        "#27176D",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Asom Gana Parishad",
+                        1,
+                        "#99CCFF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Hindustani Awam Morcha",
+                        1,
+                        "#F5D62A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "YSR Congress Party",
+                        4,
+                        "#1569C7",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Shiromani Akali Dal",
+                        1,
+                        "#0F204A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "All India Majlis-e-Ittehadul Muslimeen",
+                        1,
+                        "#0c6b4b",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Zoram People's Movement",
+                        1,
+                        "#FFF700",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Azad Samaj Party (Kanshi Ram)",
+                        1,
+                        "#003597",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Voice of the People Party",
+                        1,
+                        "#F8F9FA",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        7,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Indian National Congress",
+                        99,
+                        "#19AAED",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Samajwadi Party",
+                        37,
+                        "#FF2222",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "All India Trinamool Congress",
+                        29,
+                        "#20C646",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Dravida Munnetra Kazhagam",
+                        22,
+                        "#FF0D0D",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Communist Party of India (Marxist)",
+                        4,
+                        "#cc0d0d",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rashtriya Janata Dal",
+                        4,
+                        "#056D05",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Shiv Sena (Uddhav Balasaheb Thackeray)",
+                        9,
+                        "#FD7D24",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Aam Aadmi Party",
+                        3,
+                        "#0072B0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Nationalist Congress Party (Sharadchandra Pawar)",
+                        8,
+                        "#0029B0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Communist Party of India",
+                        2,
+                        "#cb0922",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Jharkhand Mukti Morcha",
+                        3,
+                        "#337316",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Communist Party of India (Marxist–Leninist) Liberation",
+                        2,
+                        "#C41301",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Indian Union Muslim League",
+                        3,
+                        "#006600",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Jammu and Kashmir National Conference",
+                        2,
+                        "#fe0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Viduthalai Chiruthaigal Katchi",
+                        2,
+                        "#1E90FF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Bharat Adivasi Party",
+                        1,
+                        "#FF0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Kerala Congress",
+                        1,
+                        "#CC6600",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Marumalarchi Dravida Munnetra Kazhagam",
+                        1,
+                        "#FC0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Rashtriya Loktantrik Party",
+                        1,
+                        "#FFD42A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Revolutionary Socialist Party",
+                        1,
+                        "#d84c4c",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "272 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "India",
+            "alpha-2": "IN",
+            "gov": "Federal parliamentary republic"
+        }
+    },
+    {
+        "country": "IS",
+        "elections": [
+            {
+                "date": "2024-06-01",
+                "description": "Icelandic presidential election",
+                "turnout": 80.78,
+                "data": [
+                    [
+                        null,
+                        "Halla Tómasdóttir",
+                        34.15,
+                        "#000000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Katrín Jakobsdóttir",
+                        25.19,
+                        "#00B878",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Halla Hrund Logadóttir",
+                        15.68,
+                        "#143454",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Jón Gnarr",
+                        10.09,
+                        "#ED1400",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Baldur Þórhallsson",
+                        8.41,
+                        "#02529C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Arnar Þór Jónsson",
+                        5.08,
+                        "#00ADEF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Steinunn Ólína Þorsteinsdóttir",
+                        0.65,
+                        "#9370DB",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ástþór Magnússon",
+                        0.22,
+                        "#D62718",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Viktor Traustason",
+                        0.18,
+                        "#FADA5E",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ásdís Rán Gunnarsdóttir",
+                        0.18,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Helga Þórisdóttir",
+                        0.13,
+                        "#bc1d2d",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Eiríkur Ingi Jóhannsson",
+                        0.05,
+                        "#2E8B57",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Iceland",
+            "alpha-2": "IS",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "MX",
+        "elections": [
+            {
+                "date": "2024-06-02",
+                "description": "General election - President",
+                "turnout": 61.05,
+                "data": [
+                    [
+                        "Sigamos Haciendo Historia",
+                        "Claudia Sheinbaum",
+                        59.22,
+                        "#C0311A",
+                        null,
+                        null
+                    ],
+                    [
+                        "Fuerza y Corazón por México",
+                        "Xóchitl Gálvez",
+                        27.84,
+                        "#C71585",
+                        null,
+                        null
+                    ],
+                    [
+                        "Citizens' Movement",
+                        "Jorge Máynez",
+                        10.39,
+                        "#FF8C00",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-06-02",
+                "description": "General election - Chamber of Deputies",
+                "turnout": 61.05,
+                "data": [
+                    [
+                        null,
+                        "Sigamos Haciendo Historia",
+                        256,
+                        "#C0311A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Fuerza y Corazón por México",
+                        42,
+                        "#C71585",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Citizens' Movement",
+                        1,
+                        "#FF8C00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        1,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ]
+            },
+            {
+                "date": "2024-06-02",
+                "description": "General election - Senate",
+                "turnout": 61.05,
+                "data": [
+                    [
+                        null,
+                        "Sigamos Haciendo Historia",
+                        83,
+                        "#C0311A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Fuerza y Corazón por México",
+                        40,
+                        "#C71585",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Citizens' Movement",
+                        5,
+                        "#FF8C00",
+                        null,
+                        null
+                    ]
+                ]
+            }
+        ],
+        "countryInfo": {
+            "name": "Mexico",
+            "alpha-2": "MX",
+            "gov": "Federal presidential republic"
+        }
+    },
+    {
+        "country": "BE",
+        "elections": [
+            {
+                "date": "2024-06-09",
+                "description": "Belgian federal election",
+                "turnout": 87.42,
+                "data": [
+                    [
+                        null,
+                        "PVDA-PTB",
+                        15,
+                        "#8B0000",
+                        null,
+                        9.86
+                    ],
+                    [
+                        null,
+                        "PS",
+                        16,
+                        "#FF0000",
+                        null,
+                        8.04
+                    ],
+                    [
+                        null,
+                        "Vooruit",
+                        13,
+                        "#FF2900",
+                        null,
+                        8.11
+                    ],
+                    [
+                        null,
+                        "Ecolo",
+                        3,
+                        "#5aad39",
+                        null,
+                        2.93
+                    ],
+                    [
+                        null,
+                        "Groen",
+                        6,
+                        "#01796F",
+                        null,
+                        4.65
+                    ],
+                    [
+                        null,
+                        "DéFI",
+                        1,
+                        "#DD0081",
+                        null,
+                        1.2
+                    ],
+                    [
+                        null,
+                        "LE",
+                        14,
+                        "#02E5D2",
+                        null,
+                        6.77
+                    ],
+                    [
+                        null,
+                        "CD&V",
+                        11,
+                        "#FF6200",
+                        null,
+                        7.98
+                    ],
+                    [
+                        null,
+                        "MR",
+                        20,
+                        "#0047AB",
+                        null,
+                        10.26
+                    ],
+                    [
+                        null,
+                        "Open Vld",
+                        7,
+                        "#0087DC",
+                        null,
+                        5.45
+                    ],
+                    [
+                        null,
+                        "N-VA",
+                        24,
+                        "#F9CE19",
+                        null,
+                        16.71
+                    ],
+                    [
+                        null,
+                        "VB",
+                        20,
+                        "#FFE500",
+                        null,
+                        13.77
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "76 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Belgium",
+            "alpha-2": "BE",
+            "gov": "Federal parliamentary constitutional monarchy"
+        }
+    },
+    {
+        "country": "BG",
+        "elections": [
+            {
+                "date": "2024-06-09",
+                "description": "Bulgarian parliamentary election",
+                "turnout": 33.4,
+                "data": [
+                    [
+                        null,
+                        "BSP for Bulgaria",
+                        19,
+                        "#DB0F28",
+                        null,
+                        6.85
+                    ],
+                    [
+                        null,
+                        "Movement for Rights and Freedoms",
+                        45,
+                        "#0066B7",
+                        null,
+                        16.57
+                    ],
+                    [
+                        null,
+                        "PP–DB",
+                        40,
+                        "#4200FF",
+                        null,
+                        13.92
+                    ],
+                    [
+                        null,
+                        "There is Such a People",
+                        17,
+                        "#4BB9DE",
+                        null,
+                        5.79
+                    ],
+                    [
+                        null,
+                        "GERB–SDS",
+                        68,
+                        "#226ABA",
+                        null,
+                        23.99
+                    ],
+                    [
+                        null,
+                        "Velichie",
+                        13,
+                        "#AC2225",
+                        null,
+                        4.51
+                    ],
+                    [
+                        null,
+                        "Revival",
+                        38,
+                        "#C09F62",
+                        null,
+                        13.38
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "121 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Bulgaria",
+            "alpha-2": "BG",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "EU",
+        "elections": [
+            {
+                "date": "2024-06-09",
+                "description": "European Parliament election",
+                "turnout": 51.01,
+                "data": [
+                    [
+                        null,
+                        "The Left in the European Parliament – GUE/NGL",
+                        36,
+                        "#B71C1C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Progressive Alliance of Socialists and Democrats",
+                        135,
+                        "#F0001C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Greens–European Free Alliance",
+                        53,
+                        "#57B45F",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Renew Europe",
+                        79,
+                        "#FFD700",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "European People's Party",
+                        186,
+                        "#3399FF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "European Conservatives and Reformists",
+                        73,
+                        "#196CA8",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Identity and Democracy",
+                        58,
+                        "#0E408A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Non-Inscrits",
+                        45,
+                        "#999999",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Others",
+                        55,
+                        "#DDDDBB",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "361 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "European Union",
+            "short": "EU",
+            "alpha-2": "EU",
+            "gov": "Mixed intergovernmental directorial parliamentary confederation"
+        }
+    },
+    {
+        "country": "SM",
+        "elections": [
+            {
+                "date": "2024-06-09",
+                "description": "San Marino general election",
+                "data": [
+                    [
+                        "",
+                        "RETE",
+                        3,
+                        "#275956",
+                        null,
+                        5.07
+                    ],
+                    [
+                        "",
+                        "Libera/PS – PSD",
+                        10,
+                        "#E30514",
+                        null,
+                        15.75
+                    ],
+                    [
+                        "Party of Socialists and Democrats",
+                        "PSD",
+                        8,
+                        "#DB4608",
+                        null,
+                        12.19
+                    ],
+                    [
+                        "Domani Motus Liberi",
+                        "DML",
+                        5,
+                        "#039ADA",
+                        null,
+                        8.47
+                    ],
+                    [
+                        "Future Republic",
+                        "RF",
+                        8,
+                        "#223968",
+                        null,
+                        11.98
+                    ],
+                    [
+                        "Reformist Alliance",
+                        "AR",
+                        4,
+                        "#2A68B1",
+                        null,
+                        6.98
+                    ],
+                    [
+                        "Sammarinese Christian Democratic Party",
+                        "PDCS",
+                        22,
+                        "#9CB2D8",
+                        null,
+                        34.14
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "31 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "San Marino",
+            "alpha-2": "SM",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "IQ-KR",
+        "elections": [
+            {
+                "date": "2024-06-10",
+                "description": "Kurdistan Region parliamentary election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Kurdistan Region",
+            "alpha-2": "IQ-KR",
+            "gov": "Parliamentary autonomous region"
+        }
+    },
+    {
+        "country": "IR",
+        "elections": [
+            {
+                "date": "2024-06-28",
+                "description": "Presidential election (first round)",
+                "turnout": 39.93,
+                "data": [
+                    [
+                        null,
+                        "Masoud Pezeshkian",
+                        44.36,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Saeed Jalili",
+                        40.35,
+                        "#9f8f8f",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Mohammad Bagher Ghalibaf",
+                        14.41,
+                        "#186D34",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Mostafa Pourmohammadi",
+                        0.88,
+                        "#009900",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-07-05",
+                "description": "Presidential election (second round)",
+                "turnout": 49.68,
+                "data": [
+                    [
+                        null,
+                        "Masoud Pezeshkian",
+                        54.76,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Saeed Jalili",
+                        45.24,
+                        "#9f8f8f",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": false,
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Iran (Islamic Republic of)",
+            "short": "Iran",
+            "alpha-2": "IR",
+            "gov": "Islamic republic"
+        }
+    },
+    {
+        "country": "MN",
+        "elections": [
+            {
+                "date": "2024-06-28",
+                "description": "Mongolian parliamentary election",
+                "turnout": 69.4,
+                "data": [
+                    [
+                        null,
+                        "MPP",
+                        68,
+                        "#ED1B34",
+                        null,
+                        35.01
+                    ],
+                    [
+                        null,
+                        "Civil Will-Green",
+                        4,
+                        "#027E40",
+                        null,
+                        5.02
+                    ],
+                    [
+                        null,
+                        "Democratic",
+                        42,
+                        "#11479E",
+                        null,
+                        30.14
+                    ],
+                    [
+                        null,
+                        "HUN Party",
+                        8,
+                        "#6D3290",
+                        null,
+                        10.38
+                    ],
+                    [
+                        null,
+                        "National Coalition",
+                        4,
+                        "#066B55",
+                        null,
+                        5.17
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "64 seats needed",
+                    "withPerc": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Mongolia",
+            "alpha-2": "MN",
+            "gov": "Semi-presidential republic"
+        }
+    },
+    {
+        "country": "MR",
+        "elections": [
+            {
+                "date": "2024-06-29",
+                "description": "Mauritanian presidential election",
+                "data": [
+                    [
+                        "El Insaf",
+                        "Mohamed Cheikh Ghazouani",
+                        56.12,
+                        "#234D92",
+                        null,
+                        null
+                    ],
+                    [
+                        "Democratic Alternation Pole",
+                        "Biram Dah Abeid",
+                        22.1,
+                        "#EAC553",
+                        null,
+                        null
+                    ],
+                    [
+                        "National Rally for Reform and Development",
+                        "Hamadi Sid’El Moctar Mohamed Abdi",
+                        12.78,
+                        "#008040",
+                        null,
+                        null
+                    ],
+                    [
+                        "Republican Front for Unity and Democracy",
+                        "El Id Mohameden M’Bareck",
+                        3.57,
+                        "#3080B7",
+                        null,
+                        null
+                    ],
+                    [
+                        "Alliance for Justice and Democracy/Movement for Renewal",
+                        "Mamadou Bocar Ba",
+                        2.39,
+                        "#F8C3A0",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Outouma Antoine Souleimane Soumaré",
+                        2.06,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Mohamed Lemine El Mourteji El Wavi",
+                        0.98,
+                        "#95B256",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Mauritania",
+            "alpha-2": "MR",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "FR",
+        "elections": [
+            {
+                "description": "French legislative election (first round)",
+                "date": "2024-06-30",
+                "turnout": 66.71,
+                "data": [
+                    [
+                        null,
+                        "National Rally",
+                        29.25,
+                        "#254671",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "New Popular Front",
+                        28.14,
+                        "#E50241",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ensemble",
+                        21.27,
+                        "#FFD600",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "The Republicans",
+                        6.57,
+                        "#0043B0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Union of the far-right",
+                        3.9,
+                        "#404040",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous right",
+                        3.66,
+                        "#ADC1FD",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous left",
+                        1.53,
+                        "#FFC0C0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous centre",
+                        1.22,
+                        "#fcdaa8",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous far-left",
+                        1.15,
+                        "#BB0000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Regionalists",
+                        1.05,
+                        "#DDDD00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Reconquête",
+                        0.75,
+                        "#170066",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ecologists",
+                        0.57,
+                        "#8FBC8F",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous",
+                        0.45,
+                        "#CECECE",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Sovereignist right",
+                        0.28,
+                        "#0087CD",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellaneous far-right",
+                        0.19,
+                        "#404040",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Radical Party of the Left",
+                        0.04,
+                        "#F0C200",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "description": "French legislative election (second round)",
+                "date": "2024-07-07",
+                "turnout": 66.63,
+                "notes": "Based on the final results published by Le Monde",
+                "data": [
+                    [
+                        null,
+                        "New Popular Front (left-wing alliance)",
+                        182,
+                        "#E50241",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Indipentent left",
+                        13,
+                        "#FFC0C0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ensemble (Macron’s coalition)",
+                        168,
+                        "#FFD600",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Indipendent center",
+                        6,
+                        "#fcdaa8",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Regionalists",
+                        4,
+                        "#DDDD00",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independent right",
+                        14,
+                        "#ADC1FD",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "The Republicans (conservatives)",
+                        46,
+                        "#0043B0",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "National Rally and allies",
+                        143,
+                        "#254671",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Miscellanous",
+                        1,
+                        "#CECECE",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "289 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "France",
+            "alpha-2": "FR",
+            "gov": "Semi-presidential republic"
+        }
+    },
+    {
+        "country": "GB",
+        "elections": [
+            {
+                "date": "2024-07-04",
+                "description": "British general election",
+                "data": [
+                    [
+                        null,
+                        "Labour Party",
+                        412,
+                        "#E4003B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Liberal Democrats",
+                        72,
+                        "#FAA61A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Scottish National Party",
+                        9,
+                        "#FDF38E",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Sinn Féin",
+                        7,
+                        "#326760",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Green Party of England and Wales",
+                        4,
+                        "#02A95B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independent",
+                        6,
+                        "#dcdcdc",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Reform UK",
+                        5,
+                        "#12B6CF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Unionist Party",
+                        5,
+                        "#D46A4C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Plaid Cymru",
+                        4,
+                        "#005B54",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Social Democratic and Labour Party",
+                        2,
+                        "#2AA82C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Alliance Party of Northern Ireland",
+                        1,
+                        "#F6CB2F",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ulster Unionist Party",
+                        1,
+                        "#48A5EE",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Traditional Unionist Voice",
+                        1,
+                        "#0C3A6A",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Conservative Party",
+                        121,
+                        "#0087DC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "majority": true,
+                    "majorityText": "326 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "short": "UK",
+            "alpha-2": "GB",
+            "gov": "Unitary parliamentary constitutional monarchy"
+        }
+    },
+    {
+        "country": "RW",
+        "elections": [
+            {
+                "date": "2024-07-15",
+                "description": "Rwandan general election - President",
+                "turnout": 98,
+                "data": [
+                    [
+                        "Rwandan Patriotic Front",
+                        "Paul Kagame",
+                        99.15,
+                        "#39A3DC",
+                        null,
+                        null
+                    ],
+                    [
+                        "Democratic Green Party",
+                        "Frank Habineza",
+                        0.53,
+                        "#A2FD0B",
+                        null,
+                        null
+                    ],
+                    [
+                        "Independent",
+                        "Philippe Mpayimana",
+                        0.32,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            },
+            {
+                "date": "2024-07-15",
+                "description": "Rwandan general election - Chamber of Deputies",
+                "turnout": 98,
+                "data": [
+                    [
+                        null,
+                        "RPF Coalition",
+                        62.67,
+                        "#39A3DC",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Liberal Party (Rwanda)",
+                        10.97,
+                        "#03b464",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Social Democratic Party (Rwanda)",
+                        9.48,
+                        "#00BFFF",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Ideal Democratic Party",
+                        5.81,
+                        "#009900",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Green Party of Rwanda",
+                        5.3,
+                        "#A2FD0B",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Social Party Imberakuri",
+                        5.26,
+                        "#C71585",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        0.51,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": true
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Rwanda",
+            "alpha-2": "RW",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "SY",
+        "elections": [
+            {
+                "description": "Syrian parliamentary election",
+                "date": "2024-07-15",
+                "turnout": 38.16,
+                "data": [
+                    [
+                        null,
+                        "Ba'ath Party",
+                        169,
+                        "#017B48",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Syrian Social Nationalist Party",
+                        3,
+                        "#000000",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Arab Socialist Union Party",
+                        2,
+                        "#F0001C",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Syrian Communist Party (Bakdash)",
+                        2,
+                        "#DE3533",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "National Covenant Party",
+                        2,
+                        "green",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Socialist Unionist Party",
+                        2,
+                        "#BF0202",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Arab Democratic Union Party",
+                        2,
+                        "green",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Syrian Communist Party (Unified)",
+                        2,
+                        "red",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Democratic Socialist Unionist Party",
+                        1,
+                        "red",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        "Independents",
+                        65,
+                        "#DCDCDC",
+                        null,
+                        null
+                    ]
+                ],
+                "options": {
+                    "percentage": false,
+                    "majority": true,
+                    "majorityText": "126 seats needed"
+                }
+            }
+        ],
+        "countryInfo": {
+            "name": "Syrian Arab Republic",
+            "short": "Syria",
+            "alpha-2": "SY",
+            "gov": "Unitary presidential republic under a totalitarian hereditary dictatorship"
+        }
+    },
+    {
+        "country": "VE",
+        "elections": [
+            {
+                "date": "2024-07-28",
+                "description": "Venezuelan presidential election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Venezuela",
+            "complete-name": "Venezuela (Bolivarian Republic of)",
+            "alpha-2": "VE",
+            "gov": "Federal presidential republic under a centralized authoritarian state"
+        }
+    },
+    {
+        "country": "DZ",
+        "elections": [
+            {
+                "date": "2024-09-07",
+                "description": "Algerian presidential election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Algeria",
+            "alpha-2": "DZ",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "JO",
+        "elections": [
+            {
+                "date": "2024-09-07",
+                "description": "Jordanian general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Jordan",
+            "alpha-2": "JO",
+            "gov": "Constitutional monarchy"
+        }
+    },
+    {
+        "country": "RO",
+        "elections": [
+            {
+                "date": "2024-09-15",
+                "description": "Romanian presidential election"
+            },
+            {
+                "date": "2024-12-08",
+                "description": "Romanian parliamentary election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Romania",
+            "alpha-2": "RO",
+            "gov": "Semi-presidential republic"
+        }
+    },
+    {
+        "country": "AT",
+        "elections": [
+            {
+                "date": "2024-09-29",
+                "description": "Austrian legislative election,"
+            }
+        ],
+        "countryInfo": {
+            "name": "Austria",
+            "alpha-2": "AT",
+            "gov": "Federal parliamentary republic"
+        }
+    },
+    {
+        "country": "BR",
+        "elections": [
+            {
+                "date": "2024-10-06",
+                "description": "Brazilian municipal elections"
+            }
+        ],
+        "countryInfo": {
+            "name": "Brazil",
+            "alpha-2": "BR",
+            "gov": "Federal presidential republic"
+        }
+    },
+    {
+        "country": "MZ",
+        "elections": [
+            {
+                "date": "2024-10-09",
+                "description": "Mozambican general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Mozambique",
+            "alpha-2": "MZ",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "CZ",
+        "elections": [
+            {
+                "date": "2024-10-20",
+                "description": "Czech Senate election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Czechia",
+            "alpha-2": "CZ",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "MD",
+        "elections": [
+            {
+                "date": "2024-10-20",
+                "description": "Moldovan presidential election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Moldova, Republic of",
+            "short": "Moldova",
+            "alpha-2": "MD",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "GE",
+        "elections": [
+            {
+                "date": "2024-10-26",
+                "description": "Georgian parliamentary election"
+            },
+            {
+                "date": "2024-10-26",
+                "description": "Georgian presidential election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Georgia",
+            "alpha-2": "GE",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "UY",
+        "elections": [
+            {
+                "date": "2024-10-27",
+                "description": "Uruguayan general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Uruguay",
+            "alpha-2": "UY",
+            "gov": "Unitary presidential republic"
+        }
+    },
+    {
+        "country": "US",
+        "elections": [
+            {
+                "date": "2024-11-05",
+                "description": "United States presidential election"
+            },
+            {
+                "date": "2024-11-05",
+                "description": "United States House of Representatives elections"
+            },
+            {
+                "date": "2024-11-05",
+                "description": "United States Senate elections"
+            }
+        ],
+        "countryInfo": {
+            "name": "United States of America",
+            "short": "USA",
+            "alpha-2": "US",
+            "gov": "Federal presidential republic"
+        }
+    },
+    {
+        "country": "PW",
+        "elections": [
+            {
+                "date": "2024-11-12",
+                "description": "Palauan general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Palau",
+            "alpha-2": "PW",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "NA",
+        "elections": [
+            {
+                "date": "2024-11-15",
+                "description": "Namibian general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Namibia",
+            "alpha-2": "NA",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "MU",
+        "elections": [
+            {
+                "date": "2024-11-30",
+                "description": "Mauritian general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Mauritius",
+            "alpha-2": "MU",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "GH",
+        "elections": [
+            {
+                "date": "2024-12-07",
+                "description": "Ghanaian general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "Ghana",
+            "alpha-2": "GH",
+            "gov": "Presidential republic"
+        }
+    },
+    {
+        "country": "SS",
+        "elections": [
+            {
+                "date": "2024-12-22",
+                "description": "South Sudanese general election"
+            }
+        ],
+        "countryInfo": {
+            "name": "South Sudan",
+            "alpha-2": "SS",
+            "gov": "Federal presidential republic under a provisional government"
+        }
+    },
+    {
+        "country": "BW",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Botswana general election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Botswana",
+            "alpha-2": "BW",
+            "gov": "Parliamentary republic"
+        }
+    },
+    {
+        "country": "GW",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Guinea-Bissau parliamentary election",
+                "nodate": true
+            },
+            {
+                "date": "2024-12-31",
+                "description": "Guinea-Bissau presidential election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Guinea-Bissau",
+            "alpha-2": "GW",
+            "gov": "Semi-presidential republic"
+        }
+    },
+    {
+        "country": "TN",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Tunisian presidential election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Tunisia",
+            "alpha-2": "TN",
+            "gov": "Unitary semi-presidential republic"
+        }
+    },
+    {
+        "country": "KP",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "North Korean parliamentary election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "North Korea",
+            "short": "North Korea",
+            "complete-name": "Korea (Democratic People's Republic of)",
+            "alpha-2": "KP",
+            "gov": "One-party socialist republic"
+        }
+    },
+    {
+        "country": "LK",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Sri Lankan presidential election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Sri Lanka",
+            "alpha-2": "LK",
+            "gov": "Unitary semi-presidential republic"
+        }
+    },
+    {
+        "country": "UZ",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Uzbek parliamentary election, December (first round)",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Uzbekistan",
+            "alpha-2": "UZ",
+            "gov": "Unitary presidential republic"
+        }
+    },
+    {
+        "country": "KI",
+        "elections": [
+            {
+                "date": "2024-12-31",
+                "description": "Kiribati parliamentary election",
+                "nodate": true
+            }
+        ],
+        "countryInfo": {
+            "name": "Kiribati",
+            "alpha-2": "KI",
+            "gov": "Presidential republic"
+        }
+    }
+]
