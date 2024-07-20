@@ -2824,8 +2824,9 @@
     "intermediate-region-code": ""
   },
   {
-    "name": "Syrian Arab Republic",
-    "shor": "Syria",
+    "name": "Syria",
+    "complete-name": "Syrian Arab Republic",
+    "short": "Syria",
     "alpha-2": "SY",
     "alpha-3": "SYR",
     "country-code": 760,
