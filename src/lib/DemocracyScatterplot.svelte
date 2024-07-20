@@ -62,14 +62,17 @@
                             election.data,
                             elections?.options?.percentage,
                         ),
-                        variance: variance(
-                            normalizeElection(
-                                election.data,
-                                elections?.options?.percentage,
+                        variance: Math.min(
+                            0.25,
+                            variance(
+                                normalizeElection(
+                                    election.data,
+                                    elections?.options?.percentage,
+                                ),
+                                (d) => {
+                                    return d[2];
+                                },
                             ),
-                            (d) => {
-                                return d[2];
-                            },
                         ),
                     });
                 }
@@ -79,7 +82,7 @@
         },
         {},
     );
-    // $: console.log("dataWithVariance", dataWithVariance);
+    $: console.log("dataWithVariance", dataWithVariance);
     $: maxVariance = Math.max(
         ...Object.values(dataWithVariance)
             .filter((d) => d?.[0])
@@ -111,7 +114,7 @@
                 left: 0,
                 right: 0,
             })
-            .x([1.5, 9.9])
+            .x([1.4, 9.9])
             .y([0, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
@@ -194,7 +197,7 @@
             .add(
                 chrt
                     .verticalRange()
-                    .from(1.5)
+                    .from(1.3)
                     .to(3.99)
                     .fill("#a8261f")
                     .fillOpacity(0.1)
