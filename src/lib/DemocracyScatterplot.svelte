@@ -28,6 +28,7 @@
             case "BT":
             case "BG":
             case "BY":
+            case "CZ":
                 return 7;
             case "MN":
                 return 8;
@@ -229,6 +230,7 @@
                                     "BT",
                                     "BG",
                                     "BY",
+                                    "CZ",
                                 ].includes(d[0].country)
                                     ? "bottom"
                                     : "top",
