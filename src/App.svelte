@@ -115,7 +115,7 @@
                     polls this year. Almost 70 countries will hold elections,
                     people in 8 of the 10 most populous countries in the world — <a
                         href="#BD">Bangladesh</a
-                    >, Brazil, <a href="#IN">India</a>,
+                    >, <a href="#IN">India</a>,
                     <a href="#ID">Indonesia</a>,
                     <a href="#MX">Mexico</a>,<a href="#PK">Pakistan</a>,
                     <a href="#RU">Russia</a>

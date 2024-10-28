@@ -28,7 +28,9 @@
             case "BT":
             case "BG":
             case "BY":
+            case "AT":
             case "CZ":
+            case "MD":
                 return 7;
             case "MN":
                 return 8;
@@ -116,7 +118,7 @@
                 right: 0,
             })
             .x([1.4, 9.9])
-            .y([0, maxVariance * 1.1])
+            .y([-0.006, maxVariance * 1.1])
             .data(
                 Object.values(dataWithVariance)
                     .filter((d) => d.length && democracyIndex[d[0].country])
@@ -231,6 +233,8 @@
                                     "BG",
                                     "BY",
                                     "CZ",
+                                    "AT",
+                                    "MD",
                                 ].includes(d[0].country)
                                     ? "bottom"
                                     : "top",
