@@ -436,6 +436,11 @@
     "alpha-2": "SO",
     "gov": "Federal parliamentary republic"
   },
+  {
+    "name": "Somaliland",
+    "alpha-2": "SOM",
+    "gov": "Unitary presidential republic"
+  },
   { "name": "South Africa", "alpha-2": "ZA", "gov": "Parliamentary republic" },
   { "name": "South Georgia and the South Sandwich Islands", "alpha-2": "GS" },
   {

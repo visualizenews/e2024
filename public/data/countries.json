@@ -2694,6 +2694,17 @@
     "intermediate-region-code": "014"
   },
   {
+    "name": "Somaliland",
+    "alpha-2": "SOM",
+    "iso_3166-2": "ISO 3166-2:SOM",
+    "region": "Africa",
+    "sub-region": "Sub-Saharan Africa",
+    "intermediate-region": "Eastern Africa",
+    "region-code": "002",
+    "sub-region-code": 202,
+    "intermediate-region-code": "014"
+  },
+  {
     "name": "South Africa",
     "alpha-2": "ZA",
     "alpha-3": "ZAF",
