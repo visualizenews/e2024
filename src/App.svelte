@@ -113,7 +113,7 @@
                 <b class="highlight"
                     >Around 2 billion voters are expected to be heading to the
                     polls this year. Almost 70 countries will hold elections,
-                    people in 8 of the 10 most populous countries in the world — <a
+                    people in 7 of the 10 most populous countries in the world — <a
                         href="#BD">Bangladesh</a
                     >, <a href="#IN">India</a>,
                     <a href="#ID">Indonesia</a>,
