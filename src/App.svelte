@@ -280,9 +280,9 @@
                                 options={election.options}
                                 {width}
                             />
-                            {#if election.notes}
-                                <p class="notes">{election.notes}</p>
-                            {/if}
+                        {/if}
+                        {#if election.notes}
+                            <p class="notes">{election.notes}</p>
                         {/if}
                     </div>
                 {/each}
