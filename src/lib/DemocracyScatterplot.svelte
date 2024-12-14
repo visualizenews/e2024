@@ -20,11 +20,12 @@
     }
     function getScatterPlotOffsetY(d) {
         switch (d[0].country) {
-            case "HR":
+            case "MU":
+            case "LK":
+            case "MK":
             case "ID":
             case "ZA":
             case "PL":
-            case "FI":
             case "BT":
             case "BG":
             case "BY":
@@ -34,6 +35,8 @@
                 return 7;
             case "MN":
                 return 8;
+            case "FI":
+                return 10;
             default:
                 return 0;
         }
@@ -224,7 +227,9 @@
                             )
                             .valign((d) =>
                                 [
-                                    "HR",
+                                    "MU",
+                                    "LK",
+                                    "MK",
                                     "ID",
                                     "ZA",
                                     "PL",
