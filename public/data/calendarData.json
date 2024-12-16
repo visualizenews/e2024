@@ -1,0 +1,1228 @@
+[
+  {
+    "date": "2024-01-13",
+    "country": "TW",
+    "countryInfo": {
+      "name": "Taiwan",
+      "alpha-2": "TW",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-13",
+    "country": "TW",
+    "countryInfo": {
+      "name": "Taiwan",
+      "alpha-2": "TW",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-07",
+    "country": "BD",
+    "countryInfo": {
+      "name": "Bangladesh",
+      "alpha-2": "BD",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-11",
+    "country": "SX",
+    "countryInfo": {
+      "name": "Sint Maarten (Dutch part)",
+      "short": "Sint Maarten",
+      "alpha-2": "SX",
+      "gov": "Parliamentary representative democracy within a constitutional monarchy"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-08-19",
+    "country": "SX",
+    "countryInfo": {
+      "name": "Sint Maarten (Dutch part)",
+      "short": "Sint Maarten",
+      "alpha-2": "SX",
+      "gov": "Parliamentary representative democracy within a constitutional monarchy"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-14",
+    "country": "ID",
+    "countryInfo": {
+      "name": "Indonesia",
+      "alpha-2": "ID",
+      "gov": "Presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-08",
+    "country": "PK",
+    "countryInfo": {
+      "name": "Pakistan",
+      "alpha-2": "PK",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 15,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-03-09",
+    "country": "PK",
+    "countryInfo": {
+      "name": "Pakistan",
+      "alpha-2": "PK",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-03",
+    "country": "PK",
+    "countryInfo": {
+      "name": "Pakistan",
+      "alpha-2": "PK",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-07",
+    "country": "AZ",
+    "countryInfo": {
+      "name": "Azerbaijan",
+      "alpha-2": "AZ",
+      "gov": "Presidential republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-01",
+    "country": "AZ",
+    "countryInfo": {
+      "name": "Azerbaijan",
+      "alpha-2": "AZ",
+      "gov": "Presidential republic"
+    },
+    "hasData": 26,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-04",
+    "country": "SV",
+    "countryInfo": {
+      "name": "El Salvador",
+      "alpha-2": "SV",
+      "gov": "Presidential republic"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-29",
+    "country": "FI",
+    "countryInfo": {
+      "name": "Finland",
+      "alpha-2": "FI",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-11",
+    "country": "FI",
+    "countryInfo": {
+      "name": "Finland",
+      "alpha-2": "FI",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-14",
+    "country": "KM",
+    "countryInfo": {
+      "name": "Comoros",
+      "alpha-2": "KM",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-01-09",
+    "country": "BT",
+    "countryInfo": {
+      "name": "Bhutan",
+      "alpha-2": "BT",
+      "gov": "Constitutional monarchy"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-25",
+    "country": "BY",
+    "countryInfo": {
+      "name": "Belarus",
+      "alpha-2": "BY",
+      "gov": "Presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-28",
+    "country": "IR",
+    "countryInfo": {
+      "name": "Iran (Islamic Republic of)",
+      "short": "Iran",
+      "alpha-2": "IR",
+      "gov": "Islamic republic"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-05",
+    "country": "IR",
+    "countryInfo": {
+      "name": "Iran (Islamic Republic of)",
+      "short": "Iran",
+      "alpha-2": "IR",
+      "gov": "Islamic republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-03-10",
+    "country": "PT",
+    "countryInfo": {
+      "name": "Portugal",
+      "alpha-2": "PT",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-03-17",
+    "country": "RU",
+    "countryInfo": {
+      "name": "Russian Federation",
+      "short": "Russia",
+      "alpha-2": "RU",
+      "gov": "Federal semi-presidential republic"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-03-23",
+    "country": "SK",
+    "countryInfo": {
+      "name": "Slovakia",
+      "alpha-2": "SK",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-06",
+    "country": "SK",
+    "countryInfo": {
+      "name": "Slovakia",
+      "alpha-2": "SK",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-03-24",
+    "country": "SN",
+    "countryInfo": {
+      "name": "Senegal",
+      "alpha-2": "SN",
+      "gov": "Presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-17",
+    "country": "SN",
+    "countryInfo": {
+      "name": "Senegal",
+      "alpha-2": "SN",
+      "gov": "Presidential republic"
+    },
+    "hasData": 32,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-02-25",
+    "country": "KH",
+    "countryInfo": {
+      "name": "Cambodia",
+      "alpha-2": "KH",
+      "gov": "Parliamentary constitutional monarchy"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-04",
+    "country": "KW",
+    "countryInfo": {
+      "name": "Kuwait",
+      "alpha-2": "KW",
+      "gov": "Constitutional monarchy"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-21",
+    "country": "MV",
+    "countryInfo": {
+      "name": "Maldives",
+      "alpha-2": "MV",
+      "gov": "Presidential republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-10",
+    "country": "KR",
+    "countryInfo": {
+      "name": "South Korea",
+      "complete-name": "Korea, Republic of",
+      "alpha-2": "KR",
+      "gov": "Presidential republic"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-17",
+    "country": "HR",
+    "countryInfo": {
+      "name": "Croatia",
+      "alpha-2": "HR",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 12,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-15",
+    "country": "HR",
+    "countryInfo": {
+      "name": "Croatia",
+      "alpha-2": "HR",
+      "gov": "Parliamentary republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-24",
+    "country": "MK",
+    "countryInfo": {
+      "name": "North Macedonia",
+      "alpha-2": "MK",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-08",
+    "country": "MK",
+    "countryInfo": {
+      "name": "North Macedonia",
+      "alpha-2": "MK",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-08",
+    "country": "MK",
+    "countryInfo": {
+      "name": "North Macedonia",
+      "alpha-2": "MK",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-07",
+    "country": "PL",
+    "countryInfo": {
+      "name": "Poland",
+      "alpha-2": "PL",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-17",
+    "country": "SB",
+    "countryInfo": {
+      "name": "Solomon Islands",
+      "alpha-2": "SB",
+      "gov": "Constitutional monarchy with a parliamentary system"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-04-29",
+    "country": "TG",
+    "countryInfo": {
+      "name": "Togo",
+      "alpha-2": "TG",
+      "gov": "Unitary presidential republic under an authoritarian dictatorship"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-06",
+    "country": "TD",
+    "countryInfo": {
+      "name": "Chad",
+      "alpha-2": "TD",
+      "gov": "Presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-29",
+    "country": "TD",
+    "countryInfo": {
+      "name": "Chad",
+      "alpha-2": "TD",
+      "gov": "Presidential republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-29",
+    "country": "MG",
+    "countryInfo": {
+      "name": "Madagascar",
+      "alpha-2": "MG",
+      "gov": "Presidential republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-29",
+    "country": "ZA",
+    "countryInfo": {
+      "name": "South Africa",
+      "alpha-2": "ZA",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 18,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-19",
+    "country": "DO",
+    "countryInfo": {
+      "name": "Dominican Republic",
+      "alpha-2": "DO",
+      "gov": "Presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-05",
+    "country": "PA",
+    "countryInfo": {
+      "name": "Panama",
+      "alpha-2": "PA",
+      "gov": "Presidential republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-05",
+    "country": "PA",
+    "countryInfo": {
+      "name": "Panama",
+      "alpha-2": "PA",
+      "gov": "Presidential republic"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-12",
+    "country": "LT",
+    "countryInfo": {
+      "name": "Lithuania",
+      "alpha-2": "LT",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 8,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-05-26",
+    "country": "LT",
+    "countryInfo": {
+      "name": "Lithuania",
+      "alpha-2": "LT",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-13",
+    "country": "LT",
+    "countryInfo": {
+      "name": "Lithuania",
+      "alpha-2": "LT",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-27",
+    "country": "LT",
+    "countryInfo": {
+      "name": "Lithuania",
+      "alpha-2": "LT",
+      "gov": "Parliamentary republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-29",
+    "country": "MR",
+    "countryInfo": {
+      "name": "Mauritania",
+      "alpha-2": "MR",
+      "gov": "Presidential republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-02",
+    "country": "MX",
+    "countryInfo": {
+      "name": "Mexico",
+      "alpha-2": "MX",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-02",
+    "country": "MX",
+    "countryInfo": {
+      "name": "Mexico",
+      "alpha-2": "MX",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-02",
+    "country": "MX",
+    "countryInfo": {
+      "name": "Mexico",
+      "alpha-2": "MX",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-28",
+    "country": "MN",
+    "countryInfo": {
+      "name": "Mongolia",
+      "alpha-2": "MN",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-09",
+    "country": "BE",
+    "countryInfo": {
+      "name": "Belgium",
+      "alpha-2": "BE",
+      "gov": "Federal parliamentary constitutional monarchy"
+    },
+    "hasData": 12,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-09",
+    "country": "BG",
+    "countryInfo": {
+      "name": "Bulgaria",
+      "alpha-2": "BG",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-27",
+    "country": "BG",
+    "countryInfo": {
+      "name": "Bulgaria",
+      "alpha-2": "BG",
+      "gov": "Parliamentary republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-09",
+    "country": "EU",
+    "countryInfo": {
+      "name": "European Union",
+      "short": "EU",
+      "alpha-2": "EU",
+      "gov": "Mixed intergovernmental directorial parliamentary confederation"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-01",
+    "country": "IN",
+    "countryInfo": {
+      "name": "India",
+      "alpha-2": "IN",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-01",
+    "country": "IN",
+    "countryInfo": {
+      "name": "India",
+      "alpha-2": "IN",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 42,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-01",
+    "country": "IS",
+    "countryInfo": {
+      "name": "Iceland",
+      "alpha-2": "IS",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 12,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-30",
+    "country": "IS",
+    "countryInfo": {
+      "name": "Iceland",
+      "alpha-2": "IS",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 6,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-30",
+    "country": "FR",
+    "countryInfo": {
+      "name": "France",
+      "alpha-2": "FR",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 16,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-07",
+    "country": "FR",
+    "countryInfo": {
+      "name": "France",
+      "alpha-2": "FR",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 9,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-04",
+    "country": "GB",
+    "countryInfo": {
+      "name": "United Kingdom of Great Britain and Northern Ireland",
+      "short": "UK",
+      "alpha-2": "GB",
+      "gov": "Unitary parliamentary constitutional monarchy"
+    },
+    "hasData": 14,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-15",
+    "country": "RW",
+    "countryInfo": {
+      "name": "Rwanda",
+      "alpha-2": "RW",
+      "gov": "Presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-15",
+    "country": "RW",
+    "countryInfo": {
+      "name": "Rwanda",
+      "alpha-2": "RW",
+      "gov": "Presidential republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-15",
+    "country": "SY",
+    "countryInfo": {
+      "name": "Syrian Arab Republic",
+      "short": "Syria",
+      "alpha-2": "SY",
+      "gov": "Unitary presidential republic under a totalitarian hereditary dictatorship"
+    },
+    "hasData": 10,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-28",
+    "country": "VE",
+    "countryInfo": {
+      "name": "Venezuela",
+      "complete-name": "Venezuela (Bolivarian Republic of)",
+      "alpha-2": "VE",
+      "gov": "Federal presidential republic under a centralized authoritarian state"
+    },
+    "hasData": 10,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-07-28",
+    "country": "VE",
+    "countryInfo": {
+      "name": "Venezuela",
+      "complete-name": "Venezuela (Bolivarian Republic of)",
+      "alpha-2": "VE",
+      "gov": "Federal presidential republic under a centralized authoritarian state"
+    },
+    "hasData": 10,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-25",
+    "country": "KI",
+    "countryInfo": {
+      "name": "Kiribati",
+      "alpha-2": "KI",
+      "gov": "Presidential republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-07",
+    "country": "DZ",
+    "countryInfo": {
+      "name": "Algeria",
+      "alpha-2": "DZ",
+      "gov": "Presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-10",
+    "country": "JO",
+    "countryInfo": {
+      "name": "Jordan",
+      "alpha-2": "JO",
+      "gov": "Constitutional monarchy"
+    },
+    "hasData": 13,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-21",
+    "country": "LK",
+    "countryInfo": {
+      "name": "Sri Lanka",
+      "alpha-2": "LK",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-21",
+    "country": "LK",
+    "countryInfo": {
+      "name": "Sri Lanka",
+      "alpha-2": "LK",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-14",
+    "country": "LK",
+    "countryInfo": {
+      "name": "Sri Lanka",
+      "alpha-2": "LK",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 13,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-24",
+    "country": "RO",
+    "countryInfo": {
+      "name": "Romania",
+      "alpha-2": "RO",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 14,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-08",
+    "country": "RO",
+    "countryInfo": {
+      "name": "Romania",
+      "alpha-2": "RO",
+      "gov": "Semi-presidential republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-01",
+    "country": "RO",
+    "countryInfo": {
+      "name": "Romania",
+      "alpha-2": "RO",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 31,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-01",
+    "country": "RO",
+    "countryInfo": {
+      "name": "Romania",
+      "alpha-2": "RO",
+      "gov": "Semi-presidential republic"
+    },
+    "hasData": 42,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-29",
+    "country": "AT",
+    "countryInfo": {
+      "name": "Austria",
+      "alpha-2": "AT",
+      "gov": "Federal parliamentary republic"
+    },
+    "hasData": 12,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-09",
+    "country": "MZ",
+    "countryInfo": {
+      "name": "Mozambique",
+      "alpha-2": "MZ",
+      "gov": "Presidential republic"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-09",
+    "country": "MZ",
+    "countryInfo": {
+      "name": "Mozambique",
+      "alpha-2": "MZ",
+      "gov": "Presidential republic"
+    },
+    "hasData": 4,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-21",
+    "country": "CZ",
+    "countryInfo": {
+      "name": "Czechia",
+      "alpha-2": "CZ",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 14,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-09-28",
+    "country": "CZ",
+    "countryInfo": {
+      "name": "Czechia",
+      "alpha-2": "CZ",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 11,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-20",
+    "country": "MD",
+    "countryInfo": {
+      "name": "Moldova, Republic of",
+      "short": "Moldova",
+      "alpha-2": "MD",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-20",
+    "country": "MD",
+    "countryInfo": {
+      "name": "Moldova, Republic of",
+      "short": "Moldova",
+      "alpha-2": "MD",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 11,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-03",
+    "country": "MD",
+    "countryInfo": {
+      "name": "Moldova, Republic of",
+      "short": "Moldova",
+      "alpha-2": "MD",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-20",
+    "country": "IQ-KR",
+    "countryInfo": {
+      "name": "Kurdistan Region",
+      "alpha-2": "IQ-KR",
+      "gov": "Parliamentary autonomous region"
+    },
+    "alreadyVoted": false
+  },
+  {
+    "date": "2024-10-27",
+    "country": "UY",
+    "countryInfo": {
+      "name": "Uruguay",
+      "alpha-2": "UY",
+      "gov": "Unitary presidential republic"
+    },
+    "hasData": 11,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-24",
+    "country": "UY",
+    "countryInfo": {
+      "name": "Uruguay",
+      "alpha-2": "UY",
+      "gov": "Unitary presidential republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-26",
+    "country": "GE",
+    "countryInfo": {
+      "name": "Georgia",
+      "alpha-2": "GE",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-26",
+    "country": "GE",
+    "countryInfo": {
+      "name": "Georgia",
+      "alpha-2": "GE",
+      "gov": "Parliamentary republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-10-27",
+    "country": "JP",
+    "countryInfo": {
+      "name": "Japan",
+      "alpha-2": "JP",
+      "gov": "Constitutional monarchy with a parliamentary system"
+    },
+    "hasData": 13,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-30",
+    "country": "MU",
+    "countryInfo": {
+      "name": "Mauritius",
+      "alpha-2": "MU",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 30,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-27",
+    "country": "NA",
+    "countryInfo": {
+      "name": "Namibia",
+      "alpha-2": "NA",
+      "gov": "Presidential republic"
+    },
+    "hasData": 15,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-05",
+    "country": "US",
+    "countryInfo": {
+      "name": "United States of America",
+      "short": "USA",
+      "alpha-2": "US",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 5,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-05",
+    "country": "US",
+    "countryInfo": {
+      "name": "United States of America",
+      "short": "USA",
+      "alpha-2": "US",
+      "gov": "Federal presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-05",
+    "country": "US",
+    "countryInfo": {
+      "name": "United States of America",
+      "short": "USA",
+      "alpha-2": "US",
+      "gov": "Federal presidential republic"
+    },
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-12",
+    "country": "PW",
+    "countryInfo": {
+      "name": "Palau",
+      "alpha-2": "PW",
+      "gov": "Presidential republic"
+    },
+    "hasData": 2,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-13",
+    "country": "SOM",
+    "countryInfo": {
+      "name": "Somaliland",
+      "alpha-2": "SOM",
+      "gov": "Unitary presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-11-29",
+    "country": "IE",
+    "countryInfo": {
+      "name": "Ireland",
+      "alpha-2": "IE",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 11,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-07",
+    "country": "GH",
+    "countryInfo": {
+      "name": "Ghana",
+      "alpha-2": "GH",
+      "gov": "Presidential republic"
+    },
+    "hasData": 13,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-07",
+    "country": "GH",
+    "countryInfo": {
+      "name": "Ghana",
+      "alpha-2": "GH",
+      "gov": "Presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-06-09",
+    "country": "SM",
+    "countryInfo": {
+      "name": "San Marino",
+      "alpha-2": "SM",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 7,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-22",
+    "country": "SS",
+    "countryInfo": {
+      "name": "South Sudan",
+      "alpha-2": "SS",
+      "gov": "Federal presidential republic under a provisional government"
+    },
+    "alreadyVoted": false
+  },
+  {
+    "date": "2024-10-30",
+    "country": "BW",
+    "countryInfo": {
+      "name": "Botswana",
+      "alpha-2": "BW",
+      "gov": "Parliamentary republic"
+    },
+    "hasData": 10,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-31",
+    "country": "GW",
+    "countryInfo": {
+      "name": "Guinea-Bissau",
+      "alpha-2": "GW",
+      "gov": "Semi-presidential republic"
+    },
+    "alreadyVoted": false
+  },
+  {
+    "date": "2024-12-31",
+    "country": "GW",
+    "countryInfo": {
+      "name": "Guinea-Bissau",
+      "alpha-2": "GW",
+      "gov": "Semi-presidential republic"
+    },
+    "alreadyVoted": false
+  },
+  {
+    "date": "2024-10-06",
+    "country": "TN",
+    "countryInfo": {
+      "name": "Tunisia",
+      "alpha-2": "TN",
+      "gov": "Unitary semi-presidential republic"
+    },
+    "hasData": 3,
+    "alreadyVoted": true
+  },
+  {
+    "date": "2024-12-31",
+    "country": "KP",
+    "countryInfo": {
+      "name": "North Korea",
+      "short": "North Korea",
+      "complete-name": "Korea (Democratic People's Republic of)",
+      "alpha-2": "KP",
+      "gov": "One-party socialist republic"
+    },
+    "alreadyVoted": false
+  },
+  {
+    "date": "2024-10-27",
+    "country": "UZ",
+    "countryInfo": {
+      "name": "Uzbekistan",
+      "alpha-2": "UZ",
+      "gov": "Unitary presidential republic"
+    },
+    "alreadyVoted": false
+  }
+]
