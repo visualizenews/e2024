@@ -30,6 +30,8 @@
     // $: console.log("ACTIVE", active);
     const preSelectedCountry = window.location.hash?.replace("#", "");
 
+    $: console.log(data, calendarData);
+
     onMount(async () => {
         const countriesResponse = await fetch("./data/countriesWithGov.json");
         countries = await countriesResponse.json();
@@ -39,47 +41,56 @@
         );
         democracyIndex = await democracyIndexResponse.json();
 
-        const runtime = new Runtime();
-        const main = runtime.module(define, (name) => {
-            if (name === "elections")
-                return {
-                    pending() {},
-                    fulfilled(value) {
-                        // data = value;
-                        const _data = Object.entries(value).map((d) => ({
-                            country: d[0],
-                            elections: d[1],
-                            countryInfo: countries.find(
-                                (c) => c["alpha-2"] === d[0],
-                            ),
-                        }));
-                        [data, calendarData] = [
-                            _data,
-                            _data.reduce((acc, d) => {
-                                acc = [
-                                    ...acc,
-                                    ...d.elections.map((election) => {
-                                        return {
-                                            date: election.date,
-                                            country: d.country,
-                                            countryInfo: d.countryInfo,
-                                            hasData: election?.data?.length,
-                                            alreadyVoted:
-                                                d.elections[0]?.data?.length !=
-                                                null,
-                                        };
-                                    }),
-                                ];
+        const dataJSON = await fetch("./data/data.json");
 
-                                return acc;
-                            }, []),
-                        ];
-                    },
-                    rejected(error) {
-                        console.error(`${name}: rejected`, error);
-                    },
-                };
-        });
+        const calendarDataJSON = await fetch("./data/calendarData.json");
+
+        [data, calendarData] = [
+            await dataJSON.json(),
+            await calendarDataJSON.json(),
+        ];
+
+        //     const runtime = new Runtime();
+        //     const main = runtime.module(define, (name) => {
+        //         if (name === "elections")
+        //             return {
+        //                 pending() {},
+        //                 fulfilled(value) {
+        //                     // data = value;
+        //                     const _data = Object.entries(value).map((d) => ({
+        //                         country: d[0],
+        //                         elections: d[1],
+        //                         countryInfo: countries.find(
+        //                             (c) => c["alpha-2"] === d[0],
+        //                         ),
+        //                     }));
+        //                     [data, calendarData] = [
+        //                         _data,
+        //                         _data.reduce((acc, d) => {
+        //                             acc = [
+        //                                 ...acc,
+        //                                 ...d.elections.map((election) => {
+        //                                     return {
+        //                                         date: election.date,
+        //                                         country: d.country,
+        //                                         countryInfo: d.countryInfo,
+        //                                         hasData: election?.data?.length,
+        //                                         alreadyVoted:
+        //                                             d.elections[0]?.data?.length !=
+        //                                             null,
+        //                                     };
+        //                                 }),
+        //                             ];
+
+        //                             return acc;
+        //                         }, []),
+        //                     ];
+        //                 },
+        //                 rejected(error) {
+        //                     console.error(`${name}: rejected`, error);
+        //                 },
+        //             };
+        //     });
     });
 
     let count = 0;
