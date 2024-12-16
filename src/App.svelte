@@ -119,7 +119,7 @@
                     <a href="#ID">Indonesia</a>,
                     <a href="#MX">Mexico</a>,<a href="#PK">Pakistan</a>,
                     <a href="#RU">Russia</a>
-                    and the United States — will cast a vote.</b
+                    and the <a href="#US">United States</a> — will cast a vote.</b
                 >
             </p>
         </header>
