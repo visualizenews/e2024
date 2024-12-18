@@ -80,8 +80,14 @@
                         <ul>
                             <li>
                                 <a
+                                    href="https://ghali.visualize.news/"
+                                    target="_ghali">Tutte le parole di Ghali</a
+                                >
+                            </li>
+                            <li>
+                                <a
                                     href="https://2024.visualize.news/"
-                                    target="_meloni">2024 - Elections Year</a
+                                    target="_elections">2024 - Elections Year</a
                                 >
                             </li>
                             <li>
